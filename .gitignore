@@ -1,0 +1,7 @@
+﻿.Rproj.user
+.Rhistory
+.RData
+.httr-oauth
+.env
+data-raw/
+mongo/
