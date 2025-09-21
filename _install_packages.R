@@ -5,9 +5,10 @@ pkgs <- c(
   "dtwclust", "proxy", "igraph", "ggraph",
   "syuzhet", "sentimentr",
   "ggplot2", "plotly", "shiny", "shinydashboard", "viridis",
-  "taskscheduleR", "cronR",
+  "taskscheduleR",
   "mongolite",
   "usethis", "gitcreds"
 )
 
 install.packages(setdiff(pkgs, rownames(installed.packages())))
+install.packages(c("usethis", "gitcreds"))
