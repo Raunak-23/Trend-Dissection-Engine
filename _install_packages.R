@@ -11,4 +11,3 @@ pkgs <- c(
 )
 
 install.packages(setdiff(pkgs, rownames(installed.packages())))
-install.packages(c("usethis", "gitcreds"))
