@@ -1,0 +1,28 @@
+# Global configuration for TrendR pipeline
+# Paths are relative to repository root unless absolute
+
+paths:
+  raw_dir: data-raw
+  clean_dir: data-clean
+  logs_dir: logs
+  web_dir: web_dash
+  # Stable filenames used by downstream steps
+  latest_raw: data-raw/latest.json
+  latest_processed: data-clean/processed_youtube.json
+
+params:
+  country_code: IN
+  source: youtube_trending
+
+python:
+  enabled: false
+  script_data_fetch: pmods/data_fetch_reddit.py
+  script_analyze: pmods/analyze_trends.py
+
+r:
+  # Reserved for future R-specific toggles
+  validate_schema: true
+
+run:
+  # When true, also copy the latest timestamped artifacts to stable filenames
+  update_latest_pointers: true

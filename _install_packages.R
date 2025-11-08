@@ -1,13 +1,18 @@
 pkgs <- c(
-  "tidyverse", "lubridate", "jsonlite", "httr", "rvest", "xml2",
-  "tidytext", "tm", "text2vec", "stopwords", "SnowballC",
-  "signal", "pracma", "forecast", "prophet", "xts", "zoo",
+  "tidyverse", "rvest", "xml2",
+  "tm", "stopwords", "SnowballC",
+  "signal", "pracma", "forecast", "xts",
   "dtwclust", "proxy", "igraph", "ggraph",
-  "syuzhet", "sentimentr",
-  "ggplot2", "plotly", "shiny", "shinydashboard", "viridis",
+  "plotly", "shiny", "shinydashboard", "viridis",
   "taskscheduleR",
   "mongolite",
   "usethis", "gitcreds"
 )
+install.packages(pkgs)
+install.packages(c("httr","jsonlite","lubridate","dplyr","stringr","tidyr","zoo","magrittr","purrr"))
+install.packages(c("syuzhet","sentimentr"))   # for sentiment (you already used syuzhet)
+install.packages(c("minpack.lm","prophet","xgboost","caret","Metrics"))
+install.packages("newsanchor")
+install.packages(c("tuber","Rfacebook","RedditExtractoR","factoextra","cluster","lsa","text2vec","tidytext","ggplot2"))
 
-install.packages(setdiff(pkgs, rownames(installed.packages())))
+
