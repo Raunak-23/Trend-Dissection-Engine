@@ -30,24 +30,20 @@ run_pipeline <- function(json_dir = "data/",
   
   # 3️⃣ Clustering for similarity visualization
   # Check if there are enough features for clustering
-  message(paste("DEBUG: length(features_list) =", length(features_list)))
   if (length(features_list) < 2) { # Need at least 2 topics to form clusters
     message("⚠️ Not enough topics with features for clustering — skipping.")
     clusters <- NULL
   } else {
     mat <- build_matrix_for_clustering(features_list, max_len = clustering_len)
     
-    message(paste("DEBUG: nrow(mat) =", nrow(mat)))
-    if (nrow(mat) < 2) { # This will be true if nrow(mat) is 1
+    # Check if the matrix has enough rows after filtering in build_matrix_for_clustering
+    if (nrow(mat) < 2) {
       message("⚠️ Not enough valid data points in matrix for clustering after filtering — skipping.")
       clusters <- NULL
     } else {
-      # Check for unique rows in mat
-      unique_rows_count <- nrow(unique(mat))
-      message(paste("DEBUG: unique_rows_count =", unique_rows_count))
-
-      actual_k_clusters <- min(k_clusters, unique_rows_count)
-      message(paste("DEBUG: actual_k_clusters (after unique check) =", actual_k_clusters))
+      # Adjust k_clusters: k must be at least 1 and at most nrow(mat).
+      # For meaningful clustering, we generally want k >= 2.
+      actual_k_clusters <- min(k_clusters, nrow(mat))
       
       if (actual_k_clusters < 2) {
         message("⚠️ Not enough distinct data points for meaningful clustering (need at least 2) — skipping.")
