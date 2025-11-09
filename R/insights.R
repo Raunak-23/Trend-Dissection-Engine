@@ -1,90 +1,102 @@
-library(dplyr)
-library(DT)
-library(ggplot2)
-library(plotly)
-library(xgboost)
+# ===============================================================
+# Insight_generation.R
+# Trend Dissection Engine — Insight Generation & Keyword Analysis
+# ===============================================================
+# Extract interpretable insights linking keywords to engagement,
+# sentiment, and intensity metrics.
+# Outputs: data_insights/keyword_insights_<date>.csv and .json
+# ===============================================================
 
-# ---- 1️⃣ Feature Importance for Lifespan Model ----
-get_feature_importance_plot <- function(xgb_model) {
-  if (is.null(xgb_model)) return(NULL)
-  imp <- xgb.importance(model = xgb_model)
-  p <- ggplot(imp, aes(x = reorder(Feature, Gain), y = Gain)) +
-    geom_col(fill = "#6C63FF") +
-    coord_flip() +
-    theme_minimal(base_size = 14) +
-    labs(title = "Feature Importance (Lifespan Model)",
-         x = "Feature", y = "Relative Importance")
-  ggplotly(p)
-}
+suppressPackageStartupMessages({
+  library(jsonlite)
+  library(dplyr)
+  library(tidytext)
+  library(tidyr)
+  library(stringr)
+  library(ggplot2)
+  library(lubridate)
+})
 
-# ---- 2️⃣ Prophet Trend Components Plot (for a single topic) ----
-get_prophet_component_plot <- function(prophet_result) {
-  if (is.null(prophet_result) || is.null(prophet_result$model)) return(NULL)
-  m <- prophet_result$model
-  fc <- prophet_result$forecast
-  p <- plot(m, fc) +
-    ggtitle("Prophet Forecast with Changepoints") +
-    theme_minimal(base_size = 14)
-  ggplotly(p)
-}
+message("🧠 Insight Generation — starting...")
 
-# ---- 3️⃣ Combined Summary Table for Dashboard ----
-generate_summary_table <- function(features_list, prophet_res, xgb_fit = NULL, sat_results = NULL) {
-  n <- length(features_list)
-  df <- data.frame(
-    Topic = character(n),
-    Peak_Engagement = numeric(n),
-    Time_to_Peak = numeric(n),
-    Avg_Sentiment = numeric(n),
-    Saturated = logical(n),
-    Predicted_Lifespan = numeric(n)
+# helper: load combined trend data
+source("R/utils_load_data.R")
+trends_all <- get_all_trend_data("data_clean")
+
+# create folder
+dir.create("data_insights", showWarnings = FALSE)
+today <- format(Sys.Date(), "%Y-%m-%d")
+
+# ---------------------------------------------------------------
+# 1️⃣ Text Cleaning and Tokenization
+# ---------------------------------------------------------------
+text_df <- trends_all %>%
+  select(topic, platform_source, avg_sentiment, avg_velocity,
+         trend_intensity, insta_engagement, category) %>%
+  mutate(topic_clean = str_to_lower(topic),
+         topic_clean = str_replace_all(topic_clean, "http\\S+|www\\S+", ""),
+         topic_clean = str_replace_all(topic_clean, "[^a-z\\s]", " ")) %>%
+  unnest_tokens(word, topic_clean)
+
+# remove stopwords
+data("stop_words")
+tokens <- text_df %>%
+  anti_join(stop_words, by = "word") %>%
+  filter(str_length(word) > 2)
+
+# ---------------------------------------------------------------
+# 2️⃣ Keyword Frequency and tf-idf
+# ---------------------------------------------------------------
+keyword_freq <- tokens %>%
+  count(word, sort = TRUE)
+
+keyword_tfidf <- tokens %>%
+  count(platform_source, word, sort = TRUE) %>%
+  bind_tf_idf(word, platform_source, n) %>%
+  arrange(desc(tf_idf))
+
+# ---------------------------------------------------------------
+# 3️⃣ Keyword-Level Correlations
+# ---------------------------------------------------------------
+# Compute average engagement/sentiment per word
+keyword_metrics <- tokens %>%
+  group_by(word) %>%
+  summarise(
+    avg_sentiment = mean(avg_sentiment, na.rm = TRUE),
+    avg_velocity = mean(avg_velocity, na.rm = TRUE),
+    avg_intensity = mean(trend_intensity, na.rm = TRUE),
+    avg_insta_eng = mean(insta_engagement, na.rm = TRUE),
+    count = n()
+  ) %>%
+  filter(count > 1) %>%
+  mutate(
+    engagement_rank = rank(-avg_velocity),
+    sentiment_rank = rank(-avg_sentiment),
+    combined_score = 0.5 * scale(avg_velocity) + 0.5 * scale(avg_sentiment)
   )
-  
-  for (i in seq_along(features_list)) {
-    fx <- features_list[[i]]
-    df$Topic[i] <- fx$summary$topic
-    df$Peak_Engagement[i] <- fx$summary$peak_val
-    df$Time_to_Peak[i] <- fx$summary$time_to_peak
-    df$Avg_Sentiment[i] <- round(fx$summary$avg_sentiment, 3)
-    
-    # saturation
-    if (!is.null(sat_results) && length(sat_results) >= i) {
-      df$Saturated[i] <- tail(sat_results[[i]]$saturation, 1)
-    } else {
-      df$Saturated[i] <- NA
-    }
-    
-    # predicted lifespan (XGBoost)
-    if (!is.null(xgb_fit)) {
-      test_vec <- as.matrix(df[i, c("Peak_Engagement", "Time_to_Peak", "Avg_Sentiment")])
-      pred <- predict(xgb_fit$model, test_vec)
-      df$Predicted_Lifespan[i] <- round(pred, 2)
-    } else {
-      df$Predicted_Lifespan[i] <- NA
-    }
-  }
-  
-  datatable(df, options = list(pageLength = 10, autoWidth = TRUE))
-}
 
-# ---- 4️⃣ Forecast Comparison Plot (Actual vs Predicted) ----
-plot_forecast_comparison <- function(actual_df, prophet_forecast) {
-  if (is.null(prophet_forecast)) return(NULL)
-  
-  pred_df <- prophet_forecast$forecast %>%
-    rename(date = ds, pred = yhat) %>%
-    select(date, pred)
-  
-  df <- merge(actual_df, pred_df, by = "date", all = TRUE)
-  df_long <- df %>%
-    tidyr::pivot_longer(cols = c("engagement_sum", "pred"),
-                        names_to = "type", values_to = "value")
-  
-  p <- ggplot(df_long, aes(x = date, y = value, color = type)) +
-    geom_line(size = 1.2) +
-    theme_minimal(base_size = 14) +
-    labs(x = "Time", y = "Engagement",
-         title = "Actual vs Forecasted Engagement",
-         color = "Series")
-  ggplotly(p)
-}
+# ---------------------------------------------------------------
+# 4️⃣ Visual Preview (optional for static report)
+# ---------------------------------------------------------------
+top_keywords <- keyword_metrics %>%
+  arrange(desc(combined_score)) %>%
+  head(15)
+
+ggplot(top_keywords, aes(x = reorder(word, combined_score), y = combined_score)) +
+  geom_col(fill = "#3E7DD2") +
+  coord_flip() +
+  labs(
+    title = "Top Keywords by Combined Sentiment–Engagement Score",
+    x = "Keyword", y = "Score (Scaled)"
+  ) +
+  theme_minimal()
+ggsave(file.path("data_insights", paste0("keyword_insights_plot_", today, ".png")), width = 7, height = 5)
+
+# ---------------------------------------------------------------
+# 5️⃣ Save Outputs
+# ---------------------------------------------------------------
+write.csv(keyword_metrics, file.path("data_insights", paste0("keyword_insights_", today, ".csv")), row.names = FALSE)
+write_json(keyword_metrics, file.path("data_insights", paste0("keyword_insights_", today, ".json")),
+           pretty = TRUE, auto_unbox = TRUE)
+
+message("✅ Keyword insights saved → data_insights/")

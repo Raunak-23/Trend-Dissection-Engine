@@ -1,0 +1,23 @@
+[
+  {
+    "MAE": 40.4815,
+    "RMSE": 77.1837,
+    "MAPE_pct": 7.0942,
+    "R2": 0.9927,
+    "n": 14,
+    "model": "Forecasting (Prophet)"
+  },
+  {
+    "MAE": 1770.4576,
+    "RMSE": 7451.1201,
+    "MAPE_pct": 46.9481,
+    "R2": -0.0482,
+    "n": 172,
+    "model": "Lifespan Regression (XGBoost)"
+  },
+  {
+    "model": "Clustering (K-Means)",
+    "Silhouette": 0.273,
+    "DB_Index": 0.773
+  }
+]

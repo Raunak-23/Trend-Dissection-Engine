@@ -1,0 +1,189 @@
+[
+  {
+    "word": "blondes",
+    "avg_sentiment": 0.066,
+    "avg_velocity": 0.03,
+    "avg_intensity": 64.235,
+    "avg_insta_eng": 0.0878,
+    "count": 6,
+    "engagement_rank": 12.5,
+    "sentiment_rank": 2.5,
+    "combined_score": [0.3624]
+  },
+  {
+    "word": "brainrots",
+    "avg_sentiment": 0.02,
+    "avg_velocity": 5.61,
+    "avg_intensity": 1031.93,
+    "avg_insta_eng": 0.1522,
+    "count": 4,
+    "engagement_rank": 5,
+    "sentiment_rank": 6,
+    "combined_score": [0.2776]
+  },
+  {
+    "word": "colts",
+    "avg_sentiment": 0,
+    "avg_velocity": 1.15,
+    "avg_intensity": 176.65,
+    "avg_insta_eng": 0.535,
+    "count": 2,
+    "engagement_rank": 9,
+    "sentiment_rank": 10,
+    "combined_score": [-0.5434]
+  },
+  {
+    "word": "emergence",
+    "avg_sentiment": -0.015,
+    "avg_velocity": 11.405,
+    "avg_intensity": 2052.8567,
+    "avg_insta_eng": 0.1715,
+    "count": 6,
+    "engagement_rank": 2,
+    "sentiment_rank": 16,
+    "combined_score": [0.3895]
+  },
+  {
+    "word": "espn",
+    "avg_sentiment": 0.086,
+    "avg_velocity": 0.28,
+    "avg_intensity": 401.6025,
+    "avg_insta_eng": 0.4535,
+    "count": 2,
+    "engagement_rank": 10,
+    "sentiment_rank": 1,
+    "combined_score": [0.704]
+  },
+  {
+    "word": "lala",
+    "avg_sentiment": 0,
+    "avg_velocity": 0,
+    "avg_intensity": 0.1683,
+    "avg_insta_eng": 0.0775,
+    "count": 6,
+    "engagement_rank": 15.5,
+    "sentiment_rank": 10,
+    "combined_score": [-0.6744]
+  },
+  {
+    "word": "letra",
+    "avg_sentiment": 0,
+    "avg_velocity": 0,
+    "avg_intensity": 0.1683,
+    "avg_insta_eng": 0.0775,
+    "count": 6,
+    "engagement_rank": 15.5,
+    "sentiment_rank": 10,
+    "combined_score": [-0.6744]
+  },
+  {
+    "word": "lyrics",
+    "avg_sentiment": 0.066,
+    "avg_velocity": 0.03,
+    "avg_intensity": 64.235,
+    "avg_insta_eng": 0.0878,
+    "count": 6,
+    "engagement_rank": 12.5,
+    "sentiment_rank": 2.5,
+    "combined_score": [0.3624]
+  },
+  {
+    "word": "michael",
+    "avg_sentiment": 0.05,
+    "avg_velocity": 0.1,
+    "avg_intensity": 851.6033,
+    "avg_insta_eng": 0.105,
+    "count": 6,
+    "engagement_rank": 11,
+    "sentiment_rank": 4,
+    "combined_score": [0.1199]
+  },
+  {
+    "word": "myke",
+    "avg_sentiment": 0,
+    "avg_velocity": 0,
+    "avg_intensity": 0.1683,
+    "avg_insta_eng": 0.0775,
+    "count": 6,
+    "engagement_rank": 15.5,
+    "sentiment_rank": 10,
+    "combined_score": [-0.6744]
+  },
+  {
+    "word": "official",
+    "avg_sentiment": -0.0069,
+    "avg_velocity": 5.5177,
+    "avg_intensity": 1343.2665,
+    "avg_insta_eng": 0.1364,
+    "count": 13,
+    "engagement_rank": 7.5,
+    "sentiment_rank": 13.5,
+    "combined_score": [-0.1545]
+  },
+  {
+    "word": "skibidi",
+    "avg_sentiment": -0.015,
+    "avg_velocity": 11.405,
+    "avg_intensity": 2052.8567,
+    "avg_insta_eng": 0.1715,
+    "count": 6,
+    "engagement_rank": 2,
+    "sentiment_rank": 16,
+    "combined_score": [0.3895]
+  },
+  {
+    "word": "toilet",
+    "avg_sentiment": -0.015,
+    "avg_velocity": 11.405,
+    "avg_intensity": 2052.8567,
+    "avg_insta_eng": 0.1715,
+    "count": 6,
+    "engagement_rank": 2,
+    "sentiment_rank": 16,
+    "combined_score": [0.3895]
+  },
+  {
+    "word": "towers",
+    "avg_sentiment": 0,
+    "avg_velocity": 0,
+    "avg_intensity": 0.1683,
+    "avg_insta_eng": 0.0775,
+    "count": 6,
+    "engagement_rank": 15.5,
+    "sentiment_rank": 10,
+    "combined_score": [-0.6744]
+  },
+  {
+    "word": "tracks",
+    "avg_sentiment": 0.02,
+    "avg_velocity": 5.61,
+    "avg_intensity": 1031.93,
+    "avg_insta_eng": 0.1522,
+    "count": 4,
+    "engagement_rank": 5,
+    "sentiment_rank": 6,
+    "combined_score": [0.2776]
+  },
+  {
+    "word": "trailer",
+    "avg_sentiment": -0.0069,
+    "avg_velocity": 5.5177,
+    "avg_intensity": 1343.2665,
+    "avg_insta_eng": 0.1364,
+    "count": 13,
+    "engagement_rank": 7.5,
+    "sentiment_rank": 13.5,
+    "combined_score": [-0.1545]
+  },
+  {
+    "word": "update",
+    "avg_sentiment": 0.02,
+    "avg_velocity": 5.61,
+    "avg_intensity": 1031.93,
+    "avg_insta_eng": 0.1522,
+    "count": 4,
+    "engagement_rank": 5,
+    "sentiment_rank": 6,
+    "combined_score": [0.2776]
+  }
+]

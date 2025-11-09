@@ -1,0 +1,155 @@
+[
+  {
+    "topic": "4 Non Blondes - What's Up? (Lyrics)",
+    "n_days": 6,
+    "lifespan_hours": 240,
+    "last_rolling_slope": 10,
+    "kendall_tau": 1,
+    "saturated": false,
+    "reason": ""
+  },
+  {
+    "topic": "A Doctor’s Number-1 Fitness Tip for Women Over 50 - AOL.com",
+    "n_days": 1,
+    "lifespan_hours": 6,
+    "last_rolling_slope": 0,
+    "kendall_tau": 0,
+    "saturated": true,
+    "reason": "logistic_or_heuristic_short;low_rolling_slope;kendall_flat_or_decreasing;no_recent_growth"
+  },
+  {
+    "topic": "Antonio Brown will go to Miami to face charges - ESPN",
+    "n_days": 1,
+    "lifespan_hours": 6,
+    "last_rolling_slope": 0,
+    "kendall_tau": 0,
+    "saturated": true,
+    "reason": "logistic_or_heuristic_short;low_rolling_slope;kendall_flat_or_decreasing;no_recent_growth"
+  },
+  {
+    "topic": "Colts place DT DeForest Buckner on injured reserve - Colts.com",
+    "n_days": 1,
+    "lifespan_hours": 6,
+    "last_rolling_slope": 0,
+    "kendall_tau": 0,
+    "saturated": true,
+    "reason": "logistic_or_heuristic_short;low_rolling_slope;kendall_flat_or_decreasing;no_recent_growth"
+  },
+  {
+    "topic": "F1 braced for potential cyclone disruption at Brazilian GP - The Race",
+    "n_days": 1,
+    "lifespan_hours": 6,
+    "last_rolling_slope": 0,
+    "kendall_tau": 0,
+    "saturated": true,
+    "reason": "logistic_or_heuristic_short;low_rolling_slope;kendall_flat_or_decreasing;no_recent_growth"
+  },
+  {
+    "topic": "Gray Hair Protects Us From Cancer? - StudyFinds",
+    "n_days": 1,
+    "lifespan_hours": 6,
+    "last_rolling_slope": 0,
+    "kendall_tau": 0,
+    "saturated": true,
+    "reason": "logistic_or_heuristic_short;low_rolling_slope;kendall_flat_or_decreasing;no_recent_growth"
+  },
+  {
+    "topic": "Kill Bill: The Whole Bloody Affair (2025) Official Trailer - Uma Thurman",
+    "n_days": 1,
+    "lifespan_hours": 6,
+    "last_rolling_slope": 0,
+    "kendall_tau": 0,
+    "saturated": true,
+    "reason": "logistic_or_heuristic_short;low_rolling_slope;kendall_flat_or_decreasing;no_recent_growth"
+  },
+  {
+    "topic": "Michael | Official Trailer",
+    "n_days": 6,
+    "lifespan_hours": 240,
+    "last_rolling_slope": 10,
+    "kendall_tau": 1,
+    "saturated": false,
+    "reason": ""
+  },
+  {
+    "topic": "More people are dying before they turn 65. Who it impacts and what it means. - The Washington Post",
+    "n_days": 1,
+    "lifespan_hours": 6,
+    "last_rolling_slope": 0,
+    "kendall_tau": 0,
+    "saturated": true,
+    "reason": "logistic_or_heuristic_short;low_rolling_slope;kendall_flat_or_decreasing;no_recent_growth"
+  },
+  {
+    "topic": "Myke Towers - Lala (Letra)",
+    "n_days": 6,
+    "lifespan_hours": 240,
+    "last_rolling_slope": 2,
+    "kendall_tau": 1,
+    "saturated": false,
+    "reason": ""
+  },
+  {
+    "topic": "NCAA: Six hoops players banned for betting plots - ESPN",
+    "n_days": 1,
+    "lifespan_hours": 6,
+    "last_rolling_slope": 0,
+    "kendall_tau": 0,
+    "saturated": true,
+    "reason": "logistic_or_heuristic_short;low_rolling_slope;kendall_flat_or_decreasing;no_recent_growth"
+  },
+  {
+    "topic": "New 3 TRACKS UPDATE + NEW BRAINROTS!",
+    "n_days": 4,
+    "lifespan_hours": 122.21,
+    "last_rolling_slope": 10,
+    "kendall_tau": 1,
+    "saturated": false,
+    "reason": ""
+  },
+  {
+    "topic": "The Halloween Short Horror Watch Party...",
+    "n_days": 1,
+    "lifespan_hours": 6,
+    "last_rolling_slope": 0,
+    "kendall_tau": 0,
+    "saturated": true,
+    "reason": "logistic_or_heuristic_short;low_rolling_slope;kendall_flat_or_decreasing;no_recent_growth"
+  },
+  {
+    "topic": "The U.S. job market is slowing, not collapsing - Axios",
+    "n_days": 1,
+    "lifespan_hours": 6,
+    "last_rolling_slope": 0,
+    "kendall_tau": 0,
+    "saturated": true,
+    "reason": "logistic_or_heuristic_short;low_rolling_slope;kendall_flat_or_decreasing;no_recent_growth"
+  },
+  {
+    "topic": "What does Elon Musk do with all his money? - BBC",
+    "n_days": 1,
+    "lifespan_hours": 6,
+    "last_rolling_slope": 0,
+    "kendall_tau": 0,
+    "saturated": true,
+    "reason": "logistic_or_heuristic_short;low_rolling_slope;kendall_flat_or_decreasing;no_recent_growth"
+  },
+  {
+    "topic": "Why next year's flu shot might not be as good as it should be - NPR",
+    "n_days": 1,
+    "lifespan_hours": 6,
+    "last_rolling_slope": 0,
+    "kendall_tau": 0,
+    "saturated": true,
+    "reason": "logistic_or_heuristic_short;low_rolling_slope;kendall_flat_or_decreasing;no_recent_growth"
+  },
+  {
+    "topic": "skibidi toilet: emergence | official trailer",
+    "n_days": 6,
+    "lifespan_hours": 240,
+    "last_rolling_slope": 10,
+    "kendall_tau": 1,
+    "saturated": false,
+    "reason": ""
+  }
+]

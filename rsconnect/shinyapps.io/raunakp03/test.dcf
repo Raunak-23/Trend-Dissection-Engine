@@ -1,0 +1,12 @@
+name: test
+title: test
+username: raunakp03
+account: raunakp03
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 16010458
+bundleId: 11153230
+url: https://raunakp03.shinyapps.io/test/
+version: 1
+asMultiple: FALSE
+asStatic: FALSE

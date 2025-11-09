@@ -1,0 +1,13 @@
+{
+  "topic": "Why next year's flu shot might not be as good as it should be - NPR",
+  "n_days": 1,
+  "dates": "2025-11-08",
+  "day_counts": 10,
+  "cum_counts": 10,
+  "lifespan_hours_raw": null,
+  "lifespan_hours": 48,
+  "last_rolling_slope": 0,
+  "kendall_tau": 0,
+  "saturated": true,
+  "saturation_reason": "logistic_or_heuristic_short;low_rolling_slope;kendall_flat_or_decreasing;no_recent_growth"
+}

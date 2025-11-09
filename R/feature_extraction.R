@@ -13,12 +13,15 @@ suppressPackageStartupMessages({
   library(jsonlite)
 })
 
+source("R/utils_load_data.R")
+data_all <- get_all_trend_data("data_clean")
+
 message("⚙️ Starting Feature Extraction...")
 
 today <- format(Sys.Date(), "%Y-%m-%d")
 infile <- file.path("data_clean", paste0("trends_clean_", today, ".rds"))
 if (!file.exists(infile)) stop("❌ Clean data not found: ", infile)
-df <- readRDS(infile)
+df <- data_all
 
 # ---------------------------------------------------------------
 # 1️⃣ Select Numeric Features

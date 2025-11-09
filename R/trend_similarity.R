@@ -17,10 +17,13 @@ suppressPackageStartupMessages({
 
 message("🔍 Starting Trend Similarity Analysis...")
 
+source("R/utils_load_data.R")
+data_all <- get_all_trend_data("data_clean")
+
 today <- format(Sys.Date(), "%Y-%m-%d")
 feat_path <- file.path("data_features", paste0("trend_features_", today, ".rds"))
 if (!file.exists(feat_path)) stop("❌ Feature file not found: ", feat_path)
-feat <- readRDS(feat_path)
+feat <- data_all
 
 # ---------------------------------------------------------------
 # 1️⃣ Prepare Numeric Matrix

@@ -32,9 +32,12 @@ dir.create(model_dir, showWarnings = FALSE)
 
 today_model_file      <- file.path(model_dir, paste0("xgb_lifespan_model_", today, ".rds"))
 yesterday_model_file  <- file.path(model_dir, paste0("xgb_lifespan_model_", yesterday, ".rds"))
+source("R/utils_load_data.R")
+data_all <- get_all_trend_data("data_clean")
+
 
 feat   <- readRDS(feat_path)
-trends <- readRDS(trends_path)
+trends <- data_all
 
 # ------------------------------------------------------------------
 # 1️⃣ Sanity check
