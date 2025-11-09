@@ -1,15 +1,11 @@
 # ===============================================================
-# Insight_generation.R
+# Insight_generation.R (Robust Version)
 # Trend Dissection Engine — Insight Generation & Keyword Analysis
-# ===============================================================
-# Extract interpretable insights linking keywords to engagement,
-# sentiment, and intensity metrics.
-# Outputs: data_insights/keyword_insights_<date>.csv and .json
 # ===============================================================
 
 suppressPackageStartupMessages({
   library(jsonlite)
-  library(dplyr)
+  library(dplyr, warn.conflicts = FALSE)
   library(tidytext)
   library(tidyr)
   library(stringr)
@@ -19,7 +15,7 @@ suppressPackageStartupMessages({
 
 message("🧠 Insight Generation — starting...")
 
-# helper: load combined trend data
+# ---- Load helper ----
 source("R/utils_load_data.R")
 trends_all <- get_all_trend_data("data_clean")
 
@@ -28,24 +24,52 @@ dir.create("data_insights", showWarnings = FALSE)
 today <- format(Sys.Date(), "%Y-%m-%d")
 
 # ---------------------------------------------------------------
-# 1️⃣ Text Cleaning and Tokenization
+# 1️⃣ Normalize & prepare text columns
 # ---------------------------------------------------------------
-text_df <- trends_all %>%
-  select(topic, platform_source, avg_sentiment, avg_velocity,
-         trend_intensity, insta_engagement, category) %>%
-  mutate(topic_clean = str_to_lower(topic),
-         topic_clean = str_replace_all(topic_clean, "http\\S+|www\\S+", ""),
-         topic_clean = str_replace_all(topic_clean, "[^a-z\\s]", " ")) %>%
-  unnest_tokens(word, topic_clean)
+# Handle nested reddit_metrics if present
+if ("reddit_metrics" %in% names(trends_all)) {
+  reddit_cols <- c("average_score", "average_comments", "average_sentiment", "average_velocity")
+  for (col in reddit_cols) {
+    trends_all[[col]] <- purrr::map_dbl(trends_all$reddit_metrics, ~ .x[[col]] %||% NA_real_)
+  }
+}
 
-# remove stopwords
+# Ensure required columns exist (fill NAs if missing)
+needed_cols <- c(
+  "topic", "platform_source", "avg_sentiment", "avg_velocity",
+  "trend_intensity", "insta_engagement", "category"
+)
+for (col in needed_cols) {
+  if (!col %in% names(trends_all)) {
+    trends_all[[col]] <- NA
+  }
+}
+
+# Feedback
+message("✅ Columns available for insight generation: ", 
+        paste(intersect(needed_cols, names(trends_all)), collapse = ", "))
+
+# Clean and tokenize
+text_df <- trends_all %>%
+  dplyr::select(dplyr::any_of(needed_cols)) %>%
+  dplyr::mutate(
+    topic_clean = stringr::str_to_lower(topic),
+    topic_clean = stringr::str_replace_all(topic_clean, "http\\S+|www\\S+", ""),
+    topic_clean = stringr::str_replace_all(topic_clean, "[^a-z\\s]", " ")
+  ) %>%
+  tidytext::unnest_tokens(word, topic_clean)
+
+
+# ---------------------------------------------------------------
+# 2️⃣ Remove stopwords & short words
+# ---------------------------------------------------------------
 data("stop_words")
 tokens <- text_df %>%
   anti_join(stop_words, by = "word") %>%
   filter(str_length(word) > 2)
 
 # ---------------------------------------------------------------
-# 2️⃣ Keyword Frequency and tf-idf
+# 3️⃣ Keyword frequency + tf-idf
 # ---------------------------------------------------------------
 keyword_freq <- tokens %>%
   count(word, sort = TRUE)
@@ -56,9 +80,8 @@ keyword_tfidf <- tokens %>%
   arrange(desc(tf_idf))
 
 # ---------------------------------------------------------------
-# 3️⃣ Keyword-Level Correlations
+# 4️⃣ Keyword-level correlations
 # ---------------------------------------------------------------
-# Compute average engagement/sentiment per word
 keyword_metrics <- tokens %>%
   group_by(word) %>%
   summarise(
@@ -76,27 +99,30 @@ keyword_metrics <- tokens %>%
   )
 
 # ---------------------------------------------------------------
-# 4️⃣ Visual Preview (optional for static report)
+# 5️⃣ Visualization (optional)
 # ---------------------------------------------------------------
-top_keywords <- keyword_metrics %>%
-  arrange(desc(combined_score)) %>%
-  head(15)
+if (nrow(keyword_metrics) > 0) {
+  top_keywords <- keyword_metrics %>% arrange(desc(combined_score)) %>% head(15)
+  p <- ggplot(top_keywords, aes(x = reorder(word, combined_score), y = combined_score)) +
+    geom_col(fill = "#3E7DD2") +
+    coord_flip() +
+    labs(
+      title = "Top Keywords by Sentiment–Engagement Score",
+      x = "Keyword", y = "Score (Scaled)"
+    ) +
+    theme_minimal()
+  ggsave(file.path("data_insights", paste0("keyword_insights_plot_", today, ".png")), p, width = 7, height = 5)
+}
 
-ggplot(top_keywords, aes(x = reorder(word, combined_score), y = combined_score)) +
-  geom_col(fill = "#3E7DD2") +
-  coord_flip() +
-  labs(
-    title = "Top Keywords by Combined Sentiment–Engagement Score",
-    x = "Keyword", y = "Score (Scaled)"
-  ) +
-  theme_minimal()
-ggsave(file.path("data_insights", paste0("keyword_insights_plot_", today, ".png")), width = 7, height = 5)
+# ---------------------------------------------------------------
+# 6️⃣ Save outputs
+# ---------------------------------------------------------------
+write.csv(keyword_metrics,
+          file.path("data_insights", paste0("keyword_insights_", today, ".csv")),
+          row.names = FALSE)
 
-# ---------------------------------------------------------------
-# 5️⃣ Save Outputs
-# ---------------------------------------------------------------
-write.csv(keyword_metrics, file.path("data_insights", paste0("keyword_insights_", today, ".csv")), row.names = FALSE)
-write_json(keyword_metrics, file.path("data_insights", paste0("keyword_insights_", today, ".json")),
+write_json(keyword_metrics,
+           file.path("data_insights", paste0("keyword_insights_", today, ".json")),
            pretty = TRUE, auto_unbox = TRUE)
 
 message("✅ Keyword insights saved → data_insights/")

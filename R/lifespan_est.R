@@ -1,205 +1,149 @@
 # ===============================================================
-# Lifespan_est.R (Enhanced — XGBoost with Reddit Fallback + Warm Start + Normalized Targets)
-# Trend Dissection Engine — Trend Lifespan Estimation
+# insights.R — Robust Insight Generation (tokenize, tf-idf, keyword correlations)
+# Safeguards empty inputs and always writes output files (may be empty).
 # ===============================================================
-
 suppressPackageStartupMessages({
-  library(xgboost)
-  library(dplyr)
   library(jsonlite)
-  library(caret)
-  library(Metrics)
+  library(dplyr)
+  library(tidyr)
+  library(stringr)
+  library(tidytext)
+  library(ggplot2)
+  library(lubridate)
   library(scales)
 })
 
-message("⏳ Lifespan estimation (XGBoost, normalized) — starting...")
+message("🧠 Insight Generation — starting...")
 
-# ------------------------------------------------------------------
-# 0️⃣ Paths & Dates
-# ------------------------------------------------------------------
-today      <- format(Sys.Date(), "%Y-%m-%d")
-yesterday  <- format(Sys.Date() - 1, "%Y-%m-%d")
+# Ensure data_insights folder exists
+dir.create("data_insights", showWarnings = FALSE)
 
-feat_path   <- file.path("data_features", paste0("trend_features_", today, ".rds"))
-trends_path <- file.path("data_clean",    paste0("trends_clean_", today, ".rds"))
-reddit_path <- file.path("data_clean",    paste0("reddit_posts_clean_", today, ".rds"))
-model_dir   <- "data_lifespan"
-
-if (!file.exists(feat_path)) stop("❌ Feature file missing: ", feat_path)
-if (!file.exists(trends_path)) stop("❌ Trends clean file missing: ", trends_path)
-
-dir.create(model_dir, showWarnings = FALSE)
-
-today_model_file      <- file.path(model_dir, paste0("xgb_lifespan_model_", today, ".rds"))
-yesterday_model_file  <- file.path(model_dir, paste0("xgb_lifespan_model_", yesterday, ".rds"))
-source("R/utils_load_data.R")
-data_all <- get_all_trend_data("data_clean")
-
-
-feat   <- readRDS(feat_path)
-trends <- data_all
-
-# ------------------------------------------------------------------
-# 1️⃣ Sanity check
-# ------------------------------------------------------------------
-if (!"topic" %in% colnames(feat)) stop("❌ 'topic' missing in features.")
-if (!"trend_lifespan_hours" %in% colnames(trends)) {
-  warning("⚠️ 'trend_lifespan_hours' missing — creating fallback column.")
-  trends$trend_lifespan_hours <- NA_real_
+# Try to obtain trends data via get_all_trend_data() if available, else fallback to latest trends file
+trends_all <- NULL
+if (file.exists("R/utils_load_data.R")) {
+  try({
+    source("R/utils_load_data.R", local = TRUE)
+    trends_all <- tryCatch(get_all_trend_data("data_clean"), error = function(e) NULL)
+  }, silent = TRUE)
 }
 
-# ------------------------------------------------------------------
-# 2️⃣ Reddit Fallback Lifespans (with scaling)
-# ------------------------------------------------------------------
-if (file.exists(reddit_path)) {
-  message("📥 Using Reddit fallback data for lifespan estimation...")
-  reddit_posts <- readRDS(reddit_path)
-
-  # Compute raw fallback lifespans (hours)
-  lifespans_fallback <- reddit_posts %>%
-    group_by(topic) %>%
-    summarise(est_lifespan_hours = max(post_age_hours, na.rm = TRUE), .groups = "drop")
-
-  # Guarantee column before mutate
-  if (!"trend_lifespan_hours" %in% colnames(trends))
-    trends$trend_lifespan_hours <- NA_real_
-
-  # Normalize and scale fallback to realistic range (6–240 hours)
-  max_cap <- 240  # 10 days max lifespan
-  min_cap <- 6    # at least 6 hours
-  lifespans_fallback <- lifespans_fallback %>%
-    mutate(
-      # Clip large values
-      est_lifespan_hours = pmin(est_lifespan_hours, quantile(est_lifespan_hours, 0.95, na.rm = TRUE)),
-      # Scale to [min_cap, max_cap] range
-      est_lifespan_hours = rescale(est_lifespan_hours,
-                                   to = c(min_cap, max_cap),
-                                   from = range(est_lifespan_hours, na.rm = TRUE))
-    )
-
-  # Merge with trends and add small noise
-  trends <- trends %>%
-    left_join(lifespans_fallback, by = "topic") %>%
-    mutate(
-      trend_lifespan_hours = coalesce(trend_lifespan_hours, est_lifespan_hours, 12) +
-        rnorm(n(), mean = 0, sd = 1)
-    )
-} else {
-  warning("⚠️ No Reddit fallback file found — applying default lifespan = 12 ± 2h.")
-  if (!"trend_lifespan_hours" %in% colnames(trends))
-    trends$trend_lifespan_hours <- NA_real_
-  trends$trend_lifespan_hours <- coalesce(trends$trend_lifespan_hours, 12 + rnorm(nrow(trends), 0, 2))
+# fallback: load latest trends_clean JSON or RDS if get_all_trend_data wasn't available
+if (is.null(trends_all)) {
+  files_json <- list.files("data_clean", pattern = "^trends_clean_.*\\.(json|rds|csv)$", full.names = TRUE)
+  if (length(files_json) > 0) {
+    latest <- files_json[which.max(file.mtime(files_json))]
+    message("📂 Loading latest trends file fallback: ", latest)
+    if (grepl("\\.rds$", latest, ignore.case = TRUE)) {
+      trends_all <- readRDS(latest)
+    } else if (grepl("\\.json$", latest, ignore.case = TRUE)) {
+      trends_all <- jsonlite::fromJSON(latest, simplifyVector = TRUE)
+    } else if (grepl("\\.csv$", latest, ignore.case = TRUE)) {
+      trends_all <- read.csv(latest, stringsAsFactors = FALSE)
+    }
+  } else {
+    message("⚠️ No trends files found in data_clean/. Creating empty output and exiting insights.R")
+    # create empty outputs and exit gracefully
+    empty_df <- tibble(word = character(), count = integer(), combined_score = numeric())
+    write.csv(empty_df, file.path("data_insights", paste0("keyword_insights_", format(Sys.Date(), "%Y-%m-%d"), ".csv")), row.names = FALSE)
+    jsonlite::write_json(list(), file.path("data_insights", paste0("keyword_insights_", format(Sys.Date(), "%Y-%m-%d"), ".json")), auto_unbox = TRUE, pretty = TRUE)
+    quit(save = "no")
+  }
 }
 
-# ------------------------------------------------------------------
-# 3️⃣ Merge features and targets
-# ------------------------------------------------------------------
-trends <- trends %>% select(topic, trend_lifespan_hours)
-feat   <- feat   %>% select(-any_of("trend_lifespan_hours"))
-df     <- feat   %>% left_join(trends, by = "topic")
+# Ensure it's a tibble / dataframe
+trends_all <- as.data.frame(trends_all, stringsAsFactors = FALSE)
 
-df <- df %>%
-  mutate(trend_lifespan_hours = coalesce(trend_lifespan_hours, 12 + rnorm(n(), 0, 2)))
+# Normalize column names (lowercase) and make sure commonly used cols exist
+names(trends_all) <- tolower(names(trends_all))
 
-# ------------------------------------------------------------------
-# 4️⃣ Normalize target variable (0–1 scale for regression stability)
-# ------------------------------------------------------------------
-y_raw <- df$trend_lifespan_hours
-y_scaled <- rescale(y_raw, to = c(0, 1))
-
-X <- df %>% select(-topic, -trend_lifespan_hours) %>% as.matrix()
-
-set.seed(42)
-n        <- nrow(X)
-train_id <- sample(seq_len(n), size = 0.8 * n, replace = FALSE)
-valid_id <- setdiff(seq_len(n), train_id)
-
-dtrain <- xgb.DMatrix(data = X[train_id, ], label = y_scaled[train_id])
-dvalid <- xgb.DMatrix(data = X[valid_id, ], label = y_scaled[valid_id])
-
-# ------------------------------------------------------------------
-# 5️⃣ Model parameters
-# ------------------------------------------------------------------
-params <- list(
-  objective        = "reg:squarederror",
-  eta              = 0.05,
-  max_depth        = 4,
-  subsample        = 0.8,
-  colsample_bytree = 0.8,
-  gamma            = 0.1,
-  min_child_weight = 3,
-  reg_lambda       = 1
-)
-
-# ------------------------------------------------------------------
-# 6️⃣ Warm-start or Cold-start model training
-# ------------------------------------------------------------------
-if (file.exists(yesterday_model_file)) {
-  message("🔄 Warm-starting from yesterday’s model → ", yesterday_model_file)
-  prev_model <- readRDS(yesterday_model_file)
-  nrounds <- 50
-  model_xgb <- xgb.train(
-    params   = params,
-    data     = dtrain,
-    nrounds  = nrounds,
-    xgb_model = prev_model,
-    watchlist = list(train = dtrain, valid = dvalid),
-    early_stopping_rounds = 10,
-    maximize = FALSE,
-    verbose  = 0
-  )
-} else {
-  message("🚧 No previous model found → training from scratch")
-  nrounds <- 150
-  model_xgb <- xgb.train(
-    params   = params,
-    data     = dtrain,
-    nrounds  = nrounds,
-    watchlist = list(train = dtrain, valid = dvalid),
-    early_stopping_rounds = 20,
-    maximize = FALSE,
-    verbose  = 0
-  )
+# If topic field is not present try 'title' or 'topic'
+if (!"topic" %in% names(trends_all)) {
+  possible <- intersect(c("title", "name"), names(trends_all))
+  if (length(possible) > 0) trends_all$topic <- trends_all[[possible[1]]] else trends_all$topic <- NA_character_
 }
 
-# ------------------------------------------------------------------
-# 7️⃣ Predict and Rescale to Real Hours
-# ------------------------------------------------------------------
-preds_scaled <- predict(model_xgb, X)
+# Ensure fields used for grouping/metrics exist (create NA columns if absent)
+safe_cols <- c("platform_source", "avg_sentiment", "avg_velocity", "trend_intensity", "insta_engagement")
+for (c in safe_cols) if (!c %in% names(trends_all)) trends_all[[c]] <- NA
 
-# Convert back to real hours in the [min_cap, max_cap] range
-preds_real <- rescale(preds_scaled, to = c(min_cap, max_cap))
-y_real     <- y_raw
+# Only keep rows with non-empty topics
+trends_all <- trends_all %>%
+  mutate(topic = as.character(topic),
+         topic_clean = topic %>% str_to_lower() %>% str_replace_all("http\\S+|www\\S+", "") %>%
+           str_replace_all("[^a-z\\s]", " ") %>% str_squish()) %>%
+  filter(!is.na(topic_clean) & topic_clean != "")
 
-out_df <- tibble(
-  topic = df$topic,
-  pred_lifespan_hours = round(preds_real, 2),
-  actual_lifespan_hours = round(y_real, 2)
-)
+# If after cleaning there's nothing, write empty outputs and exit gracefully
+if (nrow(trends_all) == 0) {
+  message("⚠️ No non-empty topics after cleaning. Writing empty insight outputs and exiting.")
+  empty_df <- tibble(word = character(), count = integer(), combined_score = numeric())
+  write.csv(empty_df, file.path("data_insights", paste0("keyword_insights_", format(Sys.Date(), "%Y-%m-%d"), ".csv")), row.names = FALSE)
+  jsonlite::write_json(list(), file.path("data_insights", paste0("keyword_insights_", format(Sys.Date(), "%Y-%m-%d"), ".json")), auto_unbox = TRUE, pretty = TRUE)
+  quit(save = "no")
+}
 
-# ------------------------------------------------------------------
-# 8️⃣ Evaluation metrics (now on real scale)
-# ------------------------------------------------------------------
-mae_val  <- mae(y_real, preds_real)
-rmse_val <- rmse(y_real, preds_real)
-r2_val   <- summary(lm(preds_real ~ y_real))$r.squared
+# Tokenization and stopword removal (safe flow)
+tryCatch({
+  tokens <- trends_all %>%
+    dplyr::select(topic, platform_source, avg_sentiment, avg_velocity, trend_intensity, insta_engagement, topic_clean) %>%
+    unnest_tokens(word, topic_clean) %>%
+    anti_join(tidytext::stop_words, by = "word") %>%
+    filter(!str_detect(word, "^[0-9]+$")) %>%
+    filter(str_length(word) > 2)
+}, error = function(e) {
+  message("❌ Error during tokenization: ", e$message)
+  tokens <- tibble(word = character(), topic = character(), platform_source = character(),
+                   avg_sentiment = numeric(), avg_velocity = numeric(), trend_intensity = numeric(),
+                   insta_engagement = numeric())
+})
 
-message("📊 Model Performance (Real-scale):")
-message("   • MAE  = ", round(mae_val, 2))
-message("   • RMSE = ", round(rmse_val, 2))
-message("   • R²    = ", round(r2_val, 3))
+# Compute keyword frequencies and tf-idf per platform
+if (nrow(tokens) == 0) {
+  message("⚠️ Token set is empty after tokenization/stopword removal. Writing empty outputs.")
+  empty_df <- tibble(word = character(), count = integer(), combined_score = numeric())
+  write.csv(empty_df, file.path("data_insights", paste0("keyword_insights_", format(Sys.Date(), "%Y-%m-%d"), ".csv")), row.names = FALSE)
+  jsonlite::write_json(list(), file.path("data_insights", paste0("keyword_insights_", format(Sys.Date(), "%Y-%m-%d"), ".json")), auto_unbox = TRUE, pretty = TRUE)
+  quit(save = "no")
+}
 
-# ------------------------------------------------------------------
-# 9️⃣ Save outputs
-# ------------------------------------------------------------------
-write.csv(out_df,
-          file.path(model_dir, paste0("lifespan_predictions_", today, ".csv")),
-          row.names = FALSE)
+keyword_freq <- tokens %>%
+  count(word, sort = TRUE) %>%
+  rename(count = n)
 
-write_json(out_df,
-           file.path(model_dir, paste0("lifespan_predictions_", today, ".json")),
-           pretty = TRUE, auto_unbox = TRUE)
+keyword_tfidf <- tokens %>%
+  count(platform_source, word, sort = TRUE) %>%
+  bind_tf_idf(word, platform_source, n) %>%
+  arrange(desc(tf_idf))
 
-saveRDS(model_xgb, today_model_file)
+# Per-word metrics: average sentiment, velocity, intensity, insta_engagement
+keyword_metrics <- tokens %>%
+  group_by(word) %>%
+  summarise(
+    avg_sentiment = mean(as.numeric(avg_sentiment), na.rm = TRUE),
+    avg_velocity = mean(as.numeric(avg_velocity), na.rm = TRUE),
+    avg_intensity = mean(as.numeric(trend_intensity), na.rm = TRUE),
+    avg_insta_eng = mean(as.numeric(insta_engagement), na.rm = TRUE),
+    count = n(),
+    .groups = "drop"
+  ) %>%
+  filter(count >= 1) %>%
+  mutate(
+    combined_score = ifelse(is.na(avg_velocity) & is.na(avg_sentiment), 0,
+                            scale(ifelse(is.na(avg_velocity), 0, avg_velocity))[,1] * 0.5 +
+                              scale(ifelse(is.na(avg_sentiment), 0, avg_sentiment))[,1] * 0.5)
+  ) %>%
+  arrange(desc(combined_score))
 
-message("✅ Lifespan estimation complete. Outputs saved → ", model_dir)
+# Protect combined_score NAs
+keyword_metrics$combined_score[is.na(keyword_metrics$combined_score)] <- 0
+
+# Save outputs (CSV + JSON)
+date_str <- format(Sys.Date(), "%Y-%m-%d")
+out_csv <- file.path("data_insights", paste0("keyword_insights_", date_str, ".csv"))
+out_json <- file.path("data_insights", paste0("keyword_insights_", date_str, ".json"))
+
+write.csv(keyword_metrics, out_csv, row.names = FALSE)
+jsonlite::write_json(keyword_metrics, out_json, auto_unbox = TRUE, pretty = TRUE)
+
+message("✅ Keyword insights saved → ", out_csv, " and ", out_json)
+message("🧠 Insight Generation — completed.")

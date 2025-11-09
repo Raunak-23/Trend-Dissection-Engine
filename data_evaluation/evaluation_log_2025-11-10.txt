@@ -1,0 +1,4 @@
+Model evaluation run: 2025-11-10 00:13:58.029194 
+ Forecast present: FALSE 
+ Lifespan present: TRUE 
+ Clustering present: FALSE 

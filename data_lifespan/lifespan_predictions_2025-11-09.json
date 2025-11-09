@@ -1,862 +1,192 @@
 [
   {
     "topic": "4 Non Blondes - What's Up? (Lyrics)",
-    "pred_lifespan_hours": 6,
-    "actual_lifespan_hours": 10.09
+    "pred_lifespan_hours": 8.53,
+    "actual_lifespan_hours": 9.68
   },
   {
     "topic": "4 Non Blondes - What's Up? (Lyrics)",
     "pred_lifespan_hours": 6,
-    "actual_lifespan_hours": 9.33
+    "actual_lifespan_hours": 9.68
   },
   {
     "topic": "4 Non Blondes - What's Up? (Lyrics)",
     "pred_lifespan_hours": 6,
-    "actual_lifespan_hours": 11.79
+    "actual_lifespan_hours": 9.68
   },
   {
     "topic": "4 Non Blondes - What's Up? (Lyrics)",
-    "pred_lifespan_hours": 6,
-    "actual_lifespan_hours": 11.73
+    "pred_lifespan_hours": 7.24,
+    "actual_lifespan_hours": 9.68
   },
   {
     "topic": "4 Non Blondes - What's Up? (Lyrics)",
-    "pred_lifespan_hours": 6,
-    "actual_lifespan_hours": 9.61
+    "pred_lifespan_hours": 8.53,
+    "actual_lifespan_hours": 9.68
   },
   {
     "topic": "4 Non Blondes - What's Up? (Lyrics)",
-    "pred_lifespan_hours": 6,
-    "actual_lifespan_hours": 11.37
+    "pred_lifespan_hours": 13.37,
+    "actual_lifespan_hours": 9.68
   },
   {
     "topic": "4 Non Blondes - What's Up? (Lyrics)",
-    "pred_lifespan_hours": 6,
-    "actual_lifespan_hours": 10.09
+    "pred_lifespan_hours": 189.52,
+    "actual_lifespan_hours": 9.68
   },
   {
-    "topic": "4 Non Blondes - What's Up? (Lyrics)",
-    "pred_lifespan_hours": 6,
-    "actual_lifespan_hours": 9.33
+    "topic": "Apple helped kill netbooks. Will it bring them back? - The Verge",
+    "pred_lifespan_hours": 95.58,
+    "actual_lifespan_hours": 6638.26
   },
   {
-    "topic": "4 Non Blondes - What's Up? (Lyrics)",
-    "pred_lifespan_hours": 6,
-    "actual_lifespan_hours": 11.79
-  },
-  {
-    "topic": "4 Non Blondes - What's Up? (Lyrics)",
-    "pred_lifespan_hours": 6,
-    "actual_lifespan_hours": 11.73
-  },
-  {
-    "topic": "4 Non Blondes - What's Up? (Lyrics)",
-    "pred_lifespan_hours": 6,
-    "actual_lifespan_hours": 9.61
-  },
-  {
-    "topic": "4 Non Blondes - What's Up? (Lyrics)",
-    "pred_lifespan_hours": 6,
-    "actual_lifespan_hours": 11.37
-  },
-  {
-    "topic": "4 Non Blondes - What's Up? (Lyrics)",
-    "pred_lifespan_hours": 6,
-    "actual_lifespan_hours": 10.09
-  },
-  {
-    "topic": "4 Non Blondes - What's Up? (Lyrics)",
-    "pred_lifespan_hours": 6,
-    "actual_lifespan_hours": 9.33
-  },
-  {
-    "topic": "4 Non Blondes - What's Up? (Lyrics)",
-    "pred_lifespan_hours": 6,
-    "actual_lifespan_hours": 11.79
-  },
-  {
-    "topic": "4 Non Blondes - What's Up? (Lyrics)",
-    "pred_lifespan_hours": 6,
-    "actual_lifespan_hours": 11.73
-  },
-  {
-    "topic": "4 Non Blondes - What's Up? (Lyrics)",
-    "pred_lifespan_hours": 6,
-    "actual_lifespan_hours": 9.61
-  },
-  {
-    "topic": "4 Non Blondes - What's Up? (Lyrics)",
-    "pred_lifespan_hours": 6,
-    "actual_lifespan_hours": 11.37
-  },
-  {
-    "topic": "4 Non Blondes - What's Up? (Lyrics)",
-    "pred_lifespan_hours": 6,
-    "actual_lifespan_hours": 10.09
-  },
-  {
-    "topic": "4 Non Blondes - What's Up? (Lyrics)",
-    "pred_lifespan_hours": 6,
-    "actual_lifespan_hours": 9.33
-  },
-  {
-    "topic": "4 Non Blondes - What's Up? (Lyrics)",
-    "pred_lifespan_hours": 6,
-    "actual_lifespan_hours": 11.79
-  },
-  {
-    "topic": "4 Non Blondes - What's Up? (Lyrics)",
-    "pred_lifespan_hours": 6,
-    "actual_lifespan_hours": 11.73
-  },
-  {
-    "topic": "4 Non Blondes - What's Up? (Lyrics)",
-    "pred_lifespan_hours": 6,
-    "actual_lifespan_hours": 9.61
-  },
-  {
-    "topic": "4 Non Blondes - What's Up? (Lyrics)",
-    "pred_lifespan_hours": 6,
-    "actual_lifespan_hours": 11.37
-  },
-  {
-    "topic": "4 Non Blondes - What's Up? (Lyrics)",
-    "pred_lifespan_hours": 6,
-    "actual_lifespan_hours": 10.09
-  },
-  {
-    "topic": "4 Non Blondes - What's Up? (Lyrics)",
-    "pred_lifespan_hours": 6,
-    "actual_lifespan_hours": 9.33
-  },
-  {
-    "topic": "4 Non Blondes - What's Up? (Lyrics)",
-    "pred_lifespan_hours": 6,
-    "actual_lifespan_hours": 11.79
-  },
-  {
-    "topic": "4 Non Blondes - What's Up? (Lyrics)",
-    "pred_lifespan_hours": 6,
-    "actual_lifespan_hours": 11.73
-  },
-  {
-    "topic": "4 Non Blondes - What's Up? (Lyrics)",
-    "pred_lifespan_hours": 6,
-    "actual_lifespan_hours": 9.61
-  },
-  {
-    "topic": "4 Non Blondes - What's Up? (Lyrics)",
-    "pred_lifespan_hours": 6,
-    "actual_lifespan_hours": 11.37
-  },
-  {
-    "topic": "4 Non Blondes - What's Up? (Lyrics)",
-    "pred_lifespan_hours": 6,
-    "actual_lifespan_hours": 10.09
-  },
-  {
-    "topic": "4 Non Blondes - What's Up? (Lyrics)",
-    "pred_lifespan_hours": 6,
-    "actual_lifespan_hours": 9.33
-  },
-  {
-    "topic": "4 Non Blondes - What's Up? (Lyrics)",
-    "pred_lifespan_hours": 6,
-    "actual_lifespan_hours": 11.79
-  },
-  {
-    "topic": "4 Non Blondes - What's Up? (Lyrics)",
-    "pred_lifespan_hours": 6,
-    "actual_lifespan_hours": 11.73
-  },
-  {
-    "topic": "4 Non Blondes - What's Up? (Lyrics)",
-    "pred_lifespan_hours": 6,
-    "actual_lifespan_hours": 9.61
-  },
-  {
-    "topic": "4 Non Blondes - What's Up? (Lyrics)",
-    "pred_lifespan_hours": 6,
-    "actual_lifespan_hours": 11.37
-  },
-  {
-    "topic": "A Doctor’s Number-1 Fitness Tip for Women Over 50 - AOL.com",
-    "pred_lifespan_hours": 219.1,
-    "actual_lifespan_hours": 47795.47
-  },
-  {
-    "topic": "Antonio Brown will go to Miami to face charges - ESPN",
-    "pred_lifespan_hours": 185.76,
-    "actual_lifespan_hours": 33644.6
-  },
-  {
-    "topic": "Colts place DT DeForest Buckner on injured reserve - Colts.com",
-    "pred_lifespan_hours": 128.39,
-    "actual_lifespan_hours": 18684.63
-  },
-  {
-    "topic": "F1 braced for potential cyclone disruption at Brazilian GP - The Race",
-    "pred_lifespan_hours": 156.71,
-    "actual_lifespan_hours": 29852.75
-  },
-  {
-    "topic": "Gray Hair Protects Us From Cancer? - StudyFinds",
-    "pred_lifespan_hours": 118.98,
-    "actual_lifespan_hours": 18278.69
-  },
-  {
-    "topic": "Kill Bill: The Whole Bloody Affair (2025) Official Trailer - Uma Thurman",
-    "pred_lifespan_hours": 114.89,
-    "actual_lifespan_hours": 69.83
-  },
-  {
-    "topic": "Michael | Official Trailer",
-    "pred_lifespan_hours": 6,
-    "actual_lifespan_hours": 9.69
-  },
-  {
-    "topic": "Michael | Official Trailer",
-    "pred_lifespan_hours": 6,
-    "actual_lifespan_hours": 9.92
-  },
-  {
-    "topic": "Michael | Official Trailer",
-    "pred_lifespan_hours": 6,
-    "actual_lifespan_hours": 11.49
-  },
-  {
-    "topic": "Michael | Official Trailer",
-    "pred_lifespan_hours": 6,
-    "actual_lifespan_hours": 11.15
-  },
-  {
-    "topic": "Michael | Official Trailer",
-    "pred_lifespan_hours": 6,
-    "actual_lifespan_hours": 10.78
-  },
-  {
-    "topic": "Michael | Official Trailer",
-    "pred_lifespan_hours": 6,
-    "actual_lifespan_hours": 9.99
-  },
-  {
-    "topic": "Michael | Official Trailer",
-    "pred_lifespan_hours": 6,
-    "actual_lifespan_hours": 9.69
-  },
-  {
-    "topic": "Michael | Official Trailer",
-    "pred_lifespan_hours": 6,
-    "actual_lifespan_hours": 9.92
-  },
-  {
-    "topic": "Michael | Official Trailer",
-    "pred_lifespan_hours": 6,
-    "actual_lifespan_hours": 11.49
-  },
-  {
-    "topic": "Michael | Official Trailer",
-    "pred_lifespan_hours": 6,
-    "actual_lifespan_hours": 11.15
-  },
-  {
-    "topic": "Michael | Official Trailer",
-    "pred_lifespan_hours": 6,
-    "actual_lifespan_hours": 10.78
-  },
-  {
-    "topic": "Michael | Official Trailer",
-    "pred_lifespan_hours": 6,
-    "actual_lifespan_hours": 9.99
-  },
-  {
-    "topic": "Michael | Official Trailer",
-    "pred_lifespan_hours": 6,
-    "actual_lifespan_hours": 9.69
-  },
-  {
-    "topic": "Michael | Official Trailer",
-    "pred_lifespan_hours": 6,
-    "actual_lifespan_hours": 9.92
-  },
-  {
-    "topic": "Michael | Official Trailer",
-    "pred_lifespan_hours": 6,
-    "actual_lifespan_hours": 11.49
-  },
-  {
-    "topic": "Michael | Official Trailer",
-    "pred_lifespan_hours": 6,
-    "actual_lifespan_hours": 11.15
-  },
-  {
-    "topic": "Michael | Official Trailer",
-    "pred_lifespan_hours": 6,
-    "actual_lifespan_hours": 10.78
-  },
-  {
-    "topic": "Michael | Official Trailer",
-    "pred_lifespan_hours": 6,
-    "actual_lifespan_hours": 9.99
-  },
-  {
-    "topic": "Michael | Official Trailer",
-    "pred_lifespan_hours": 6,
-    "actual_lifespan_hours": 9.69
-  },
-  {
-    "topic": "Michael | Official Trailer",
-    "pred_lifespan_hours": 6,
-    "actual_lifespan_hours": 9.92
-  },
-  {
-    "topic": "Michael | Official Trailer",
-    "pred_lifespan_hours": 6,
-    "actual_lifespan_hours": 11.49
-  },
-  {
-    "topic": "Michael | Official Trailer",
-    "pred_lifespan_hours": 6,
-    "actual_lifespan_hours": 11.15
-  },
-  {
-    "topic": "Michael | Official Trailer",
-    "pred_lifespan_hours": 6,
-    "actual_lifespan_hours": 10.78
-  },
-  {
-    "topic": "Michael | Official Trailer",
-    "pred_lifespan_hours": 6,
-    "actual_lifespan_hours": 9.99
-  },
-  {
-    "topic": "Michael | Official Trailer",
-    "pred_lifespan_hours": 6,
-    "actual_lifespan_hours": 9.69
-  },
-  {
-    "topic": "Michael | Official Trailer",
-    "pred_lifespan_hours": 6,
-    "actual_lifespan_hours": 9.92
-  },
-  {
-    "topic": "Michael | Official Trailer",
-    "pred_lifespan_hours": 6,
-    "actual_lifespan_hours": 11.49
-  },
-  {
-    "topic": "Michael | Official Trailer",
-    "pred_lifespan_hours": 6,
-    "actual_lifespan_hours": 11.15
-  },
-  {
-    "topic": "Michael | Official Trailer",
-    "pred_lifespan_hours": 6,
-    "actual_lifespan_hours": 10.78
-  },
-  {
-    "topic": "Michael | Official Trailer",
-    "pred_lifespan_hours": 6,
-    "actual_lifespan_hours": 9.99
-  },
-  {
-    "topic": "Michael | Official Trailer",
-    "pred_lifespan_hours": 6,
-    "actual_lifespan_hours": 9.69
-  },
-  {
-    "topic": "Michael | Official Trailer",
-    "pred_lifespan_hours": 6,
-    "actual_lifespan_hours": 9.92
-  },
-  {
-    "topic": "Michael | Official Trailer",
-    "pred_lifespan_hours": 6,
-    "actual_lifespan_hours": 11.49
-  },
-  {
-    "topic": "Michael | Official Trailer",
-    "pred_lifespan_hours": 6,
-    "actual_lifespan_hours": 11.15
-  },
-  {
-    "topic": "Michael | Official Trailer",
-    "pred_lifespan_hours": 6,
-    "actual_lifespan_hours": 10.78
-  },
-  {
-    "topic": "Michael | Official Trailer",
-    "pred_lifespan_hours": 6,
-    "actual_lifespan_hours": 9.99
-  },
-  {
-    "topic": "More people are dying before they turn 65. Who it impacts and what it means. - The Washington Post",
-    "pred_lifespan_hours": 228.14,
-    "actual_lifespan_hours": 34913.63
-  },
-  {
-    "topic": "Myke Towers - Lala (Letra)",
-    "pred_lifespan_hours": 6,
-    "actual_lifespan_hours": 10.78
-  },
-  {
-    "topic": "Myke Towers - Lala (Letra)",
-    "pred_lifespan_hours": 6,
-    "actual_lifespan_hours": 11.34
-  },
-  {
-    "topic": "Myke Towers - Lala (Letra)",
-    "pred_lifespan_hours": 6,
-    "actual_lifespan_hours": 10.76
-  },
-  {
-    "topic": "Myke Towers - Lala (Letra)",
-    "pred_lifespan_hours": 6,
-    "actual_lifespan_hours": 13.39
-  },
-  {
-    "topic": "Myke Towers - Lala (Letra)",
-    "pred_lifespan_hours": 6,
-    "actual_lifespan_hours": 12.68
-  },
-  {
-    "topic": "Myke Towers - Lala (Letra)",
-    "pred_lifespan_hours": 6,
-    "actual_lifespan_hours": 13.77
-  },
-  {
-    "topic": "Myke Towers - Lala (Letra)",
-    "pred_lifespan_hours": 6,
-    "actual_lifespan_hours": 10.78
-  },
-  {
-    "topic": "Myke Towers - Lala (Letra)",
-    "pred_lifespan_hours": 6,
-    "actual_lifespan_hours": 11.34
-  },
-  {
-    "topic": "Myke Towers - Lala (Letra)",
-    "pred_lifespan_hours": 6,
-    "actual_lifespan_hours": 10.76
-  },
-  {
-    "topic": "Myke Towers - Lala (Letra)",
-    "pred_lifespan_hours": 6,
-    "actual_lifespan_hours": 13.39
-  },
-  {
-    "topic": "Myke Towers - Lala (Letra)",
-    "pred_lifespan_hours": 6,
-    "actual_lifespan_hours": 12.68
-  },
-  {
-    "topic": "Myke Towers - Lala (Letra)",
-    "pred_lifespan_hours": 6,
-    "actual_lifespan_hours": 13.77
-  },
-  {
-    "topic": "Myke Towers - Lala (Letra)",
-    "pred_lifespan_hours": 6,
-    "actual_lifespan_hours": 10.78
-  },
-  {
-    "topic": "Myke Towers - Lala (Letra)",
-    "pred_lifespan_hours": 6,
-    "actual_lifespan_hours": 11.34
-  },
-  {
-    "topic": "Myke Towers - Lala (Letra)",
-    "pred_lifespan_hours": 6,
-    "actual_lifespan_hours": 10.76
-  },
-  {
-    "topic": "Myke Towers - Lala (Letra)",
-    "pred_lifespan_hours": 6,
-    "actual_lifespan_hours": 13.39
-  },
-  {
-    "topic": "Myke Towers - Lala (Letra)",
-    "pred_lifespan_hours": 6,
-    "actual_lifespan_hours": 12.68
-  },
-  {
-    "topic": "Myke Towers - Lala (Letra)",
-    "pred_lifespan_hours": 6,
-    "actual_lifespan_hours": 13.77
-  },
-  {
-    "topic": "Myke Towers - Lala (Letra)",
-    "pred_lifespan_hours": 6,
-    "actual_lifespan_hours": 10.78
-  },
-  {
-    "topic": "Myke Towers - Lala (Letra)",
-    "pred_lifespan_hours": 6,
-    "actual_lifespan_hours": 11.34
-  },
-  {
-    "topic": "Myke Towers - Lala (Letra)",
-    "pred_lifespan_hours": 6,
-    "actual_lifespan_hours": 10.76
-  },
-  {
-    "topic": "Myke Towers - Lala (Letra)",
-    "pred_lifespan_hours": 6,
-    "actual_lifespan_hours": 13.39
-  },
-  {
-    "topic": "Myke Towers - Lala (Letra)",
-    "pred_lifespan_hours": 6,
-    "actual_lifespan_hours": 12.68
-  },
-  {
-    "topic": "Myke Towers - Lala (Letra)",
-    "pred_lifespan_hours": 6,
-    "actual_lifespan_hours": 13.77
-  },
-  {
-    "topic": "Myke Towers - Lala (Letra)",
-    "pred_lifespan_hours": 6,
-    "actual_lifespan_hours": 10.78
-  },
-  {
-    "topic": "Myke Towers - Lala (Letra)",
-    "pred_lifespan_hours": 6,
-    "actual_lifespan_hours": 11.34
-  },
-  {
-    "topic": "Myke Towers - Lala (Letra)",
-    "pred_lifespan_hours": 6,
-    "actual_lifespan_hours": 10.76
-  },
-  {
-    "topic": "Myke Towers - Lala (Letra)",
-    "pred_lifespan_hours": 6,
-    "actual_lifespan_hours": 13.39
-  },
-  {
-    "topic": "Myke Towers - Lala (Letra)",
-    "pred_lifespan_hours": 6,
-    "actual_lifespan_hours": 12.68
-  },
-  {
-    "topic": "Myke Towers - Lala (Letra)",
-    "pred_lifespan_hours": 6,
-    "actual_lifespan_hours": 13.77
-  },
-  {
-    "topic": "Myke Towers - Lala (Letra)",
-    "pred_lifespan_hours": 6,
-    "actual_lifespan_hours": 10.78
-  },
-  {
-    "topic": "Myke Towers - Lala (Letra)",
-    "pred_lifespan_hours": 6,
-    "actual_lifespan_hours": 11.34
-  },
-  {
-    "topic": "Myke Towers - Lala (Letra)",
-    "pred_lifespan_hours": 6,
-    "actual_lifespan_hours": 10.76
-  },
-  {
-    "topic": "Myke Towers - Lala (Letra)",
-    "pred_lifespan_hours": 6,
-    "actual_lifespan_hours": 13.39
-  },
-  {
-    "topic": "Myke Towers - Lala (Letra)",
-    "pred_lifespan_hours": 6,
-    "actual_lifespan_hours": 12.68
-  },
-  {
-    "topic": "Myke Towers - Lala (Letra)",
-    "pred_lifespan_hours": 6,
-    "actual_lifespan_hours": 13.77
-  },
-  {
-    "topic": "NCAA: Six hoops players banned for betting plots - ESPN",
-    "pred_lifespan_hours": 146.04,
-    "actual_lifespan_hours": 18531.31
-  },
-  {
-    "topic": "New 3 TRACKS UPDATE + NEW BRAINROTS!",
-    "pred_lifespan_hours": 6.27,
-    "actual_lifespan_hours": 9.64
-  },
-  {
-    "topic": "New 3 TRACKS UPDATE + NEW BRAINROTS!",
-    "pred_lifespan_hours": 6.27,
-    "actual_lifespan_hours": 9.85
-  },
-  {
-    "topic": "New 3 TRACKS UPDATE + NEW BRAINROTS!",
-    "pred_lifespan_hours": 6.27,
-    "actual_lifespan_hours": 9.21
-  },
-  {
-    "topic": "New 3 TRACKS UPDATE + NEW BRAINROTS!",
-    "pred_lifespan_hours": 6.27,
-    "actual_lifespan_hours": 10.87
-  },
-  {
-    "topic": "New 3 TRACKS UPDATE + NEW BRAINROTS!",
-    "pred_lifespan_hours": 6.27,
-    "actual_lifespan_hours": 9.64
-  },
-  {
-    "topic": "New 3 TRACKS UPDATE + NEW BRAINROTS!",
-    "pred_lifespan_hours": 6.27,
-    "actual_lifespan_hours": 9.85
-  },
-  {
-    "topic": "New 3 TRACKS UPDATE + NEW BRAINROTS!",
-    "pred_lifespan_hours": 6.27,
-    "actual_lifespan_hours": 9.21
-  },
-  {
-    "topic": "New 3 TRACKS UPDATE + NEW BRAINROTS!",
-    "pred_lifespan_hours": 6.27,
-    "actual_lifespan_hours": 10.87
-  },
-  {
-    "topic": "New 3 TRACKS UPDATE + NEW BRAINROTS!",
-    "pred_lifespan_hours": 6.27,
-    "actual_lifespan_hours": 9.64
-  },
-  {
-    "topic": "New 3 TRACKS UPDATE + NEW BRAINROTS!",
-    "pred_lifespan_hours": 6.27,
-    "actual_lifespan_hours": 9.85
-  },
-  {
-    "topic": "New 3 TRACKS UPDATE + NEW BRAINROTS!",
-    "pred_lifespan_hours": 6.27,
-    "actual_lifespan_hours": 9.21
-  },
-  {
-    "topic": "New 3 TRACKS UPDATE + NEW BRAINROTS!",
-    "pred_lifespan_hours": 6.27,
-    "actual_lifespan_hours": 10.87
-  },
-  {
-    "topic": "New 3 TRACKS UPDATE + NEW BRAINROTS!",
-    "pred_lifespan_hours": 6.27,
-    "actual_lifespan_hours": 9.64
-  },
-  {
-    "topic": "New 3 TRACKS UPDATE + NEW BRAINROTS!",
-    "pred_lifespan_hours": 6.27,
-    "actual_lifespan_hours": 9.85
-  },
-  {
-    "topic": "New 3 TRACKS UPDATE + NEW BRAINROTS!",
-    "pred_lifespan_hours": 6.27,
-    "actual_lifespan_hours": 9.21
-  },
-  {
-    "topic": "New 3 TRACKS UPDATE + NEW BRAINROTS!",
-    "pred_lifespan_hours": 6.27,
-    "actual_lifespan_hours": 10.87
-  },
-  {
-    "topic": "The Halloween Short Horror Watch Party...",
-    "pred_lifespan_hours": 140.88,
-    "actual_lifespan_hours": 20282.6
-  },
-  {
-    "topic": "The U.S. job market is slowing, not collapsing - Axios",
+    "topic": "Flight cancelations to worsen next week if shutdown continues - CNBC",
     "pred_lifespan_hours": 240,
-    "actual_lifespan_hours": 40844.33
+    "actual_lifespan_hours": 26727.05
   },
   {
-    "topic": "What does Elon Musk do with all his money? - BBC",
-    "pred_lifespan_hours": 23.11,
-    "actual_lifespan_hours": 13716.35
+    "topic": "Jeremy Renner Denies Harassment Allegations From Film Director: ‘Totally Inaccurate and Untrue’ - Variety",
+    "pred_lifespan_hours": 51.39,
+    "actual_lifespan_hours": 1472.73
   },
   {
-    "topic": "Why next year's flu shot might not be as good as it should be - NPR",
-    "pred_lifespan_hours": 182.63,
-    "actual_lifespan_hours": 28945.79
+    "topic": "KT vs T1 | WORLDS 2025 | Finals",
+    "pred_lifespan_hours": 26.2,
+    "actual_lifespan_hours": 587.2
+  },
+  {
+    "topic": "Michael | Official Trailer",
+    "pred_lifespan_hours": 14.5,
+    "actual_lifespan_hours": 11.11
+  },
+  {
+    "topic": "Michael | Official Trailer",
+    "pred_lifespan_hours": 9.15,
+    "actual_lifespan_hours": 11.11
+  },
+  {
+    "topic": "Michael | Official Trailer",
+    "pred_lifespan_hours": 9.15,
+    "actual_lifespan_hours": 11.11
+  },
+  {
+    "topic": "Michael | Official Trailer",
+    "pred_lifespan_hours": 9.15,
+    "actual_lifespan_hours": 11.11
+  },
+  {
+    "topic": "Michael | Official Trailer",
+    "pred_lifespan_hours": 9.15,
+    "actual_lifespan_hours": 11.11
+  },
+  {
+    "topic": "Michael | Official Trailer",
+    "pred_lifespan_hours": 14.5,
+    "actual_lifespan_hours": 11.11
+  },
+  {
+    "topic": "Michael | Official Trailer",
+    "pred_lifespan_hours": 27.42,
+    "actual_lifespan_hours": 11.11
+  },
+  {
+    "topic": "Myke Towers - Lala (Letra)",
+    "pred_lifespan_hours": 11.35,
+    "actual_lifespan_hours": 10.65
+  },
+  {
+    "topic": "Myke Towers - Lala (Letra)",
+    "pred_lifespan_hours": 11.35,
+    "actual_lifespan_hours": 10.65
+  },
+  {
+    "topic": "Myke Towers - Lala (Letra)",
+    "pred_lifespan_hours": 15.64,
+    "actual_lifespan_hours": 10.65
+  },
+  {
+    "topic": "Myke Towers - Lala (Letra)",
+    "pred_lifespan_hours": 11.35,
+    "actual_lifespan_hours": 10.65
+  },
+  {
+    "topic": "Myke Towers - Lala (Letra)",
+    "pred_lifespan_hours": 6,
+    "actual_lifespan_hours": 10.65
+  },
+  {
+    "topic": "Myke Towers - Lala (Letra)",
+    "pred_lifespan_hours": 6,
+    "actual_lifespan_hours": 10.65
+  },
+  {
+    "topic": "Myke Towers - Lala (Letra)",
+    "pred_lifespan_hours": 85.63,
+    "actual_lifespan_hours": 10.65
+  },
+  {
+    "topic": "New 3 TRACKS UPDATE + NEW BRAINROTS!",
+    "pred_lifespan_hours": 18.79,
+    "actual_lifespan_hours": 11.39
+  },
+  {
+    "topic": "New 3 TRACKS UPDATE + NEW BRAINROTS!",
+    "pred_lifespan_hours": 13.47,
+    "actual_lifespan_hours": 11.39
+  },
+  {
+    "topic": "New 3 TRACKS UPDATE + NEW BRAINROTS!",
+    "pred_lifespan_hours": 14.5,
+    "actual_lifespan_hours": 11.39
+  },
+  {
+    "topic": "New 3 TRACKS UPDATE + NEW BRAINROTS!",
+    "pred_lifespan_hours": 15.27,
+    "actual_lifespan_hours": 11.39
+  },
+  {
+    "topic": "TVLine's Performer Of The Week: Rhea Seehorn - TVLine",
+    "pred_lifespan_hours": 189.52,
+    "actual_lifespan_hours": 14999.59
+  },
+  {
+    "topic": "The endearing movie that affirms creativity as a human act - The Verge",
+    "pred_lifespan_hours": 215.58,
+    "actual_lifespan_hours": 29932.06
   },
   {
     "topic": "skibidi toilet: emergence | official trailer",
-    "pred_lifespan_hours": 6,
-    "actual_lifespan_hours": 9.64
+    "pred_lifespan_hours": 9.15,
+    "actual_lifespan_hours": 11.21
   },
   {
     "topic": "skibidi toilet: emergence | official trailer",
-    "pred_lifespan_hours": 6,
-    "actual_lifespan_hours": 10.03
+    "pred_lifespan_hours": 13.47,
+    "actual_lifespan_hours": 11.21
   },
   {
     "topic": "skibidi toilet: emergence | official trailer",
-    "pred_lifespan_hours": 6,
-    "actual_lifespan_hours": 9.73
+    "pred_lifespan_hours": 9.15,
+    "actual_lifespan_hours": 11.21
   },
   {
     "topic": "skibidi toilet: emergence | official trailer",
-    "pred_lifespan_hours": 6,
-    "actual_lifespan_hours": 10.04
+    "pred_lifespan_hours": 9.15,
+    "actual_lifespan_hours": 11.21
   },
   {
     "topic": "skibidi toilet: emergence | official trailer",
-    "pred_lifespan_hours": 6,
-    "actual_lifespan_hours": 10.26
+    "pred_lifespan_hours": 18.79,
+    "actual_lifespan_hours": 11.21
   },
   {
     "topic": "skibidi toilet: emergence | official trailer",
-    "pred_lifespan_hours": 6,
-    "actual_lifespan_hours": 10.52
+    "pred_lifespan_hours": 15.27,
+    "actual_lifespan_hours": 11.21
   },
   {
     "topic": "skibidi toilet: emergence | official trailer",
-    "pred_lifespan_hours": 6,
-    "actual_lifespan_hours": 9.64
-  },
-  {
-    "topic": "skibidi toilet: emergence | official trailer",
-    "pred_lifespan_hours": 6,
-    "actual_lifespan_hours": 10.03
-  },
-  {
-    "topic": "skibidi toilet: emergence | official trailer",
-    "pred_lifespan_hours": 6,
-    "actual_lifespan_hours": 9.73
-  },
-  {
-    "topic": "skibidi toilet: emergence | official trailer",
-    "pred_lifespan_hours": 6,
-    "actual_lifespan_hours": 10.04
-  },
-  {
-    "topic": "skibidi toilet: emergence | official trailer",
-    "pred_lifespan_hours": 6,
-    "actual_lifespan_hours": 10.26
-  },
-  {
-    "topic": "skibidi toilet: emergence | official trailer",
-    "pred_lifespan_hours": 6,
-    "actual_lifespan_hours": 10.52
-  },
-  {
-    "topic": "skibidi toilet: emergence | official trailer",
-    "pred_lifespan_hours": 6,
-    "actual_lifespan_hours": 9.64
-  },
-  {
-    "topic": "skibidi toilet: emergence | official trailer",
-    "pred_lifespan_hours": 6,
-    "actual_lifespan_hours": 10.03
-  },
-  {
-    "topic": "skibidi toilet: emergence | official trailer",
-    "pred_lifespan_hours": 6,
-    "actual_lifespan_hours": 9.73
-  },
-  {
-    "topic": "skibidi toilet: emergence | official trailer",
-    "pred_lifespan_hours": 6,
-    "actual_lifespan_hours": 10.04
-  },
-  {
-    "topic": "skibidi toilet: emergence | official trailer",
-    "pred_lifespan_hours": 6,
-    "actual_lifespan_hours": 10.26
-  },
-  {
-    "topic": "skibidi toilet: emergence | official trailer",
-    "pred_lifespan_hours": 6,
-    "actual_lifespan_hours": 10.52
-  },
-  {
-    "topic": "skibidi toilet: emergence | official trailer",
-    "pred_lifespan_hours": 6,
-    "actual_lifespan_hours": 9.64
-  },
-  {
-    "topic": "skibidi toilet: emergence | official trailer",
-    "pred_lifespan_hours": 6,
-    "actual_lifespan_hours": 10.03
-  },
-  {
-    "topic": "skibidi toilet: emergence | official trailer",
-    "pred_lifespan_hours": 6,
-    "actual_lifespan_hours": 9.73
-  },
-  {
-    "topic": "skibidi toilet: emergence | official trailer",
-    "pred_lifespan_hours": 6,
-    "actual_lifespan_hours": 10.04
-  },
-  {
-    "topic": "skibidi toilet: emergence | official trailer",
-    "pred_lifespan_hours": 6,
-    "actual_lifespan_hours": 10.26
-  },
-  {
-    "topic": "skibidi toilet: emergence | official trailer",
-    "pred_lifespan_hours": 6,
-    "actual_lifespan_hours": 10.52
-  },
-  {
-    "topic": "skibidi toilet: emergence | official trailer",
-    "pred_lifespan_hours": 6,
-    "actual_lifespan_hours": 9.64
-  },
-  {
-    "topic": "skibidi toilet: emergence | official trailer",
-    "pred_lifespan_hours": 6,
-    "actual_lifespan_hours": 10.03
-  },
-  {
-    "topic": "skibidi toilet: emergence | official trailer",
-    "pred_lifespan_hours": 6,
-    "actual_lifespan_hours": 9.73
-  },
-  {
-    "topic": "skibidi toilet: emergence | official trailer",
-    "pred_lifespan_hours": 6,
-    "actual_lifespan_hours": 10.04
-  },
-  {
-    "topic": "skibidi toilet: emergence | official trailer",
-    "pred_lifespan_hours": 6,
-    "actual_lifespan_hours": 10.26
-  },
-  {
-    "topic": "skibidi toilet: emergence | official trailer",
-    "pred_lifespan_hours": 6,
-    "actual_lifespan_hours": 10.52
-  },
-  {
-    "topic": "skibidi toilet: emergence | official trailer",
-    "pred_lifespan_hours": 6,
-    "actual_lifespan_hours": 9.64
-  },
-  {
-    "topic": "skibidi toilet: emergence | official trailer",
-    "pred_lifespan_hours": 6,
-    "actual_lifespan_hours": 10.03
-  },
-  {
-    "topic": "skibidi toilet: emergence | official trailer",
-    "pred_lifespan_hours": 6,
-    "actual_lifespan_hours": 9.73
-  },
-  {
-    "topic": "skibidi toilet: emergence | official trailer",
-    "pred_lifespan_hours": 6,
-    "actual_lifespan_hours": 10.04
-  },
-  {
-    "topic": "skibidi toilet: emergence | official trailer",
-    "pred_lifespan_hours": 6,
-    "actual_lifespan_hours": 10.26
-  },
-  {
-    "topic": "skibidi toilet: emergence | official trailer",
-    "pred_lifespan_hours": 6,
-    "actual_lifespan_hours": 10.52
+    "pred_lifespan_hours": 32.32,
+    "actual_lifespan_hours": 11.21
   }
 ]

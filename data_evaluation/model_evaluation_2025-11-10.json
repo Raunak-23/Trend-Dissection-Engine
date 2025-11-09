@@ -1,0 +1,15 @@
+[
+  {
+    "Model": "Lifespan Regression (XGBoost)",
+    "MAE": 2103.006,
+    "RMSE": 6975.807,
+    "MAPE": 112.028,
+    "R2": -0.081,
+    "N": 38
+  },
+  {
+    "Model": "Clustering (Provided)",
+    "Silhouette": 0.474,
+    "DB_Index": 0.462
+  }
+]

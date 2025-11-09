@@ -1,1586 +1,866 @@
 [
-  {
-    "topic": "4 Non Blondes - What's Up? (Lyrics)",
-    "platform_source": "YouTube",
-    "category": "10",
-    "time_fetched": "2025-11-09T21:41:05.370998+05:30",
-    "trend_score": 95.81,
-    "trend_lifespan_hours": 14801.8,
-    "external_interest_index": 62,
-    "reddit_metrics": {
-      "average_score": 355.9,
-      "average_comments": 62.4,
-      "average_sentiment": 0.066,
-      "average_velocity": 0.03,
-      "post_count": 10
+    {
+        "topic": "4 Non Blondes - What's Up? (Lyrics)",
+        "platform_source": "YouTube",
+        "category": "10",
+        "time_fetched": "2025-11-10T00:22:07.131718+05:30",
+        "trend_score": 95.39,
+        "trend_lifespan_hours": 14801.8,
+        "external_interest_index": 72,
+        "reddit_metrics": {
+            "average_score": 353.9,
+            "average_comments": 62.4,
+            "average_sentiment": 0.066,
+            "average_velocity": 0.03,
+            "post_count": 10
+        },
+        "reddit_posts": [
+            {
+                "title": "What's Up lyrics meaning - 4 Non Blondes",
+                "score": 0,
+                "num_comments": 12,
+                "upvote_ratio": 0.5,
+                "sentiment": 0.0,
+                "engagement_velocity": 0.0,
+                "post_age_hours": 13632.38,
+                "url": "/r/LyricalDrugs/comments/1c8wqww/whats_up_lyrics_meaning_4_non_blondes/"
+            },
+            {
+                "title": "4 Non Blondes - What's Up (Lyrics)",
+                "score": 1,
+                "num_comments": 0,
+                "upvote_ratio": 1.0,
+                "sentiment": 0.0,
+                "engagement_velocity": 0.0,
+                "post_age_hours": 10147.49,
+                "url": "https://www.youtube.com/watch?v=9ojcIZoEd2I"
+            },
+            {
+                "title": "What's Up lyrics meaning - 4 Non Blondes",
+                "score": 0,
+                "num_comments": 2,
+                "upvote_ratio": 0.5,
+                "sentiment": 0.0,
+                "engagement_velocity": 0.0,
+                "post_age_hours": 13632.47,
+                "url": "https://www.reddit.com/r/LyricalDrugs/comments/1c8wqww/whats_up_lyrics_meaning_4_non_blondes/"
+            },
+            {
+                "title": "[Music] LavenderGate: Taylor Swift, Midnights, Gaylors, and How One Instagram Reel Imploded The Gaylor Community Medium",
+                "score": 1051,
+                "num_comments": 189,
+                "upvote_ratio": 0.95,
+                "sentiment": 0.0,
+                "engagement_velocity": 0.05,
+                "post_age_hours": 26344.27,
+                "url": "https://www.reddit.com/r/HobbyDrama/comments/yp8rsi/music_lavendergate_taylor_swift_midnights_gaylors/"
+            },
+            {
+                "title": "[Book/Music] Emilie Autumn's Asylum, pt. 3 – Retconned friendships, abstract deadlines, eternal returns: author's endless tinkerings cause delays and aggravate fans",
+                "score": 629,
+                "num_comments": 136,
+                "upvote_ratio": 0.98,
+                "sentiment": -0.125,
+                "engagement_velocity": 0.06,
+                "post_age_hours": 13350.37,
+                "url": "https://www.reddit.com/r/HobbyDrama/comments/1ciegh3/bookmusic_emilie_autumns_asylum_pt_3_retconned/"
+            },
+            {
+                "title": "Part 3 - Erika Jayne For Dummies - Timeline for S11 so far",
+                "score": 766,
+                "num_comments": 203,
+                "upvote_ratio": 0.99,
+                "sentiment": 0.1,
+                "engagement_velocity": 0.03,
+                "post_age_hours": 36476.59,
+                "url": "https://www.reddit.com/r/BravoRealHousewives/comments/pmgmrw/part_3_erika_jayne_for_dummies_timeline_for_s11/"
+            },
+            {
+                "title": "[Prog Rock] The Lamb Lies Down On Broadway: How A Frontman’s Ambitions And Some Truly Spinal Tap Moves Almost Killed Genesis Before They Got Big",
+                "score": 636,
+                "num_comments": 49,
+                "upvote_ratio": 0.98,
+                "sentiment": -0.119,
+                "engagement_velocity": 0.09,
+                "post_age_hours": 7274.59,
+                "url": "https://www.reddit.com/r/HobbyDrama/comments/1hy80ot/prog_rock_the_lamb_lies_down_on_broadway_how_a/"
+            },
+            {
+                "title": "A Shiori Nyavella Character Write up",
+                "score": 454,
+                "num_comments": 33,
+                "upvote_ratio": 0.98,
+                "sentiment": 0.0,
+                "engagement_velocity": 0.11,
+                "post_age_hours": 4364.96,
+                "url": "https://www.reddit.com/r/Hololive/comments/1kkcg8h/a_shiori_nyavella_character_write_up/"
+            },
+            {
+                "title": "4 Non Blondes - What's Up (combo unplugged acoustic karaoke lyrics instr...",
+                "score": 1,
+                "num_comments": 0,
+                "upvote_ratio": 0.67,
+                "sentiment": 0.0,
+                "engagement_velocity": 0.0,
+                "post_age_hours": 32160.7,
+                "url": "https://youtube.com/watch?v=3_aYRpP_PEA&feature=share"
+            },
+            {
+                "title": "WHAT'S UP - 4 Non Blondes - chords and lyrics - ♫ Alain happy guitar",
+                "score": 1,
+                "num_comments": 0,
+                "upvote_ratio": 1.0,
+                "sentiment": 0.8,
+                "engagement_velocity": 0.0,
+                "post_age_hours": 34228.85,
+                "url": "https://youtu.be/rUW_u2jrFmw"
+            }
+        ]
     },
-    "reddit_posts": [
-      {
-        "title": "What's Up lyrics meaning - 4 Non Blondes",
-        "score": 0,
-        "num_comments": 12,
-        "upvote_ratio": 0.5,
-        "sentiment": 0,
-        "engagement_velocity": 0,
-        "post_age_hours": 13629.7,
-        "url": "/r/LyricalDrugs/comments/1c8wqww/whats_up_lyrics_meaning_4_non_blondes/"
-      },
-      {
-        "title": "4 Non Blondes - What's Up (Lyrics)",
-        "score": 1,
-        "num_comments": 0,
-        "upvote_ratio": 1,
-        "sentiment": 0,
-        "engagement_velocity": 0,
-        "post_age_hours": 10144.81,
-        "url": "https://www.youtube.com/watch?v=9ojcIZoEd2I"
-      },
-      {
-        "title": "What's Up lyrics meaning - 4 Non Blondes",
-        "score": 4,
-        "num_comments": 2,
-        "upvote_ratio": 0.74,
-        "sentiment": 0,
-        "engagement_velocity": 0,
-        "post_age_hours": 13629.79,
-        "url": "https://www.reddit.com/r/LyricalDrugs/comments/1c8wqww/whats_up_lyrics_meaning_4_non_blondes/"
-      },
-      {
-        "title": "[Music] LavenderGate: Taylor Swift, Midnights, Gaylors, and How One Instagram Reel Imploded The Gaylor Community Medium",
-        "score": 1056,
-        "num_comments": 189,
-        "upvote_ratio": 0.95,
-        "sentiment": 0,
-        "engagement_velocity": 0.05,
-        "post_age_hours": 26341.59,
-        "url": "https://www.reddit.com/r/HobbyDrama/comments/yp8rsi/music_lavendergate_taylor_swift_midnights_gaylors/"
-      },
-      {
-        "title": "[Book/Music] Emilie Autumn's Asylum, pt. 3 – Retconned friendships, abstract deadlines, eternal returns: author's endless tinkerings cause delays and aggravate fans",
-        "score": 639,
-        "num_comments": 136,
-        "upvote_ratio": 0.98,
-        "sentiment": -0.125,
-        "engagement_velocity": 0.06,
-        "post_age_hours": 13347.68,
-        "url": "https://www.reddit.com/r/HobbyDrama/comments/1ciegh3/bookmusic_emilie_autumns_asylum_pt_3_retconned/"
-      },
-      {
-        "title": "Part 3 - Erika Jayne For Dummies - Timeline for S11 so far",
-        "score": 766,
-        "num_comments": 203,
-        "upvote_ratio": 0.99,
-        "sentiment": 0.1,
-        "engagement_velocity": 0.03,
-        "post_age_hours": 36473.9,
-        "url": "https://www.reddit.com/r/BravoRealHousewives/comments/pmgmrw/part_3_erika_jayne_for_dummies_timeline_for_s11/"
-      },
-      {
-        "title": "[Prog Rock] The Lamb Lies Down On Broadway: How A Frontman’s Ambitions And Some Truly Spinal Tap Moves Almost Killed Genesis Before They Got Big",
-        "score": 637,
-        "num_comments": 49,
-        "upvote_ratio": 0.98,
-        "sentiment": -0.119,
-        "engagement_velocity": 0.09,
-        "post_age_hours": 7271.91,
-        "url": "https://www.reddit.com/r/HobbyDrama/comments/1hy80ot/prog_rock_the_lamb_lies_down_on_broadway_how_a/"
-      },
-      {
-        "title": "A Shiori Nyavella Character Write up",
-        "score": 454,
-        "num_comments": 33,
-        "upvote_ratio": 0.98,
-        "sentiment": 0,
-        "engagement_velocity": 0.11,
-        "post_age_hours": 4362.28,
-        "url": "https://www.reddit.com/r/Hololive/comments/1kkcg8h/a_shiori_nyavella_character_write_up/"
-      },
-      {
-        "title": "4 Non Blondes - What's Up (combo unplugged acoustic karaoke lyrics instr...",
-        "score": 1,
-        "num_comments": 0,
-        "upvote_ratio": 0.67,
-        "sentiment": 0,
-        "engagement_velocity": 0,
-        "post_age_hours": 32158.01,
-        "url": "https://youtube.com/watch?v=3_aYRpP_PEA&feature=share"
-      },
-      {
-        "title": "WHAT'S UP - 4 Non Blondes - chords and lyrics - ♫ Alain happy guitar",
-        "score": 1,
-        "num_comments": 0,
-        "upvote_ratio": 1,
-        "sentiment": 0.8,
-        "engagement_velocity": 0,
-        "post_age_hours": 34226.16,
-        "url": "https://youtu.be/rUW_u2jrFmw"
-      }
-    ],
-    "instagram_metrics": {
-      "platform_source": "Instagram",
-      "topic": "4 Non Blondes - What's Up? (Lyrics)",
-      "avg_likes": 119765,
-      "avg_comments": 9867,
-      "sentiment": -0.191,
-      "engagement_rate": 0.579,
-      "time_fetched": "2025-11-09 21:41:38.682262",
-      "simulated": false
-    }
-  },
-  {
-    "topic": "skibidi toilet: emergence | official trailer",
-    "platform_source": "YouTube",
-    "category": "24",
-    "time_fetched": "2025-11-09T21:41:05.370998+05:30",
-    "trend_score": 2546.33,
-    "trend_lifespan_hours": 2204.51,
-    "external_interest_index": 52,
-    "reddit_metrics": {
-      "average_score": 10177.9,
-      "average_comments": 1814.9,
-      "average_sentiment": -0.015,
-      "average_velocity": 10.02,
-      "post_count": 10
+    {
+        "topic": "skibidi toilet: emergence | official trailer",
+        "platform_source": "YouTube",
+        "category": "24",
+        "time_fetched": "2025-11-10T00:22:07.131718+05:30",
+        "trend_score": 2546.53,
+        "trend_lifespan_hours": 2204.51,
+        "external_interest_index": 63,
+        "reddit_metrics": {
+            "average_score": 10179.4,
+            "average_comments": 1815.3,
+            "average_sentiment": -0.015,
+            "average_velocity": 9.46,
+            "post_count": 10
+        },
+        "reddit_posts": [
+            {
+                "title": "Thoughts on the new Emergence trailer?",
+                "score": 128,
+                "num_comments": 114,
+                "upvote_ratio": 0.97,
+                "sentiment": 0.136,
+                "engagement_velocity": 14.54,
+                "post_age_hours": 15.65,
+                "url": "https://i.redd.it/7nqcsry1f50g1.jpeg"
+            },
+            {
+                "title": "New trailer is not that bad",
+                "score": 261,
+                "num_comments": 60,
+                "upvote_ratio": 0.88,
+                "sentiment": -0.282,
+                "engagement_velocity": 19.25,
+                "post_age_hours": 15.68,
+                "url": "https://i.redd.it/futh4wove50g1.jpeg"
+            },
+            {
+                "title": "Stranger Things 5 | Official Trailer | Netflix",
+                "score": 5225,
+                "num_comments": 1345,
+                "upvote_ratio": 0.94,
+                "sentiment": 0.0,
+                "engagement_velocity": 26.61,
+                "post_age_hours": 245.87,
+                "url": "https://www.youtube.com/watch?v=PssKpzB0Ah0"
+            },
+            {
+                "title": "Avatar: Fire and Ash | Official Trailer",
+                "score": 9051,
+                "num_comments": 2737,
+                "upvote_ratio": 0.83,
+                "sentiment": 0.0,
+                "engagement_velocity": 4.71,
+                "post_age_hours": 2499.86,
+                "url": "https://www.youtube.com/watch?v=nb_fFj_0rq8"
+            },
+            {
+                "title": "Superman | Official Trailer",
+                "score": 18356,
+                "num_comments": 4153,
+                "upvote_ratio": 0.89,
+                "sentiment": 0.0,
+                "engagement_velocity": 5.23,
+                "post_age_hours": 4299.1,
+                "url": "https://youtu.be/Ox8ZLF6cGM0?si=MfY2mQVQjUssge4V"
+            },
+            {
+                "title": "The Naked Gun | Official Trailer",
+                "score": 14753,
+                "num_comments": 1849,
+                "upvote_ratio": 0.91,
+                "sentiment": 0.0,
+                "engagement_velocity": 4.73,
+                "post_age_hours": 3509.83,
+                "url": "https://www.youtube.com/watch?v=uLguU7WLreA"
+            },
+            {
+                "title": "Predator: Badlands | Official Trailer",
+                "score": 9489,
+                "num_comments": 1622,
+                "upvote_ratio": 0.9,
+                "sentiment": 0.0,
+                "engagement_velocity": 4.16,
+                "post_age_hours": 2666.86,
+                "url": "https://www.youtube.com/watch?v=43R9l7EkJwE&pp=0gcJCcwJAYcqIYzv"
+            },
+            {
+                "title": "The Naked Gun | Official Teaser Trailer (2025 Movie) - Liam Neeson, Pamela Anderson",
+                "score": 32897,
+                "num_comments": 3119,
+                "upvote_ratio": 0.89,
+                "sentiment": 0.0,
+                "engagement_velocity": 6.82,
+                "post_age_hours": 5281.86,
+                "url": "https://www.youtube.com/watch?v=_8-N8IIq_8I"
+            },
+            {
+                "title": "Zootopia 2 | Official Trailer",
+                "score": 7908,
+                "num_comments": 1238,
+                "upvote_ratio": 0.91,
+                "sentiment": 0.0,
+                "engagement_velocity": 3.73,
+                "post_age_hours": 2454.07,
+                "url": "https://www.youtube.com/watch?v=BjkIOU5PhyQ"
+            },
+            {
+                "title": "The Mandalorian and Grogu | Official Trailer",
+                "score": 3726,
+                "num_comments": 1916,
+                "upvote_ratio": 0.75,
+                "sentiment": 0.0,
+                "engagement_velocity": 4.87,
+                "post_age_hours": 1157.86,
+                "url": "https://www.youtube.com/watch?v=_pa1KLXuW0Y"
+            }
+        ]
     },
-    "reddit_posts": [
-      {
-        "title": "Thoughts on the new Emergence trailer?",
-        "score": 128,
-        "num_comments": 114,
-        "upvote_ratio": 0.97,
-        "sentiment": 0.136,
-        "engagement_velocity": 17.33,
-        "post_age_hours": 12.96,
-        "url": "https://i.redd.it/7nqcsry1f50g1.jpeg"
-      },
-      {
-        "title": "New trailer is not that bad",
-        "score": 247,
-        "num_comments": 56,
-        "upvote_ratio": 0.89,
-        "sentiment": -0.282,
-        "engagement_velocity": 21.65,
-        "post_age_hours": 12.99,
-        "url": "https://i.redd.it/futh4wove50g1.jpeg"
-      },
-      {
-        "title": "Stranger Things 5 | Official Trailer | Netflix",
-        "score": 5229,
-        "num_comments": 1345,
-        "upvote_ratio": 0.94,
-        "sentiment": 0,
-        "engagement_velocity": 26.92,
-        "post_age_hours": 243.18,
-        "url": "https://www.youtube.com/watch?v=PssKpzB0Ah0"
-      },
-      {
-        "title": "Avatar: Fire and Ash | Official Trailer",
-        "score": 9056,
-        "num_comments": 2737,
-        "upvote_ratio": 0.83,
-        "sentiment": 0,
-        "engagement_velocity": 4.72,
-        "post_age_hours": 2497.18,
-        "url": "https://www.youtube.com/watch?v=nb_fFj_0rq8"
-      },
-      {
-        "title": "Superman | Official Trailer",
-        "score": 18347,
-        "num_comments": 4153,
-        "upvote_ratio": 0.89,
-        "sentiment": 0,
-        "engagement_velocity": 5.24,
-        "post_age_hours": 4296.42,
-        "url": "https://youtu.be/Ox8ZLF6cGM0?si=MfY2mQVQjUssge4V"
-      },
-      {
-        "title": "The Naked Gun | Official Trailer",
-        "score": 14749,
-        "num_comments": 1849,
-        "upvote_ratio": 0.91,
-        "sentiment": 0,
-        "engagement_velocity": 4.73,
-        "post_age_hours": 3507.14,
-        "url": "https://www.youtube.com/watch?v=uLguU7WLreA"
-      },
-      {
-        "title": "Predator: Badlands | Official Trailer",
-        "score": 9490,
-        "num_comments": 1622,
-        "upvote_ratio": 0.9,
-        "sentiment": 0,
-        "engagement_velocity": 4.17,
-        "post_age_hours": 2664.18,
-        "url": "https://www.youtube.com/watch?v=43R9l7EkJwE&pp=0gcJCcwJAYcqIYzv"
-      },
-      {
-        "title": "The Naked Gun | Official Teaser Trailer (2025 Movie) - Liam Neeson, Pamela Anderson",
-        "score": 32896,
-        "num_comments": 3119,
-        "upvote_ratio": 0.89,
-        "sentiment": 0,
-        "engagement_velocity": 6.82,
-        "post_age_hours": 5279.18,
-        "url": "https://www.youtube.com/watch?v=_8-N8IIq_8I"
-      },
-      {
-        "title": "Zootopia 2 | Official Trailer",
-        "score": 7910,
-        "num_comments": 1238,
-        "upvote_ratio": 0.91,
-        "sentiment": 0,
-        "engagement_velocity": 3.73,
-        "post_age_hours": 2451.39,
-        "url": "https://www.youtube.com/watch?v=BjkIOU5PhyQ"
-      },
-      {
-        "title": "The Mandalorian and Grogu | Official Trailer",
-        "score": 3727,
-        "num_comments": 1916,
-        "upvote_ratio": 0.75,
-        "sentiment": 0,
-        "engagement_velocity": 4.88,
-        "post_age_hours": 1155.17,
-        "url": "https://www.youtube.com/watch?v=_pa1KLXuW0Y"
-      }
-    ],
-    "instagram_metrics": {
-      "platform_source": "Instagram",
-      "topic": "skibidi toilet: emergence | official trailer",
-      "avg_likes": 324021,
-      "avg_comments": 9432,
-      "sentiment": 0.433,
-      "engagement_rate": 0.622,
-      "time_fetched": "2025-11-09 21:41:38.703518",
-      "simulated": false
-    }
-  },
-  {
-    "topic": "KT vs T1 | WORLDS 2025 | Finals",
-    "platform_source": "YouTube",
-    "category": "20",
-    "time_fetched": "2025-11-09T21:41:05.370998+05:30",
-    "trend_score": 1753.12,
-    "trend_lifespan_hours": 587.35,
-    "external_interest_index": 50,
-    "reddit_metrics": {
-      "average_score": 3791.5,
-      "average_comments": 2725.5,
-      "average_sentiment": 0.014,
-      "average_velocity": 384.13,
-      "post_count": 10
+    {
+        "topic": "Myke Towers - Lala (Letra)",
+        "platform_source": "YouTube",
+        "category": "10",
+        "time_fetched": "2025-11-10T00:22:07.131718+05:30",
+        "trend_score": 0.2,
+        "trend_lifespan_hours": 2157.04,
+        "external_interest_index": 73,
+        "reddit_metrics": {
+            "average_score": 1.0,
+            "average_comments": 0.0,
+            "average_sentiment": 0.0,
+            "average_velocity": 0.0,
+            "post_count": 2
+        },
+        "reddit_posts": [
+            {
+                "title": "Myke Towers - LALA (Letra/Lyrics)",
+                "score": 1,
+                "num_comments": 0,
+                "upvote_ratio": 1.0,
+                "sentiment": 0.0,
+                "engagement_velocity": 0.0,
+                "post_age_hours": 18212.91,
+                "url": "https://youtu.be/PcMA4p6B5jY?si=zyJ3RltqglMl5Bva"
+            },
+            {
+                "title": "Myke Towers - LALA (Lyrics/Letra)",
+                "score": 1,
+                "num_comments": 0,
+                "upvote_ratio": 1.0,
+                "sentiment": 0.0,
+                "engagement_velocity": 0.0,
+                "post_age_hours": 20369.95,
+                "url": "https://youtu.be/-FQapMK_Kvw"
+            }
+        ]
     },
-    "reddit_posts": [
-      {
-        "title": "KT Rolster vs. T1 / 2025 World Championship - Final / Post-Match Discussion",
-        "score": 9656,
-        "num_comments": 4430,
-        "upvote_ratio": 0.95,
-        "sentiment": 0,
-        "engagement_velocity": 2792.14,
-        "post_age_hours": 4.04,
-        "url": "https://www.reddit.com/r/leagueoflegends/comments/1oshrk9/kt_rolster_vs_t1_2025_world_championship_final/"
-      },
-      {
-        "title": "Gen.G vs. KT Rolster / 2025 World Championship - Semi-Final / Post-Match Discussion",
-        "score": 9774,
-        "num_comments": 5394,
-        "upvote_ratio": 0.95,
-        "sentiment": 0,
-        "engagement_velocity": 76.46,
-        "post_age_hours": 197.38,
-        "url": "https://www.reddit.com/r/leagueoflegends/comments/1olkspv/geng_vs_kt_rolster_2025_world_championship/"
-      },
-      {
-        "title": "T1 vs. Top Esports / 2025 World Championship - Semi-Final / Post-Match Discussion",
-        "score": 5981,
-        "num_comments": 2844,
-        "upvote_ratio": 0.94,
-        "sentiment": 0.5,
-        "engagement_velocity": 50.23,
-        "post_age_hours": 174.69,
-        "url": "https://www.reddit.com/r/leagueoflegends/comments/1omd0tw/t1_vs_top_esports_2025_world_championship/"
-      },
-      {
-        "title": "Gen.G vs. KT Rolster / LCK 2025 Season Playoffs - Winners' Bracket Round 2 / Post-Match Discussion",
-        "score": 4546,
-        "num_comments": 1542,
-        "upvote_ratio": 0.95,
-        "sentiment": -0.2,
-        "engagement_velocity": 4.43,
-        "post_age_hours": 1373.46,
-        "url": "https://www.reddit.com/r/leagueoflegends/comments/1nfucrt/geng_vs_kt_rolster_lck_2025_season_playoffs/"
-      },
-      {
-        "title": "Gen.G vs. T1 / LCK 2025 Season Playoffs - Lower Bracket Round 3 / Post-Match Discussion",
-        "score": 1821,
-        "num_comments": 1441,
-        "upvote_ratio": 0.92,
-        "sentiment": -0.2,
-        "engagement_velocity": 2.76,
-        "post_age_hours": 1181.52,
-        "url": "https://www.reddit.com/r/leagueoflegends/comments/1nmoosn/geng_vs_t1_lck_2025_season_playoffs_lower_bracket/"
-      },
-      {
-        "title": "Hanwha Life Esports vs. T1 / LCK 2025 Season Playoffs - Upper Bracket Round 2 / Post-Match Discussion",
-        "score": 2055,
-        "num_comments": 955,
-        "upvote_ratio": 0.94,
-        "sentiment": -0.1,
-        "engagement_velocity": 2.23,
-        "post_age_hours": 1351.42,
-        "url": "https://www.reddit.com/r/leagueoflegends/comments/1ngm4zv/hanwha_life_esports_vs_t1_lck_2025_season/"
-      },
-      {
-        "title": "GEN.G vs. KT | Worlds 2025 - Semifinals Day 1 - Hupu Ratings & Comments",
-        "score": 1457,
-        "num_comments": 370,
-        "upvote_ratio": 0.99,
-        "sentiment": 0,
-        "engagement_velocity": 9.59,
-        "post_age_hours": 189.43,
-        "url": "https://www.reddit.com/r/leagueoflegends/comments/1olvlpp/geng_vs_kt_worlds_2025_semifinals_day_1_hupu/"
-      },
-      {
-        "title": "T1 vs. TES | Worlds 2025 - Semifinals Day 2 - Hupu Ratings & Comments",
-        "score": 1151,
-        "num_comments": 380,
-        "upvote_ratio": 0.98,
-        "sentiment": 0,
-        "engagement_velocity": 9.01,
-        "post_age_hours": 169.01,
-        "url": "https://www.reddit.com/r/leagueoflegends/comments/1omjqk0/t1_vs_tes_worlds_2025_semifinals_day_2_hupu/"
-      },
-      {
-        "title": "2025 World Championship / Finals / Live Discussion",
-        "score": 394,
-        "num_comments": 9580,
-        "upvote_ratio": 0.97,
-        "sentiment": 0.136,
-        "engagement_velocity": 893.29,
-        "post_age_hours": 10.17,
-        "url": "https://www.reddit.com/r/leagueoflegends/comments/1osbpf1/2025_world_championship_finals_live_discussion/"
-      },
-      {
-        "title": "Hanwha Life Esports vs. KT Rolster / LCK 2025 Season Playoffs - Upper Bracket Final / Post-Match Discussion",
-        "score": 1080,
-        "num_comments": 319,
-        "upvote_ratio": 0.97,
-        "sentiment": 0,
-        "engagement_velocity": 1.16,
-        "post_age_hours": 1207.8,
-        "url": "https://www.reddit.com/r/leagueoflegends/comments/1nlso1j/hanwha_life_esports_vs_kt_rolster_lck_2025_season/"
-      }
-    ],
-    "instagram_metrics": {
-      "platform_source": "Instagram",
-      "topic": "KT vs T1 | WORLDS 2025 | Finals",
-      "avg_likes": 141029,
-      "avg_comments": 10075,
-      "sentiment": 0.284,
-      "engagement_rate": 0.559,
-      "time_fetched": "2025-11-09 21:41:38.702931",
-      "simulated": false
-    }
-  },
-  {
-    "topic": "Myke Towers - Lala (Letra)",
-    "platform_source": "YouTube",
-    "category": "10",
-    "time_fetched": "2025-11-09T21:41:05.370998+05:30",
-    "trend_score": 0.2,
-    "trend_lifespan_hours": 2157.03,
-    "external_interest_index": 74,
-    "reddit_metrics": {
-      "average_score": 1,
-      "average_comments": 0,
-      "average_sentiment": 0,
-      "average_velocity": 0,
-      "post_count": 2
+    {
+        "topic": "Michael | Official Trailer",
+        "platform_source": "YouTube",
+        "category": "24",
+        "time_fetched": "2025-11-10T00:22:07.131718+05:30",
+        "trend_score": 1040.95,
+        "trend_lifespan_hours": 36811.07,
+        "external_interest_index": 97,
+        "reddit_metrics": {
+            "average_score": 4148.2,
+            "average_comments": 539.0,
+            "average_sentiment": 0.05,
+            "average_velocity": 0.1,
+            "post_count": 10
+        },
+        "reddit_posts": [
+            {
+                "title": "Arrested Development - Season 5 | Official Trailer",
+                "score": 22553,
+                "num_comments": 1100,
+                "upvote_ratio": 0.88,
+                "sentiment": 0.0,
+                "engagement_velocity": 0.36,
+                "post_age_hours": 65835.81,
+                "url": "http://www.youtube.com/watch?v=gXg2_yExgVY"
+            },
+            {
+                "title": "STILL: A Michael J. Fox Movie — Official Trailer | Apple TV+",
+                "score": 2932,
+                "num_comments": 279,
+                "upvote_ratio": 0.95,
+                "sentiment": 0.0,
+                "engagement_velocity": 0.14,
+                "post_age_hours": 22755.87,
+                "url": "https://www.youtube.com/watch?v=yHgMSR4F1Ak"
+            },
+            {
+                "title": "Arrested Development - Season 5 | Official Trailer",
+                "score": 6511,
+                "num_comments": 464,
+                "upvote_ratio": 0.95,
+                "sentiment": 0.0,
+                "engagement_velocity": 0.11,
+                "post_age_hours": 65835.75,
+                "url": "https://www.youtube.com/watch?v=gXg2_yExgVY"
+            },
+            {
+                "title": "Better Man | Official Teaser Trailer (2024 Movie) - Robbie Williams, Michael Gracey, Jonno Davies",
+                "score": 569,
+                "num_comments": 457,
+                "upvote_ratio": 0.86,
+                "sentiment": 0.5,
+                "engagement_velocity": 0.11,
+                "post_age_hours": 9677.82,
+                "url": "https://youtu.be/84PGKvnTYHc?si=l6Gf20MfJlhrGnPc"
+            },
+            {
+                "title": "Lucifer Season 5 | Official Trailer | Netflix",
+                "score": 2486,
+                "num_comments": 434,
+                "upvote_ratio": 0.99,
+                "sentiment": 0.0,
+                "engagement_velocity": 0.06,
+                "post_age_hours": 46682.2,
+                "url": "https://www.youtube.com/watch?v=3mTh2joPPj8"
+            },
+            {
+                "title": "6 Underground starring Ryan Reynolds | Official Trailer | Netflix",
+                "score": 1730,
+                "num_comments": 504,
+                "upvote_ratio": 0.93,
+                "sentiment": 0.0,
+                "engagement_velocity": 0.04,
+                "post_age_hours": 53548.81,
+                "url": "https://www.youtube.com/watch?v=YLE85olJjp8"
+            },
+            {
+                "title": "Halloween Ends | Official Trailer",
+                "score": 768,
+                "num_comments": 599,
+                "upvote_ratio": 0.89,
+                "sentiment": 0.0,
+                "engagement_velocity": 0.05,
+                "post_age_hours": 29008.61,
+                "url": "https://www.youtube.com/watch?v=eYtIC12eHcI&feature=emb_logo"
+            },
+            {
+                "title": "Widows | Official Trailer",
+                "score": 1756,
+                "num_comments": 339,
+                "upvote_ratio": 0.91,
+                "sentiment": 0.0,
+                "engagement_velocity": 0.03,
+                "post_age_hours": 65165.86,
+                "url": "https://youtu.be/6S3phVSi0tI"
+            },
+            {
+                "title": "Returnal | Official Review Mega Thread",
+                "score": 565,
+                "num_comments": 924,
+                "upvote_ratio": 0.95,
+                "sentiment": 0.0,
+                "engagement_velocity": 0.04,
+                "post_age_hours": 39723.49,
+                "url": "https://www.reddit.com/r/PS5/comments/n16qn6/returnal_official_review_mega_thread/"
+            },
+            {
+                "title": "Fahrenheit 451 (2018) Official Trailer ft. Michael B. Jordan & Michael Shannon | HBO",
+                "score": 1612,
+                "num_comments": 290,
+                "upvote_ratio": 0.92,
+                "sentiment": 0.0,
+                "engagement_velocity": 0.03,
+                "post_age_hours": 66599.77,
+                "url": "https://youtu.be/mNKwe9k55fs"
+            }
+        ]
     },
-    "reddit_posts": [
-      {
-        "title": "Myke Towers - LALA (Letra/Lyrics)",
-        "score": 1,
-        "num_comments": 0,
-        "upvote_ratio": 1,
-        "sentiment": 0,
-        "engagement_velocity": 0,
-        "post_age_hours": 18210.23,
-        "url": "https://youtu.be/PcMA4p6B5jY?si=zyJ3RltqglMl5Bva"
-      },
-      {
-        "title": "Myke Towers - LALA (Lyrics/Letra)",
-        "score": 1,
-        "num_comments": 0,
-        "upvote_ratio": 1,
-        "sentiment": 0,
-        "engagement_velocity": 0,
-        "post_age_hours": 20367.26,
-        "url": "https://youtu.be/-FQapMK_Kvw"
-      }
-    ],
-    "instagram_metrics": {
-      "platform_source": "Instagram",
-      "topic": "Myke Towers - Lala (Letra)",
-      "avg_likes": 92272,
-      "avg_comments": 319,
-      "sentiment": 0.269,
-      "engagement_rate": 0.045,
-      "time_fetched": "2025-11-09 21:41:38.704636",
-      "simulated": true
-    }
-  },
-  {
-    "topic": "Michael | Official Trailer",
-    "platform_source": "YouTube",
-    "category": "24",
-    "time_fetched": "2025-11-09T21:41:05.370998+05:30",
-    "trend_score": 1040.82,
-    "trend_lifespan_hours": 36811.07,
-    "external_interest_index": 81,
-    "reddit_metrics": {
-      "average_score": 4147.6,
-      "average_comments": 539,
-      "average_sentiment": 0.05,
-      "average_velocity": 0.1,
-      "post_count": 10
+    {
+        "topic": "Flight cancelations to worsen next week if shutdown continues - CNBC",
+        "platform_source": "News",
+        "category": "business",
+        "time_fetched": "2025-11-10T00:22:07.131718+05:30",
+        "trend_score": 16042.43,
+        "trend_lifespan_hours": 26725.96,
+        "external_interest_index": 56,
+        "reddit_metrics": {
+            "average_score": 59684.8,
+            "average_comments": 13665.5,
+            "average_sentiment": 0.0,
+            "average_velocity": 2.53,
+            "post_count": 10
+        },
+        "reddit_posts": [
+            {
+                "title": "Covid-19 update Wednesday 11th March",
+                "score": 473,
+                "num_comments": 62,
+                "upvote_ratio": 0.99,
+                "sentiment": 0.0,
+                "engagement_velocity": 0.01,
+                "post_age_hours": 49662.43,
+                "url": "https://www.reddit.com/r/supplychain/comments/fgwbrx/covid19_update_wednesday_11th_march/"
+            },
+            {
+                "title": "Covid-19 update March 4th",
+                "score": 341,
+                "num_comments": 58,
+                "upvote_ratio": 0.99,
+                "sentiment": 0.0,
+                "engagement_velocity": 0.01,
+                "post_age_hours": 49832.43,
+                "url": "https://www.reddit.com/r/supplychain/comments/fdb3il/covid19_update_march_4th/"
+            },
+            {
+                "title": "What Trump Has Done - February 2025 (Part Three)",
+                "score": 5,
+                "num_comments": 3,
+                "upvote_ratio": 1.0,
+                "sentiment": 0.0,
+                "engagement_velocity": 0.0,
+                "post_age_hours": 6434.8,
+                "url": "https://www.reddit.com/r/WhatTrumpHasDone/comments/1ipdweo/what_trump_has_done_february_2025_part_three/"
+            },
+            {
+                "title": "📣 Apollo will close down on June 30th. Reddit’s recent decisions and actions have unfortunately made it impossible for Apollo to continue. Thank you so, so much for all the support over the years. ❤️",
+                "score": 221100,
+                "num_comments": 15269,
+                "upvote_ratio": 0.95,
+                "sentiment": -0.224,
+                "engagement_velocity": 11.13,
+                "post_age_hours": 21241.56,
+                "url": "https://www.reddit.com/r/apolloapp/comments/144f6xm/apollo_will_close_down_on_june_30th_reddits/"
+            },
+            {
+                "title": "Megathread: Trump Indicted by Federal Prosecutors on Charges Related to Handling of Classified Documents",
+                "score": 75195,
+                "num_comments": 21348,
+                "upvote_ratio": 0.9,
+                "sentiment": 0.0,
+                "engagement_velocity": 4.55,
+                "post_age_hours": 21234.97,
+                "url": "https://www.reddit.com/r/politics/comments/144pdan/megathread_trump_indicted_by_federal_prosecutors/"
+            },
+            {
+                "title": "GPT-4 Week 3. Chatbots are yesterdays news. AI Agents are the future. The beginning of the proto-agi era is here",
+                "score": 13156,
+                "num_comments": 2121,
+                "upvote_ratio": 0.92,
+                "sentiment": 0.0,
+                "engagement_velocity": 0.67,
+                "post_age_hours": 22758.69,
+                "url": "https://www.reddit.com/r/ChatGPT/comments/12diapw/gpt4_week_3_chatbots_are_yesterdays_news_ai/"
+            },
+            {
+                "title": "Megathread: Joseph R. Biden Sworn in as the 46th President of the United States",
+                "score": 112127,
+                "num_comments": 27693,
+                "upvote_ratio": 0.81,
+                "sentiment": 0.0,
+                "engagement_velocity": 3.32,
+                "post_age_hours": 42097.62,
+                "url": "https://www.reddit.com/r/politics/comments/l1dj7s/megathread_joseph_r_biden_sworn_in_as_the_46th/"
+            },
+            {
+                "title": "Megathread: President Donald Trump announces he has tested positive for Coronavirus",
+                "score": 102772,
+                "num_comments": 43673,
+                "upvote_ratio": 0.93,
+                "sentiment": 0.227,
+                "engagement_velocity": 3.27,
+                "post_age_hours": 44749.61,
+                "url": "https://www.reddit.com/r/politics/comments/j3oozc/megathread_president_donald_trump_announces_he/"
+            },
+            {
+                "title": "Megathread: President Donald Trump Refuses to Participate in the Next Debate, Which is Scheduled to be Held Virtually",
+                "score": 63145,
+                "num_comments": 20479,
+                "upvote_ratio": 0.92,
+                "sentiment": 0.0,
+                "engagement_velocity": 1.88,
+                "post_age_hours": 44598.03,
+                "url": "https://www.reddit.com/r/politics/comments/j7cfvc/megathread_president_donald_trump_refuses_to/"
+            },
+            {
+                "title": "MEGATHREAD: Vince McMahon Retires",
+                "score": 8534,
+                "num_comments": 5949,
+                "upvote_ratio": 0.91,
+                "sentiment": 0.0,
+                "engagement_velocity": 0.5,
+                "post_age_hours": 28942.57,
+                "url": "https://www.reddit.com/r/SquaredCircle/comments/w5k9pv/megathread_vince_mcmahon_retires/"
+            }
+        ]
     },
-    "reddit_posts": [
-      {
-        "title": "Arrested Development - Season 5 | Official Trailer",
-        "score": 22557,
-        "num_comments": 1100,
-        "upvote_ratio": 0.88,
-        "sentiment": 0,
-        "engagement_velocity": 0.36,
-        "post_age_hours": 65833.12,
-        "url": "http://www.youtube.com/watch?v=gXg2_yExgVY"
-      },
-      {
-        "title": "STILL: A Michael J. Fox Movie — Official Trailer | Apple TV+",
-        "score": 2931,
-        "num_comments": 279,
-        "upvote_ratio": 0.95,
-        "sentiment": 0,
-        "engagement_velocity": 0.14,
-        "post_age_hours": 22753.19,
-        "url": "https://www.youtube.com/watch?v=yHgMSR4F1Ak"
-      },
-      {
-        "title": "Arrested Development - Season 5 | Official Trailer",
-        "score": 6506,
-        "num_comments": 464,
-        "upvote_ratio": 0.95,
-        "sentiment": 0,
-        "engagement_velocity": 0.11,
-        "post_age_hours": 65833.06,
-        "url": "https://www.youtube.com/watch?v=gXg2_yExgVY"
-      },
-      {
-        "title": "Better Man | Official Teaser Trailer (2024 Movie) - Robbie Williams, Michael Gracey, Jonno Davies",
-        "score": 566,
-        "num_comments": 457,
-        "upvote_ratio": 0.86,
-        "sentiment": 0.5,
-        "engagement_velocity": 0.11,
-        "post_age_hours": 9675.14,
-        "url": "https://youtu.be/84PGKvnTYHc?si=l6Gf20MfJlhrGnPc"
-      },
-      {
-        "title": "Lucifer Season 5 | Official Trailer | Netflix",
-        "score": 2491,
-        "num_comments": 434,
-        "upvote_ratio": 0.99,
-        "sentiment": 0,
-        "engagement_velocity": 0.06,
-        "post_age_hours": 46679.52,
-        "url": "https://www.youtube.com/watch?v=3mTh2joPPj8"
-      },
-      {
-        "title": "6 Underground starring Ryan Reynolds | Official Trailer | Netflix",
-        "score": 1733,
-        "num_comments": 504,
-        "upvote_ratio": 0.93,
-        "sentiment": 0,
-        "engagement_velocity": 0.04,
-        "post_age_hours": 53546.13,
-        "url": "https://www.youtube.com/watch?v=YLE85olJjp8"
-      },
-      {
-        "title": "Halloween Ends | Official Trailer",
-        "score": 766,
-        "num_comments": 599,
-        "upvote_ratio": 0.89,
-        "sentiment": 0,
-        "engagement_velocity": 0.05,
-        "post_age_hours": 29005.92,
-        "url": "https://www.youtube.com/watch?v=eYtIC12eHcI&feature=emb_logo"
-      },
-      {
-        "title": "Widows | Official Trailer",
-        "score": 1757,
-        "num_comments": 339,
-        "upvote_ratio": 0.91,
-        "sentiment": 0,
-        "engagement_velocity": 0.03,
-        "post_age_hours": 65163.17,
-        "url": "https://youtu.be/6S3phVSi0tI"
-      },
-      {
-        "title": "Returnal | Official Review Mega Thread",
-        "score": 563,
-        "num_comments": 924,
-        "upvote_ratio": 0.95,
-        "sentiment": 0,
-        "engagement_velocity": 0.04,
-        "post_age_hours": 39720.8,
-        "url": "https://www.reddit.com/r/PS5/comments/n16qn6/returnal_official_review_mega_thread/"
-      },
-      {
-        "title": "Fahrenheit 451 (2018) Official Trailer ft. Michael B. Jordan & Michael Shannon | HBO",
-        "score": 1606,
-        "num_comments": 290,
-        "upvote_ratio": 0.92,
-        "sentiment": 0,
-        "engagement_velocity": 0.03,
-        "post_age_hours": 66597.09,
-        "url": "https://youtu.be/mNKwe9k55fs"
-      }
-    ],
-    "instagram_metrics": {
-      "platform_source": "Instagram",
-      "topic": "Michael | Official Trailer",
-      "avg_likes": 10971,
-      "avg_comments": 256,
-      "sentiment": -0.064,
-      "engagement_rate": 0.028,
-      "time_fetched": "2025-11-09 21:41:38.704992",
-      "simulated": true
-    }
-  },
-  {
-    "topic": "Millionaires value their personal trainers and therapists more than their wealth advisors - CNBC",
-    "platform_source": "News",
-    "category": "business",
-    "time_fetched": "2025-11-09T21:41:05.370998+05:30",
-    "trend_score": 2351.05,
-    "trend_lifespan_hours": 27307.57,
-    "external_interest_index": 56,
-    "reddit_metrics": {
-      "average_score": 9321.8,
-      "average_comments": 1333.1,
-      "average_sentiment": 0.038,
-      "average_velocity": 1.72,
-      "post_count": 10
+    {
+        "topic": "Apple helped kill netbooks. Will it bring them back? - The Verge",
+        "platform_source": "News",
+        "category": "technology",
+        "time_fetched": "2025-11-10T00:22:07.131718+05:30",
+        "trend_score": 5991.32,
+        "trend_lifespan_hours": 6639.76,
+        "external_interest_index": 56,
+        "reddit_metrics": {
+            "average_score": 20669.4,
+            "average_comments": 1435.1,
+            "average_sentiment": 0.312,
+            "average_velocity": 1.88,
+            "post_count": 10
+        },
+        "reddit_posts": [
+            {
+                "title": "Guess what's NOT the top news in today's NYTimes.",
+                "score": 12781,
+                "num_comments": 1451,
+                "upvote_ratio": 0.98,
+                "sentiment": 0.5,
+                "engagement_velocity": 2.73,
+                "post_age_hours": 5214.89,
+                "url": "https://i.redd.it/kxr8hnnle7te1.jpeg"
+            },
+            {
+                "title": "How do I (22/F) tell my best friend (22/M) that his \"pranks\" are physically painful?",
+                "score": 5464,
+                "num_comments": 437,
+                "upvote_ratio": 0.97,
+                "sentiment": 0.15,
+                "engagement_velocity": 2.35,
+                "post_age_hours": 2510.84,
+                "url": "https://www.reddit.com/r/BestofRedditorUpdates/comments/1mb6crm/how_do_i_22f_tell_my_best_friend_22m_that_his/"
+            },
+            {
+                "title": "My (19F) Dad (40s M) has an obsession with buying exotic or illegal animal meat and is why my family fell apart.",
+                "score": 7453,
+                "num_comments": 1631,
+                "upvote_ratio": 0.96,
+                "sentiment": 0.0,
+                "engagement_velocity": 1.25,
+                "post_age_hours": 7261.87,
+                "url": "https://www.reddit.com/r/BestofRedditorUpdates/comments/1hyojvf/my_19f_dad_40s_m_has_an_obsession_with_buying/"
+            },
+            {
+                "title": "[New Update]: I’m about to ruin my best friend’s life, and I don’t feel remorse.",
+                "score": 4768,
+                "num_comments": 940,
+                "upvote_ratio": 0.8,
+                "sentiment": 0.568,
+                "engagement_velocity": 1.1,
+                "post_age_hours": 5174.84,
+                "url": "https://www.reddit.com/r/BestofRedditorUpdates/comments/1ju4sk1/new_update_im_about_to_ruin_my_best_friends_life/"
+            },
+            {
+                "title": "AITA for wanting to report my doctor, who is my sister’s best friend, for telling her I'm on Vyvanse, a HIPAA violation? (Conclusion)",
+                "score": 9632,
+                "num_comments": 679,
+                "upvote_ratio": 0.97,
+                "sentiment": 1.0,
+                "engagement_velocity": 1.35,
+                "post_age_hours": 7635.28,
+                "url": "https://www.reddit.com/r/BestofRedditorUpdates/comments/1hmqqm4/aita_for_wanting_to_report_my_doctor_who_is_my/"
+            },
+            {
+                "title": "My husband cheated and gave me an std while I’m currently pregnant (New Update)",
+                "score": 12032,
+                "num_comments": 857,
+                "upvote_ratio": 0.96,
+                "sentiment": 0.235,
+                "engagement_velocity": 1.21,
+                "post_age_hours": 10670.87,
+                "url": "https://www.reddit.com/r/BestofRedditorUpdates/comments/1ey9ysk/my_husband_cheated_and_gave_me_an_std_while_im/"
+            },
+            {
+                "title": "📣 I want to debunk Reddit's claims, and talk about their unwillingness to work with developers, moderators, and the larger community, as well as say thank you for all the support",
+                "score": 134034,
+                "num_comments": 5404,
+                "upvote_ratio": 0.9,
+                "sentiment": 0.0,
+                "engagement_velocity": 6.65,
+                "post_age_hours": 20977.48,
+                "url": "https://www.reddit.com/r/apolloapp/comments/14dkqrw/i_want_to_debunk_reddits_claims_and_talk_about/"
+            },
+            {
+                "title": "[New Update]: I’m about to ruin my best friend’s life, and I don’t feel remorse.",
+                "score": 6018,
+                "num_comments": 1105,
+                "upvote_ratio": 0.88,
+                "sentiment": 0.568,
+                "engagement_velocity": 0.76,
+                "post_age_hours": 9326.87,
+                "url": "https://www.reddit.com/r/BestofRedditorUpdates/comments/1g5ia68/new_update_im_about_to_ruin_my_best_friends_life/"
+            },
+            {
+                "title": "My wife is addicted to the gym and it’s ruining our marriage (New Update)",
+                "score": 6890,
+                "num_comments": 1023,
+                "upvote_ratio": 0.96,
+                "sentiment": -0.132,
+                "engagement_velocity": 0.71,
+                "post_age_hours": 11102.85,
+                "url": "https://www.reddit.com/r/BestofRedditorUpdates/comments/1ejmbd6/my_wife_is_addicted_to_the_gym_and_its_ruining/"
+            },
+            {
+                "title": "OOP finds out her child is pregnant and expects OOP to raise the baby as her child's sibling (new update)",
+                "score": 7622,
+                "num_comments": 824,
+                "upvote_ratio": 0.97,
+                "sentiment": 0.235,
+                "engagement_velocity": 0.73,
+                "post_age_hours": 11575.26,
+                "url": "https://www.reddit.com/r/BestofRedditorUpdates/comments/1e3sksa/oop_finds_out_her_child_is_pregnant_and_expects/"
+            }
+        ]
     },
-    "reddit_posts": [
-      {
-        "title": "Comprehensive Due Diligence Report: RICO Prosecution of Naked Short Sellers Targeting GameStop Corporation",
-        "score": 6436,
-        "num_comments": 256,
-        "upvote_ratio": 0.97,
-        "sentiment": -0.042,
-        "engagement_velocity": 10.43,
-        "post_age_hours": 640.61,
-        "url": "https://www.reddit.com/r/Superstonk/comments/1o5zvs7/comprehensive_due_diligence_report_rico/"
-      },
-      {
-        "title": "The seeming lack of effort to try to stop Trump from putting the US under authoritarian rule makes no sense",
-        "score": 6262,
-        "num_comments": 1246,
-        "upvote_ratio": 0.91,
-        "sentiment": 0,
-        "engagement_velocity": 1.07,
-        "post_age_hours": 6984.88,
-        "url": "https://www.reddit.com/r/self/comments/1i7desr/the_seeming_lack_of_effort_to_try_to_stop_trump/"
-      },
-      {
-        "title": "From 321K to 10M — Since my last post, I got so many questions asking for more details. This post is an attempt to answer all the “how’s”.",
-        "score": 2451,
-        "num_comments": 291,
-        "upvote_ratio": 0.99,
-        "sentiment": 0.333,
-        "engagement_velocity": 3.25,
-        "post_age_hours": 842.93,
-        "url": "https://www.reddit.com/gallery/1nynx68"
-      },
-      {
-        "title": "How a short/gamma squeeze on Tilray is causing the ENTIRE cannabis market to moon and how to avoid becoming a bag holder when this all comes crashing down",
-        "score": 13538,
-        "num_comments": 3035,
-        "upvote_ratio": 0.87,
-        "sentiment": 0.098,
-        "engagement_velocity": 0.4,
-        "post_age_hours": 41577.28,
-        "url": "https://www.reddit.com/r/wallstreetbets/comments/lhf2qw/how_a_shortgamma_squeeze_on_tilray_is_causing_the/"
-      },
-      {
-        "title": "CMV: Compared to other developed nations, America is a “shithole” country for all but the wealthy and well-connected",
-        "score": 19504,
-        "num_comments": 2950,
-        "upvote_ratio": 0.76,
-        "sentiment": 0.158,
-        "engagement_velocity": 0.49,
-        "post_age_hours": 45829.39,
-        "url": "https://www.reddit.com/r/changemyview/comments/ibssr3/cmv_compared_to_other_developed_nations_america/"
-      },
-      {
-        "title": "Burning Cash Part III",
-        "score": 8476,
-        "num_comments": 316,
-        "upvote_ratio": 0.97,
-        "sentiment": 0,
-        "engagement_velocity": 0.49,
-        "post_age_hours": 18026.1,
-        "url": "https://www.reddit.com/r/Superstonk/comments/17cc2yd/burning_cash_part_iii/"
-      },
-      {
-        "title": "To Ape Gang: Why Sentiment Has Turned Against You",
-        "score": 11150,
-        "num_comments": 1326,
-        "upvote_ratio": 0.86,
-        "sentiment": 0,
-        "engagement_velocity": 0.3,
-        "post_age_hours": 41649.37,
-        "url": "https://www.reddit.com/r/wallstreetbets/comments/lf657e/to_ape_gang_why_sentiment_has_turned_against_you/"
-      },
-      {
-        "title": "KEN GRIFFIN EXPOSED",
-        "score": 11797,
-        "num_comments": 852,
-        "upvote_ratio": 0.96,
-        "sentiment": 0,
-        "engagement_velocity": 0.32,
-        "post_age_hours": 40151.41,
-        "url": "https://www.reddit.com/r/Superstonk/comments/mou8ww/ken_griffin_exposed/"
-      },
-      {
-        "title": "Gamestop Big Picture: The Short Singularity Pt 3 - WTF edition",
-        "score": 7135,
-        "num_comments": 1659,
-        "upvote_ratio": 0.98,
-        "sentiment": -0.167,
-        "engagement_velocity": 0.21,
-        "post_age_hours": 41884.42,
-        "url": "https://www.reddit.com/r/investing/comments/l7qlfh/gamestop_big_picture_the_short_singularity_pt_3/"
-      },
-      {
-        "title": "Gamestop Big Picture: Market Mechanics",
-        "score": 6469,
-        "num_comments": 1400,
-        "upvote_ratio": 0.98,
-        "sentiment": 0,
-        "engagement_velocity": 0.19,
-        "post_age_hours": 41840.52,
-        "url": "https://www.reddit.com/r/investing/comments/l97jbo/gamestop_big_picture_market_mechanics/"
-      }
-    ],
-    "instagram_metrics": {
-      "platform_source": "Instagram",
-      "topic": "Millionaires value their personal trainers and therapists more than their wealth advisors - CNBC",
-      "avg_likes": 62496,
-      "avg_comments": 5030,
-      "sentiment": 0.047,
-      "engagement_rate": 0.443,
-      "time_fetched": "2025-11-09 21:41:38.703298",
-      "simulated": false
-    }
-  },
-  {
-    "topic": "The U.S. job market is slowing, not collapsing - Axios",
-    "platform_source": "News",
-    "category": "business",
-    "time_fetched": "2025-11-09T21:41:05.370998+05:30",
-    "trend_score": 6037.18,
-    "trend_lifespan_hours": 40842.17,
-    "external_interest_index": 50,
-    "reddit_metrics": {
-      "average_score": 18937.1,
-      "average_comments": 5430.9,
-      "average_sentiment": 0.114,
-      "average_velocity": 0.62,
-      "post_count": 10
+    {
+        "topic": "TVLine's Performer Of The Week: Rhea Seehorn - TVLine",
+        "platform_source": "News",
+        "category": "entertainment",
+        "time_fetched": "2025-11-10T00:22:07.131718+05:30",
+        "trend_score": 51.39,
+        "trend_lifespan_hours": 14998.65,
+        "external_interest_index": 85,
+        "reddit_metrics": {
+            "average_score": 198.8,
+            "average_comments": 38.4,
+            "average_sentiment": 0.0,
+            "average_velocity": 0.27,
+            "post_count": 10
+        },
+        "reddit_posts": [
+            {
+                "title": "TVLine's Performer Of The Week: Keri Russell - \"The Diplomat\"",
+                "score": 393,
+                "num_comments": 51,
+                "upvote_ratio": 0.9,
+                "sentiment": 0.0,
+                "engagement_velocity": 1.21,
+                "post_age_hours": 364.78,
+                "url": "https://www.tvline.com/2006401/keri-russell-performance-the-diplomat-season-3-netflix-kate/"
+            },
+            {
+                "title": "TVLine's Performer Of The Week: Ethan Hawke - “The Lowdown”",
+                "score": 253,
+                "num_comments": 28,
+                "upvote_ratio": 0.88,
+                "sentiment": 0.0,
+                "engagement_velocity": 1.42,
+                "post_age_hours": 196.83,
+                "url": "https://www.tvline.com/2013638/ethan-hawke-performance-the-lowdown-fx-episode-7-lee/"
+            },
+            {
+                "title": "Billie Lourd has received an honorable mention from TVLine’s ‘performer of the week’ - for her performance in American Horror Stories",
+                "score": 690,
+                "num_comments": 68,
+                "upvote_ratio": 0.99,
+                "sentiment": 0.0,
+                "engagement_velocity": 0.02,
+                "post_age_hours": 37323.64,
+                "url": "https://i.redd.it/wk277ulscyf71.jpg"
+            },
+            {
+                "title": "Joe is TVLine’s Performer of the Week ‘Honorable Mention’ ",
+                "score": 81,
+                "num_comments": 8,
+                "upvote_ratio": 0.99,
+                "sentiment": 0.0,
+                "engagement_velocity": 0.01,
+                "post_age_hours": 9264.62,
+                "url": "https://i.redd.it/0xe4kk098rvd1.jpeg"
+            },
+            {
+                "title": "TVLine’s Performer of the Week: Mekia Cox - The Rookie",
+                "score": 1,
+                "num_comments": 0,
+                "upvote_ratio": 1.0,
+                "sentiment": 0.0,
+                "engagement_velocity": 0.0,
+                "post_age_hours": 5735.33,
+                "url": "https://www.reddit.com/r/TheEntertainmentMix/comments/1jc33yi/tvlines_performer_of_the_week_mekia_cox_the_rookie/"
+            },
+            {
+                "title": "TVLine Performer of the Week: Richard E. Grant in 'Loki' Episode 5 - 'Journey Into Mystery'",
+                "score": 327,
+                "num_comments": 16,
+                "upvote_ratio": 0.99,
+                "sentiment": 0.0,
+                "engagement_velocity": 0.01,
+                "post_age_hours": 37996.44,
+                "url": "https://tvline.com/2021/07/10/richard-e-grant-classic-loki-episode-5-performance/"
+            },
+            {
+                "title": "TVLine Performer of the Week: Jay Hayden - Ep 7.03",
+                "score": 10,
+                "num_comments": 4,
+                "upvote_ratio": 0.92,
+                "sentiment": 0.0,
+                "engagement_velocity": 0.0,
+                "post_age_hours": 14120.25,
+                "url": "https://tvline.com/lists/jay-hayden-performance-station-19-final-season-7-episode-3/honorable-mention-aisling-bea/"
+            },
+            {
+                "title": "TVLine Performer of the Week: Honorable Mention: Jaina Lee Ortiz - 7x04",
+                "score": 11,
+                "num_comments": 2,
+                "upvote_ratio": 0.92,
+                "sentiment": 0.0,
+                "engagement_velocity": 0.0,
+                "post_age_hours": 13972.38,
+                "url": "https://tvline.com/lists/domhnall-gleeson-performance-alice-and-jack-episode-3-pbs/"
+            },
+            {
+                "title": "The Last of Us Season 2 - Review Megathread",
+                "score": 151,
+                "num_comments": 199,
+                "upvote_ratio": 0.95,
+                "sentiment": 0.0,
+                "engagement_velocity": 0.07,
+                "post_age_hours": 5186.94,
+                "url": "https://www.reddit.com/r/ThelastofusHBOseries/comments/1jtooer/the_last_of_us_season_2_review_megathread/"
+            },
+            {
+                "title": "Ismael Cruz Córdova - TVLine Performer of the Week Honorable Mention",
+                "score": 71,
+                "num_comments": 8,
+                "upvote_ratio": 0.89,
+                "sentiment": 0.0,
+                "engagement_velocity": 0.0,
+                "post_age_hours": 27738.63,
+                "url": "https://twitter.com/michaelausiello/status/1568603032509612037?s=46&t=f7U12SZiCqigZTuv2R3I0w"
+            }
+        ]
     },
-    "reddit_posts": [
-      {
-        "title": "Coronavirus predictions for 2020",
-        "score": 363,
-        "num_comments": 550,
-        "upvote_ratio": 0.87,
-        "sentiment": 0,
-        "engagement_velocity": 0.02,
-        "post_age_hours": 50024.7,
-        "url": "https://www.reddit.com/r/CoronaVirus_2019_nCoV/comments/f96ndz/coronavirus_predictions_for_2020/"
-      },
-      {
-        "title": "[FREE] AI Weekly News Rundown July 05 - July 12 2025: ♟️OpenAI's Windsurf deal is dead — Google just poached the CEO instead ⏸️OpenAI delays the release of its open model, again🚀Kimi-K2 is the next open-weight AI milestone from China after Deepseek 💎Samsung explores AI necklaces and smart earrings",
-        "score": 1,
-        "num_comments": 1,
-        "upvote_ratio": 1,
-        "sentiment": 0.083,
-        "engagement_velocity": 0,
-        "post_age_hours": 2873.67,
-        "url": "https://www.reddit.com/r/u_enoumen/comments/1lyczfw/free_ai_weekly_news_rundown_july_05_july_12_2025/"
-      },
-      {
-        "title": "Check out which of these shocking coronavirus predictions from 2/23 came true so far, and which didn't. What will happen next?",
-        "score": 91,
-        "num_comments": 34,
-        "upvote_ratio": 0.83,
-        "sentiment": -0.138,
-        "engagement_velocity": 0,
-        "post_age_hours": 49166.41,
-        "url": "https://www.reddit.com/r/Trumpvirus/comments/fsq6m5/check_out_which_of_these_shocking_coronavirus/"
-      },
-      {
-        "title": "J.P. Morgan Early Look at the Market – Tues 3.21.17",
-        "score": 110,
-        "num_comments": 37,
-        "upvote_ratio": 0.88,
-        "sentiment": 0.1,
-        "engagement_velocity": 0,
-        "post_age_hours": 75723.97,
-        "url": "https://www.reddit.com/r/wallstreetbets/comments/60n7p7/jp_morgan_early_look_at_the_market_tues_32117/"
-      },
-      {
-        "title": "food for thought on - why is this shitbag even allowed to speak?",
-        "score": 1,
-        "num_comments": 0,
-        "upvote_ratio": 1,
-        "sentiment": 0,
-        "engagement_velocity": 0,
-        "post_age_hours": 28107.19,
-        "url": "https://www.reddit.com/r/Food_for_Thought_on/comments/wy8krv/food_for_thought_on_why_is_this_shitbag_even/"
-      },
-      {
-        "title": "Timeline of COVID-19 Pandemic Events - President Trump did a great job! (Part 3)",
-        "score": 0,
-        "num_comments": 6,
-        "upvote_ratio": 0.4,
-        "sentiment": 1,
-        "engagement_velocity": 0,
-        "post_age_hours": 48686.71,
-        "url": "https://www.reddit.com/r/trump/comments/g55uak/timeline_of_covid19_pandemic_events_president/"
-      },
-      {
-        "title": "J.P. Morgan Early Look at the Market – Tues 3.21.17",
-        "score": 7,
-        "num_comments": 3,
-        "upvote_ratio": 0.89,
-        "sentiment": 0.1,
-        "engagement_velocity": 0,
-        "post_age_hours": 75724.24,
-        "url": "https://www.reddit.com/r/The_Street/comments/60n56g/jp_morgan_early_look_at_the_market_tues_32117/"
-      },
-      {
-        "title": "Megathread: House votes to remove Speaker Kevin McCarthy",
-        "score": 10681,
-        "num_comments": 8745,
-        "upvote_ratio": 0.97,
-        "sentiment": 0,
-        "engagement_velocity": 1.05,
-        "post_age_hours": 18426.9,
-        "url": "https://www.reddit.com/r/politics/comments/16z3s32/megathread_house_votes_to_remove_speaker_kevin/"
-      },
-      {
-        "title": "Megathread: Joseph R. Biden Sworn in as the 46th President of the United States",
-        "score": 112128,
-        "num_comments": 27693,
-        "upvote_ratio": 0.81,
-        "sentiment": 0,
-        "engagement_velocity": 3.32,
-        "post_age_hours": 42094.94,
-        "url": "https://www.reddit.com/r/politics/comments/l1dj7s/megathread_joseph_r_biden_sworn_in_as_the_46th/"
-      },
-      {
-        "title": "Megathread: President Trump Suggests Delaying 2020 Presidential Election",
-        "score": 65989,
-        "num_comments": 17240,
-        "upvote_ratio": 0.89,
-        "sentiment": 0,
-        "engagement_velocity": 1.8,
-        "post_age_hours": 46274.7,
-        "url": "https://www.reddit.com/r/politics/comments/i0m1wk/megathread_president_trump_suggests_delaying_2020/"
-      }
-    ],
-    "instagram_metrics": {
-      "platform_source": "Instagram",
-      "topic": "The U.S. job market is slowing, not collapsing - Axios",
-      "avg_likes": 97071,
-      "avg_comments": 291,
-      "sentiment": 0.332,
-      "engagement_rate": 0.071,
-      "time_fetched": "2025-11-09 21:41:38.705291",
-      "simulated": true
+    {
+        "topic": "The endearing movie that affirms creativity as a human act - The Verge",
+        "platform_source": "News",
+        "category": "entertainment",
+        "time_fetched": "2025-11-10T00:22:07.131718+05:30",
+        "trend_score": 298.86,
+        "trend_lifespan_hours": 29933.62,
+        "external_interest_index": 92,
+        "reddit_metrics": {
+            "average_score": 601.0,
+            "average_comments": 564.3,
+            "average_sentiment": 0.032,
+            "average_velocity": 0.05,
+            "post_count": 10
+        },
+        "reddit_posts": [
+            {
+                "title": "Musical Theatre As A Genre: Cast Recordings For Pop Fans",
+                "score": 234,
+                "num_comments": 107,
+                "upvote_ratio": 0.97,
+                "sentiment": 0.0,
+                "engagement_velocity": 0.01,
+                "post_age_hours": 55609.89,
+                "url": "https://www.reddit.com/r/popheads/comments/ca90y1/musical_theatre_as_a_genre_cast_recordings_for/"
+            },
+            {
+                "title": "'The Matrix Resurrections' Review Thread",
+                "score": 2395,
+                "num_comments": 4370,
+                "upvote_ratio": 0.93,
+                "sentiment": 0.0,
+                "engagement_velocity": 0.2,
+                "post_age_hours": 34058.79,
+                "url": "https://www.reddit.com/r/movies/comments/rlhs6d/the_matrix_resurrections_review_thread/"
+            },
+            {
+                "title": "Yakuza: Like a Dragon - Review Thread",
+                "score": 1006,
+                "num_comments": 267,
+                "upvote_ratio": 0.94,
+                "sentiment": 0.0,
+                "engagement_velocity": 0.03,
+                "post_age_hours": 43949.56,
+                "url": "https://www.reddit.com/r/Games/comments/jnwj6p/yakuza_like_a_dragon_review_thread/"
+            },
+            {
+                "title": "Black Panther: Wakanda Forever - Social Media Reactions Megathread",
+                "score": 377,
+                "num_comments": 259,
+                "upvote_ratio": 0.97,
+                "sentiment": -0.067,
+                "engagement_velocity": 0.02,
+                "post_age_hours": 26629.15,
+                "url": "https://www.reddit.com/r/marvelstudios/comments/yejrwz/black_panther_wakanda_forever_social_media/"
+            },
+            {
+                "title": "Black Panther: Wakanda Forever - Reviews Megathread",
+                "score": 246,
+                "num_comments": 268,
+                "upvote_ratio": 0.94,
+                "sentiment": -0.167,
+                "engagement_velocity": 0.02,
+                "post_age_hours": 26328.4,
+                "url": "https://www.reddit.com/r/marvelstudios/comments/ypuer3/black_panther_wakanda_forever_reviews_megathread/"
+            },
+            {
+                "title": "Hot take: Makima is the most tragic character in CSM",
+                "score": 586,
+                "num_comments": 74,
+                "upvote_ratio": 0.95,
+                "sentiment": 0.0,
+                "engagement_velocity": 0.03,
+                "post_age_hours": 19363.84,
+                "url": "https://www.reddit.com/r/ChainsawMan/comments/161e5fo/hot_take_makima_is_the_most_tragic_character_in/"
+            },
+            {
+                "title": "Orion Pest Control: A Trail Of Treats",
+                "score": 322,
+                "num_comments": 55,
+                "upvote_ratio": 0.99,
+                "sentiment": 0.0,
+                "engagement_velocity": 0.04,
+                "post_age_hours": 10387.19,
+                "url": "https://www.reddit.com/r/nosleep/comments/1f7li2o/orion_pest_control_a_trail_of_treats/"
+            },
+            {
+                "title": "[Spoilers Main] The Best Violence Wins - The Problematic Theme of the GOT Show vs ASOIF Books",
+                "score": 573,
+                "num_comments": 167,
+                "upvote_ratio": 0.87,
+                "sentiment": 0.489,
+                "engagement_velocity": 0.01,
+                "post_age_hours": 72524.39,
+                "url": "https://www.reddit.com/r/asoiaf/comments/6qzu17/spoilers_main_the_best_violence_wins_the/"
+            },
+            {
+                "title": "New to the Disney™ 'My Colorful Stage Feat. Mimi Harrison' franchise? Start here!",
+                "score": 224,
+                "num_comments": 68,
+                "upvote_ratio": 0.98,
+                "sentiment": 0.256,
+                "engagement_velocity": 0.02,
+                "post_age_hours": 14115.69,
+                "url": "https://www.reddit.com/r/ProjectSekai/comments/1bscncz/new_to_the_disney_my_colorful_stage_feat_mimi/"
+            },
+            {
+                "title": "BORED IN TALLY: WEEKLY EVENTS, 10/23/25 – 10/29/25 - it's a busy one!",
+                "score": 47,
+                "num_comments": 8,
+                "upvote_ratio": 0.97,
+                "sentiment": -0.188,
+                "engagement_velocity": 0.13,
+                "post_age_hours": 409.51,
+                "url": "https://www.reddit.com/r/Tallahassee/comments/1oe9c95/bored_in_tally_weekly_events_102325_102925_its_a/"
+            }
+        ]
     }
-  },
-  {
-    "topic": "Apple's Cheap MacBook: What to Expect in 2026 - MacRumors",
-    "platform_source": "News",
-    "category": "technology",
-    "time_fetched": "2025-11-09T21:41:05.370998+05:30",
-    "trend_score": 467.09,
-    "trend_lifespan_hours": 41214.03,
-    "external_interest_index": 75,
-    "reddit_metrics": {
-      "average_score": 1295,
-      "average_comments": 752.4,
-      "average_sentiment": -0.036,
-      "average_velocity": 0.05,
-      "post_count": 10
-    },
-    "reddit_posts": [
-      {
-        "title": "Apple HomePod - The Audiophile Perspective + Measurements!",
-        "score": 6294,
-        "num_comments": 1390,
-        "upvote_ratio": 0.91,
-        "sentiment": 0,
-        "engagement_velocity": 0.11,
-        "post_age_hours": 67863.92,
-        "url": "https://www.reddit.com/r/audiophile/comments/7wwtqy/apple_homepod_the_audiophile_perspective/"
-      },
-      {
-        "title": "AMC DD for New Apes",
-        "score": 3865,
-        "num_comments": 175,
-        "upvote_ratio": 0.98,
-        "sentiment": 0.136,
-        "engagement_velocity": 0.11,
-        "post_age_hours": 36895.04,
-        "url": "https://www.reddit.com/r/amcstock/comments/pb7ib8/amc_dd_for_new_apes/"
-      },
-      {
-        "title": "Harvest Rock 2025 Line-up Speculation Thread",
-        "score": 24,
-        "num_comments": 171,
-        "upvote_ratio": 0.96,
-        "sentiment": 0,
-        "engagement_velocity": 0.08,
-        "post_age_hours": 2412.54,
-        "url": "https://www.reddit.com/r/harvestrockfestival/comments/1mem4la/harvest_rock_2025_lineup_speculation_thread/"
-      },
-      {
-        "title": "WWDC 2016 Official Event Megathread",
-        "score": 429,
-        "num_comments": 4837,
-        "upvote_ratio": 0.87,
-        "sentiment": 0,
-        "engagement_velocity": 0.06,
-        "post_age_hours": 82463.26,
-        "url": "https://www.reddit.com/r/apple/comments/4nwk59/wwdc_2016_official_event_megathread/"
-      },
-      {
-        "title": "Wrestling Observer Rewind ★ Oct. 13, 2003",
-        "score": 232,
-        "num_comments": 83,
-        "upvote_ratio": 0.91,
-        "sentiment": 0,
-        "engagement_velocity": 0.03,
-        "post_age_hours": 9720.17,
-        "url": "https://www.reddit.com/r/SquaredCircle/comments/1fsz4sw/wrestling_observer_rewind_oct_13_2003/"
-      },
-      {
-        "title": "2021 Pokémon Plans",
-        "score": 534,
-        "num_comments": 177,
-        "upvote_ratio": 0.88,
-        "sentiment": 0,
-        "engagement_velocity": 0.02,
-        "post_age_hours": 42221.22,
-        "url": "https://www.reddit.com/r/GamingLeaksAndRumours/comments/kxsbvk/2021_pokémon_plans/"
-      },
-      {
-        "title": "The expensive design flaw with current gen MacBook Pros: fragile display flex cable",
-        "score": 459,
-        "num_comments": 261,
-        "upvote_ratio": 0.88,
-        "sentiment": -0.167,
-        "engagement_velocity": 0.01,
-        "post_age_hours": 59836.31,
-        "url": "https://www.reddit.com/r/apple/comments/af6qi5/the_expensive_design_flaw_with_current_gen/"
-      },
-      {
-        "title": "Anonymity Guide",
-        "score": 292,
-        "num_comments": 89,
-        "upvote_ratio": 0.98,
-        "sentiment": 0,
-        "engagement_velocity": 0.02,
-        "post_age_hours": 19413.46,
-        "url": "https://www.reddit.com/r/hacking/comments/15zcn7f/anonymity_guide/"
-      },
-      {
-        "title": "MacBook Pro 16\" (2019) has some serious hardware design flaws Apple should acknowledge.",
-        "score": 276,
-        "num_comments": 190,
-        "upvote_ratio": 0.82,
-        "sentiment": -0.333,
-        "engagement_velocity": 0.01,
-        "post_age_hours": 42624.81,
-        "url": "https://www.reddit.com/r/apple/comments/kmgccq/macbook_pro_16_2019_has_some_serious_hardware/"
-      },
-      {
-        "title": "/u/Foxconninsider's WWDC report card",
-        "score": 545,
-        "num_comments": 151,
-        "upvote_ratio": 0.88,
-        "sentiment": 0,
-        "engagement_velocity": 0.01,
-        "post_age_hours": 72759.99,
-        "url": "https://www.reddit.com/r/apple/comments/6oyd0z/ufoxconninsiders_wwdc_report_card/"
-      }
-    ],
-    "instagram_metrics": {
-      "platform_source": "Instagram",
-      "topic": "Apple's Cheap MacBook: What to Expect in 2026 - MacRumors",
-      "avg_likes": 25963,
-      "avg_comments": 807,
-      "sentiment": -0.032,
-      "engagement_rate": 0.039,
-      "time_fetched": "2025-11-09 21:41:38.70552",
-      "simulated": true
-    }
-  },
-  {
-    "topic": "Russell Crowe Makes for a Menacing Nazi in ‘Nuremberg’ - The Daily Beast",
-    "platform_source": "News",
-    "category": "entertainment",
-    "time_fetched": "2025-11-09T21:41:05.370998+05:30",
-    "trend_score": 7.47,
-    "trend_lifespan_hours": 57305.18,
-    "external_interest_index": 80,
-    "reddit_metrics": {
-      "average_score": 22.9,
-      "average_comments": 7.1,
-      "average_sentiment": 0.108,
-      "average_velocity": 0.08,
-      "post_count": 10
-    },
-    "reddit_posts": [
-      {
-        "title": "'Nuremberg' Review Thread",
-        "score": 32,
-        "num_comments": 26,
-        "upvote_ratio": 0.81,
-        "sentiment": 0,
-        "engagement_velocity": 0.76,
-        "post_age_hours": 75.33,
-        "url": "https://www.reddit.com/r/boxoffice/comments/1opy2kq/nuremberg_review_thread/"
-      },
-      {
-        "title": "My 2023 Horror Watchlist",
-        "score": 166,
-        "num_comments": 29,
-        "upvote_ratio": 0.98,
-        "sentiment": 0,
-        "engagement_velocity": 0.01,
-        "post_age_hours": 25243.18,
-        "url": "https://www.reddit.com/r/horror/comments/ztsil7/my_2023_horror_watchlist/"
-      },
-      {
-        "title": "'To Kill A Mockingbird' - In Defense of the 1962 Movie About Racism",
-        "score": 2,
-        "num_comments": 0,
-        "upvote_ratio": 1,
-        "sentiment": 0,
-        "engagement_velocity": 0,
-        "post_age_hours": 46226.7,
-        "url": "https://www.reddit.com/r/Moviereviewed/comments/i1s802/to_kill_a_mockingbird_in_defense_of_the_1962/"
-      },
-      {
-        "title": "Abortion Rights, Birth Control, the Oppression of Women - 50 Years After 'The Pill' - Still A Long Way to Go - r/WomenLiberation",
-        "score": 2,
-        "num_comments": 3,
-        "upvote_ratio": 0.63,
-        "sentiment": -0.05,
-        "engagement_velocity": 0,
-        "post_age_hours": 56835.34,
-        "url": "https://www.reddit.com/r/WomenLiberation/comments/bpqvag/abortion_rights_birth_control_the_oppression_of/"
-      },
-      {
-        "title": "In defense of To Kill a Mockingbird: The 1962 film about racism in theaters this week - 28 March 2019",
-        "score": 1,
-        "num_comments": 2,
-        "upvote_ratio": 0.67,
-        "sentiment": 0,
-        "engagement_velocity": 0,
-        "post_age_hours": 58037.28,
-        "url": "https://www.reddit.com/r/DailymotionVid/comments/b6hbmk/in_defense_of_to_kill_a_mockingbird_the_1962_film/"
-      },
-      {
-        "title": "Birth Control, Abortion Rights and Women’s Oppression - More Than Fifty Years After the Pill: Still a Long Way to Go (x-post /r/RadicalFeminism)",
-        "score": 2,
-        "num_comments": 5,
-        "upvote_ratio": 0.56,
-        "sentiment": 0.225,
-        "engagement_velocity": 0,
-        "post_age_hours": 77524.68,
-        "url": "https://www.reddit.com/r/uspolitics/comments/5m5wdh/birth_control_abortion_rights_and_womens/"
-      },
-      {
-        "title": "Birth Control, Abortion Rights and Women’s Oppression - More Than Fifty Years After the Pill: Still a Long Way to Go (x-post /r/RadicalFeminism)",
-        "score": 11,
-        "num_comments": 2,
-        "upvote_ratio": 0.7,
-        "sentiment": 0.225,
-        "engagement_velocity": 0,
-        "post_age_hours": 77524.9,
-        "url": "https://www.reddit.com/r/LateStageSocialism/comments/5m5uqd/birth_control_abortion_rights_and_womens/"
-      },
-      {
-        "title": "Birth Control, Abortion Rights and Women’s Oppression - More Than Fifty Years After the Pill: Still a Long Way to Go (x-post /r/RadicalFeminism)",
-        "score": 0,
-        "num_comments": 2,
-        "upvote_ratio": 0.46,
-        "sentiment": 0.225,
-        "engagement_velocity": 0,
-        "post_age_hours": 77564.89,
-        "url": "https://www.reddit.com/r/AnythingGoesUltimate/comments/5ltu2o/birth_control_abortion_rights_and_womens/"
-      },
-      {
-        "title": "Birth Control, Abortion Rights and Women’s Oppression - More Than Fifty Years After the Pill: Still a Long Way to Go (x-post /r/RadicalFeminism)",
-        "score": 6,
-        "num_comments": 1,
-        "upvote_ratio": 0.71,
-        "sentiment": 0.225,
-        "engagement_velocity": 0,
-        "post_age_hours": 77264.16,
-        "url": "https://www.reddit.com/r/Political_Revolution/comments/5o9npt/birth_control_abortion_rights_and_womens/"
-      },
-      {
-        "title": "Birth Control, Abortion Rights and Women’s Oppression - More Than Fifty Years After the Pill: Still a Long Way to Go (x-post /r/RadicalFeminism)",
-        "score": 7,
-        "num_comments": 1,
-        "upvote_ratio": 0.81,
-        "sentiment": 0.225,
-        "engagement_velocity": 0,
-        "post_age_hours": 77453.66,
-        "url": "https://www.reddit.com/r/Corruption/comments/5mqa51/birth_control_abortion_rights_and_womens/"
-      }
-    ],
-    "instagram_metrics": {
-      "platform_source": "Instagram",
-      "topic": "Russell Crowe Makes for a Menacing Nazi in ‘Nuremberg’ - The Daily Beast",
-      "avg_likes": 18681,
-      "avg_comments": 941,
-      "sentiment": 0.191,
-      "engagement_rate": 0.115,
-      "time_fetched": "2025-11-09 21:41:38.70577",
-      "simulated": true
-    }
-  },
-  {
-    "topic": "Taylor Swift Grabs Dinner With Sabrina Carpenter In New York City - TMZ",
-    "platform_source": "News",
-    "category": "entertainment",
-    "time_fetched": "2025-11-09T21:41:05.370998+05:30",
-    "trend_score": 3256.89,
-    "trend_lifespan_hours": 3703.66,
-    "external_interest_index": 97,
-    "reddit_metrics": {
-      "average_score": 14458.9,
-      "average_comments": 915.4,
-      "average_sentiment": 0.011,
-      "average_velocity": 135.24,
-      "post_count": 10
-    },
-    "reddit_posts": [
-      {
-        "title": "Taylor & Travis - Out for dinner at Torrisi in New York City June 20, 2025",
-        "score": 4311,
-        "num_comments": 472,
-        "upvote_ratio": 0.85,
-        "sentiment": 0.136,
-        "engagement_velocity": 1.41,
-        "post_age_hours": 3384.14,
-        "url": "https://www.reddit.com/gallery/1lgzz7j"
-      },
-      {
-        "title": "Taylor Swift out in New York City with HAIM, Blake Lively & Gigi Hadid",
-        "score": 2972,
-        "num_comments": 646,
-        "upvote_ratio": 0.81,
-        "sentiment": 0.136,
-        "engagement_velocity": 0.16,
-        "post_age_hours": 22392.64,
-        "url": "https://i.redd.it/qf1jdvfqsava1.jpg"
-      },
-      {
-        "title": "Taylor out in New York City with Sabrina Carpenter tonight",
-        "score": 1009,
-        "num_comments": 89,
-        "upvote_ratio": 0.98,
-        "sentiment": 0.136,
-        "engagement_velocity": 28.47,
-        "post_age_hours": 37.56,
-        "url": "https://www.reddit.com/gallery/1ordxib"
-      },
-      {
-        "title": "Feelings are not facts... Fuck your feelings",
-        "score": 50779,
-        "num_comments": 1571,
-        "upvote_ratio": 0.95,
-        "sentiment": -0.4,
-        "engagement_velocity": 1023.88,
-        "post_age_hours": 50.13,
-        "url": "https://i.redd.it/7eubv021cuzf1.jpeg"
-      },
-      {
-        "title": "Taylor Swift and Sabrina Carpenter out for dinner together in NYC ❤️",
-        "score": 7883,
-        "num_comments": 1877,
-        "upvote_ratio": 0.72,
-        "sentiment": 0,
-        "engagement_velocity": 248.86,
-        "post_age_hours": 38.22,
-        "url": "https://www.reddit.com/gallery/1ord46g"
-      },
-      {
-        "title": "Sources",
-        "score": 13918,
-        "num_comments": 876,
-        "upvote_ratio": 0.98,
-        "sentiment": 0,
-        "engagement_velocity": 22.06,
-        "post_age_hours": 669.59,
-        "url": "https://i.redd.it/ggzlt3h96quf1.png"
-      },
-      {
-        "title": "Told my wife (F35) that she couldn’t do it without me (M34). Turns out she can. (New Update)",
-        "score": 11240,
-        "num_comments": 1618,
-        "upvote_ratio": 0.96,
-        "sentiment": 0.136,
-        "engagement_velocity": 5.53,
-        "post_age_hours": 2326.23,
-        "url": "https://www.reddit.com/r/BestofRedditorUpdates/comments/1mhkn9m/told_my_wife_f35_that_she_couldnt_do_it_without/"
-      },
-      {
-        "title": "Selena and Taylor Swift Out for Dinner in New York City - May 31, 2025",
-        "score": 1589,
-        "num_comments": 41,
-        "upvote_ratio": 0.98,
-        "sentiment": 0.136,
-        "engagement_velocity": 0.42,
-        "post_age_hours": 3864.55,
-        "url": "https://www.reddit.com/gallery/1l0rxvp"
-      },
-      {
-        "title": "The NYPost should feel ashamed to have posted this.",
-        "score": 44088,
-        "num_comments": 1178,
-        "upvote_ratio": 0.93,
-        "sentiment": 0,
-        "engagement_velocity": 11.85,
-        "post_age_hours": 3818.67,
-        "url": "https://www.reddit.com/gallery/1l2bz40"
-      },
-      {
-        "title": "Taylor Swift hasn’t been papped with a black person in years - until now.",
-        "score": 6800,
-        "num_comments": 786,
-        "upvote_ratio": 0.95,
-        "sentiment": -0.167,
-        "engagement_velocity": 9.77,
-        "post_age_hours": 775.53,
-        "url": "https://www.reddit.com/gallery/1o1520b"
-      }
-    ],
-    "instagram_metrics": {
-      "platform_source": "Instagram",
-      "topic": "Taylor Swift Grabs Dinner With Sabrina Carpenter In New York City - TMZ",
-      "avg_likes": 194805,
-      "avg_comments": 15750,
-      "sentiment": 0.266,
-      "engagement_rate": 0.497,
-      "time_fetched": "2025-11-09 21:41:38.702451",
-      "simulated": false
-    }
-  },
-  {
-    "topic": "Sao Paulo Grand Prix: Lando Norris wins sprint after Oscar Piastri crashes out in Interlagos - BBC",
-    "platform_source": "News",
-    "category": "sports",
-    "time_fetched": "2025-11-09T21:41:05.370998+05:30",
-    "trend_score": 6448.13,
-    "trend_lifespan_hours": 4845.63,
-    "external_interest_index": 56,
-    "reddit_metrics": {
-      "average_score": 15299,
-      "average_comments": 9231.8,
-      "average_sentiment": 0.104,
-      "average_velocity": 24.43,
-      "post_count": 10
-    },
-    "reddit_posts": [
-      {
-        "title": "Why Piastri fans are rightfully upset",
-        "score": 18887,
-        "num_comments": 1744,
-        "upvote_ratio": 0.88,
-        "sentiment": 0,
-        "engagement_velocity": 25.03,
-        "post_age_hours": 823.3,
-        "url": "https://www.reddit.com/r/formula1/comments/1nzdv3y/why_piastri_fans_are_rightfully_upset/"
-      },
-      {
-        "title": "'Superman' - Review Thread",
-        "score": 5462,
-        "num_comments": 3255,
-        "upvote_ratio": 0.91,
-        "sentiment": 0,
-        "engagement_velocity": 2.93,
-        "post_age_hours": 2973.18,
-        "url": "https://www.reddit.com/r/movies/comments/1lux4kl/superman_review_thread/"
-      },
-      {
-        "title": "Piastri, Hülkenberg and Colapinto crashes into the barriers - Safety Car called",
-        "score": 3657,
-        "num_comments": 758,
-        "upvote_ratio": 0.97,
-        "sentiment": 0,
-        "engagement_velocity": 163.59,
-        "post_age_hours": 25.99,
-        "url": "https://dubz.link/c/7f3556"
-      },
-      {
-        "title": "Paul Thomas Anderson's 'One Battle After Another' - Review Thread",
-        "score": 3679,
-        "num_comments": 924,
-        "upvote_ratio": 0.97,
-        "sentiment": 0,
-        "engagement_velocity": 3.61,
-        "post_age_hours": 1272.33,
-        "url": "https://www.reddit.com/r/movies/comments/1njgwc8/paul_thomas_andersons_one_battle_after_another/"
-      },
-      {
-        "title": "Three years ago today - Oscar Piastri made a certain announcement",
-        "score": 20479,
-        "num_comments": 354,
-        "upvote_ratio": 0.96,
-        "sentiment": 0.214,
-        "engagement_velocity": 8.74,
-        "post_age_hours": 2382.42,
-        "url": "https://i.redd.it/mbmddmx1vkgf1.jpeg"
-      },
-      {
-        "title": "Megathread: Federal Judge Overseeing Stolen Classified Documents Case Against Former President Trump Dismisses Indictment on the Grounds that Special Prosecutor Was Improperly Appointed",
-        "score": 32814,
-        "num_comments": 10595,
-        "upvote_ratio": 0.92,
-        "sentiment": 0.179,
-        "engagement_velocity": 3.75,
-        "post_age_hours": 11569.97,
-        "url": "https://www.reddit.com/r/politics/comments/1e3vswh/megathread_federal_judge_overseeing_stolen/"
-      },
-      {
-        "title": "Megathread: US Supreme Court Finds in Trump v. United States That Presidents Have Full Immunity for Constitutional Powers, the Presumption of Immunity for Official Acts, and No Immunity for Unofficial Acts",
-        "score": 35366,
-        "num_comments": 21692,
-        "upvote_ratio": 0.93,
-        "sentiment": 0.35,
-        "engagement_velocity": 4.79,
-        "post_age_hours": 11905.46,
-        "url": "https://www.reddit.com/r/politics/comments/1dsupsh/megathread_us_supreme_court_finds_in_trump_v/"
-      },
-      {
-        "title": "Not your average transformation - 4 year progress 114-79kg 31yo",
-        "score": 10872,
-        "num_comments": 175,
-        "upvote_ratio": 0.99,
-        "sentiment": -0.15,
-        "engagement_velocity": 24.61,
-        "post_age_hours": 447.9,
-        "url": "https://www.reddit.com/gallery/1octlo9"
-      },
-      {
-        "title": "Discussion Thread: First US Presidential General Election Debate of 2024 Between Joe Biden and Donald Trump",
-        "score": 12316,
-        "num_comments": 52285,
-        "upvote_ratio": 0.88,
-        "sentiment": 0.15,
-        "engagement_velocity": 5.39,
-        "post_age_hours": 11992.37,
-        "url": "https://www.reddit.com/r/politics/comments/1dq5s2f/discussion_thread_first_us_presidential_general/"
-      },
-      {
-        "title": "2025 Japanese Grand Prix - Free Practice 1 Classification.",
-        "score": 9458,
-        "num_comments": 536,
-        "upvote_ratio": 0.98,
-        "sentiment": 0.3,
-        "engagement_velocity": 1.9,
-        "post_age_hours": 5268.36,
-        "url": "https://i.redd.it/vtlsl085qqse1.jpeg"
-      }
-    ],
-    "instagram_metrics": {
-      "platform_source": "Instagram",
-      "topic": "Sao Paulo Grand Prix: Lando Norris wins sprint after Oscar Piastri crashes out in Interlagos - BBC",
-      "avg_likes": 40727,
-      "avg_comments": 265,
-      "sentiment": -0.079,
-      "engagement_rate": 0.149,
-      "time_fetched": "2025-11-09 21:41:38.706534",
-      "simulated": true
-    }
-  },
-  {
-    "topic": "It’s more complicated than just “starting” Brock Purdy - Niners Nation",
-    "platform_source": "News",
-    "category": "sports",
-    "time_fetched": "2025-11-09T21:41:05.370998+05:30",
-    "trend_score": 341.09,
-    "trend_lifespan_hours": 36211.22,
-    "external_interest_index": 56,
-    "reddit_metrics": {
-      "average_score": 557.6,
-      "average_comments": 765.2,
-      "average_sentiment": 0,
-      "average_velocity": 0.04,
-      "post_count": 10
-    },
-    "reddit_posts": [
-      {
-        "title": "Official r/NFL Week 3 Power Rankings",
-        "score": 683,
-        "num_comments": 907,
-        "upvote_ratio": 0.94,
-        "sentiment": 0,
-        "engagement_velocity": 0.04,
-        "post_age_hours": 36069.14,
-        "url": "https://www.reddit.com/r/nfl/comments/pxdb3v/official_rnfl_week_3_power_rankings/"
-      },
-      {
-        "title": "Official /r/NFL Week 4 Power Rankings",
-        "score": 544,
-        "num_comments": 629,
-        "upvote_ratio": 0.95,
-        "sentiment": 0,
-        "engagement_velocity": 0.04,
-        "post_age_hours": 27165.04,
-        "url": "https://www.reddit.com/r/nfl/comments/xvnqkm/official_rnfl_week_4_power_rankings/"
-      },
-      {
-        "title": "Official r/NFL Week 11 Power Rankings",
-        "score": 138,
-        "num_comments": 358,
-        "upvote_ratio": 0.9,
-        "sentiment": 0,
-        "engagement_velocity": 0.06,
-        "post_age_hours": 8515.18,
-        "url": "https://www.reddit.com/r/nfl/comments/1gv7tmq/official_rnfl_week_11_power_rankings/"
-      },
-      {
-        "title": "Official /r/NFL Week 3 Power Rankings",
-        "score": 826,
-        "num_comments": 1170,
-        "upvote_ratio": 0.93,
-        "sentiment": 0,
-        "engagement_velocity": 0.02,
-        "post_age_hours": 79918.19,
-        "url": "https://www.reddit.com/r/nfl/comments/54rvjj/official_rnfl_week_3_power_rankings/"
-      },
-      {
-        "title": "Official r/NFL Week 15 Power Rankings",
-        "score": 674,
-        "num_comments": 565,
-        "upvote_ratio": 0.96,
-        "sentiment": 0,
-        "engagement_velocity": 0.03,
-        "post_age_hours": 42787.91,
-        "url": "https://www.reddit.com/r/nfl/comments/kid4j9/official_rnfl_week_15_power_rankings/"
-      },
-      {
-        "title": "Official R/NFL Week 5 Power Rankings",
-        "score": 591,
-        "num_comments": 1120,
-        "upvote_ratio": 0.94,
-        "sentiment": 0,
-        "engagement_velocity": 0.03,
-        "post_age_hours": 53372.79,
-        "url": "https://www.reddit.com/r/nfl/comments/df4sw6/official_rnfl_week_5_power_rankings/"
-      },
-      {
-        "title": "Official r/NFL Week 14 Power Rankings",
-        "score": 100,
-        "num_comments": 311,
-        "upvote_ratio": 0.87,
-        "sentiment": 0,
-        "engagement_velocity": 0.05,
-        "post_age_hours": 8010.94,
-        "url": "https://www.reddit.com/r/nfl/comments/1hbcib2/official_rnfl_week_14_power_rankings/"
-      },
-      {
-        "title": "Official Week 10 R/NFL Power Rankings",
-        "score": 647,
-        "num_comments": 800,
-        "upvote_ratio": 0.96,
-        "sentiment": 0,
-        "engagement_velocity": 0.03,
-        "post_age_hours": 52532.19,
-        "url": "https://www.reddit.com/r/nfl/comments/dvfdhm/official_week_10_rnfl_power_rankings/"
-      },
-      {
-        "title": "Official Week 3 /r/NFL Power Rankings",
-        "score": 628,
-        "num_comments": 801,
-        "upvote_ratio": 0.95,
-        "sentiment": 0,
-        "engagement_velocity": 0.03,
-        "post_age_hours": 53709.76,
-        "url": "https://www.reddit.com/r/nfl/comments/d8r7mn/official_week_3_rnfl_power_rankings/"
-      },
-      {
-        "title": "Official /r/NFL Week 2 Power Rankings",
-        "score": 745,
-        "num_comments": 991,
-        "upvote_ratio": 0.93,
-        "sentiment": 0,
-        "engagement_velocity": 0.02,
-        "post_age_hours": 80085.48,
-        "url": "https://www.reddit.com/r/nfl/comments/53owgh/official_rnfl_week_2_power_rankings/"
-      }
-    ],
-    "instagram_metrics": {
-      "platform_source": "Instagram",
-      "topic": "It’s more complicated than just “starting” Brock Purdy - Niners Nation",
-      "avg_likes": 88879,
-      "avg_comments": 125,
-      "sentiment": 0.155,
-      "engagement_rate": 0.136,
-      "time_fetched": "2025-11-09 21:41:38.707057",
-      "simulated": true
-    }
-  },
-  {
-    "topic": "How a ‘one and done’ gene-editing treatment could lower cholesterol - The Washington Post",
-    "platform_source": "News",
-    "category": "health",
-    "time_fetched": "2025-11-09T21:41:05.370998+05:30",
-    "trend_score": 1099.78,
-    "trend_lifespan_hours": 23829.18,
-    "external_interest_index": 50,
-    "reddit_metrics": {
-      "average_score": 2951.4,
-      "average_comments": 1465.7,
-      "average_sentiment": 0.068,
-      "average_velocity": 0.13,
-      "post_count": 10
-    },
-    "reddit_posts": [
-      {
-        "title": "Megathread: Biden Forgiveness Announcement",
-        "score": 13915,
-        "num_comments": 12852,
-        "upvote_ratio": 0.87,
-        "sentiment": 0,
-        "engagement_velocity": 0.95,
-        "post_age_hours": 28156.14,
-        "url": "https://www.reddit.com/r/StudentLoans/comments/wwhr85/megathread_biden_forgiveness_announcement/"
-      },
-      {
-        "title": "Right to contraceptives, same-sex marriage, and interracial marriage next on the Supreme Court's chopping block",
-        "score": 3040,
-        "num_comments": 193,
-        "upvote_ratio": 0.96,
-        "sentiment": 0.143,
-        "engagement_velocity": 0.1,
-        "post_age_hours": 30794.28,
-        "url": "https://www.reddit.com/r/Keep_Track/comments/ujo04k/right_to_contraceptives_samesex_marriage_and/"
-      },
-      {
-        "title": "Quick Thoughts on every Week 15 game",
-        "score": 835,
-        "num_comments": 749,
-        "upvote_ratio": 0.94,
-        "sentiment": -0.033,
-        "engagement_velocity": 0.02,
-        "post_age_hours": 78043.82,
-        "url": "https://www.reddit.com/r/fantasyfootball/comments/5icxes/quick_thoughts_on_every_week_15_game/"
-      },
-      {
-        "title": "Coronavirus: Trump ‘enthusiastic’ about MyPillow CEO’s miracle ‘cure’",
-        "score": 1916,
-        "num_comments": 133,
-        "upvote_ratio": 0.99,
-        "sentiment": 0.6,
-        "engagement_velocity": 0.04,
-        "post_age_hours": 45723.54,
-        "url": "https://www.reddit.com/r/Keep_Track/comments/iehpqr/coronavirus_trump_enthusiastic_about_mypillow/"
-      },
-      {
-        "title": "Quick Thoughts on every Week 8 game",
-        "score": 918,
-        "num_comments": 433,
-        "upvote_ratio": 0.94,
-        "sentiment": -0.033,
-        "engagement_velocity": 0.02,
-        "post_age_hours": 79221.58,
-        "url": "https://www.reddit.com/r/fantasyfootball/comments/59j8n6/quick_thoughts_on_every_week_8_game/"
-      },
-      {
-        "title": "Lost in the Sauce: 5,000+ covid deaths a week with no end in sight",
-        "score": 1684,
-        "num_comments": 72,
-        "upvote_ratio": 0.98,
-        "sentiment": 0,
-        "engagement_velocity": 0.04,
-        "post_age_hours": 47523.82,
-        "url": "https://www.reddit.com/r/Keep_Track/comments/gyybhy/lost_in_the_sauce_5000_covid_deaths_a_week_with/"
-      },
-      {
-        "title": "Lost in the Sauce: Trump milks election fraud claims to fund defense against lawsuits & potential charges",
-        "score": 2495,
-        "num_comments": 44,
-        "upvote_ratio": 0.98,
-        "sentiment": 0,
-        "engagement_velocity": 0.06,
-        "post_age_hours": 43464.04,
-        "url": "https://www.reddit.com/r/Keep_Track/comments/k07tl2/lost_in_the_sauce_trump_milks_election_fraud/"
-      },
-      {
-        "title": "Coronavirus response: Testing for Trump, but not for us “warriors”",
-        "score": 1704,
-        "num_comments": 64,
-        "upvote_ratio": 0.98,
-        "sentiment": 0,
-        "engagement_velocity": 0.04,
-        "post_age_hours": 48242.87,
-        "url": "https://www.reddit.com/r/Keep_Track/comments/ggfall/coronavirus_response_testing_for_trump_but_not/"
-      },
-      {
-        "title": "Lost in the Sauce: Trump Organization seeks financial aid from the Trump administration",
-        "score": 2074,
-        "num_comments": 33,
-        "upvote_ratio": 0.99,
-        "sentiment": 0,
-        "engagement_velocity": 0.04,
-        "post_age_hours": 48531.38,
-        "url": "https://www.reddit.com/r/Keep_Track/comments/g902c5/lost_in_the_sauce_trump_organization_seeks/"
-      },
-      {
-        "title": "Everything you need to know about the Republican Senate.",
-        "score": 933,
-        "num_comments": 84,
-        "upvote_ratio": 0.75,
-        "sentiment": 0,
-        "engagement_velocity": 0.01,
-        "post_age_hours": 70096.75,
-        "url": "https://www.reddit.com/r/The_Congress/comments/7c4twx/everything_you_need_to_know_about_the_republican/"
-      }
-    ],
-    "instagram_metrics": {
-      "platform_source": "Instagram",
-      "topic": "How a ‘one and done’ gene-editing treatment could lower cholesterol - The Washington Post",
-      "avg_likes": 77797,
-      "avg_comments": 143,
-      "sentiment": 0.046,
-      "engagement_rate": 0.116,
-      "time_fetched": "2025-11-09 21:41:38.707422",
-      "simulated": true
-    }
-  }
 ]
