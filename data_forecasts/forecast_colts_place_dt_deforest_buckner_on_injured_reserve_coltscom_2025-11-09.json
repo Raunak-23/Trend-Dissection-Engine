@@ -1,0 +1,101 @@
+{
+  "topic": "Colts place DT DeForest Buckner on injured reserve - Colts.com",
+  "forecast": [
+    {
+      "ds": "2019-05-18",
+      "yhat": 6974.9712,
+      "yhat_lower": 6766.6716,
+      "yhat_upper": 7172.736
+    },
+    {
+      "ds": "2020-09-16",
+      "yhat": 397.251,
+      "yhat_lower": 193.9286,
+      "yhat_upper": 599.2366
+    },
+    {
+      "ds": "2021-03-10",
+      "yhat": 426.8455,
+      "yhat_lower": 230.9873,
+      "yhat_upper": 636.87
+    },
+    {
+      "ds": "2025-09-24",
+      "yhat": 704.7962,
+      "yhat_lower": 519.8617,
+      "yhat_upper": 916.341
+    },
+    {
+      "ds": "2025-10-01",
+      "yhat": 705.969,
+      "yhat_lower": 496.9957,
+      "yhat_upper": 904.5247
+    },
+    {
+      "ds": "2025-10-08",
+      "yhat": 707.1418,
+      "yhat_lower": 506.4135,
+      "yhat_upper": 924.4766
+    },
+    {
+      "ds": "2025-10-15",
+      "yhat": 708.3146,
+      "yhat_lower": 511.6769,
+      "yhat_upper": 922.0201
+    },
+    {
+      "ds": "2025-10-22",
+      "yhat": 709.4874,
+      "yhat_lower": 506.6101,
+      "yhat_upper": 916.7886
+    },
+    {
+      "ds": "2025-11-05",
+      "yhat": 711.833,
+      "yhat_lower": 521.8666,
+      "yhat_upper": 916.7027
+    },
+    {
+      "ds": "2025-11-06",
+      "yhat": -208.1696,
+      "yhat_lower": -421.4359,
+      "yhat_upper": -13.8567
+    },
+    {
+      "ds": "2025-11-07",
+      "yhat": -208.0023,
+      "yhat_lower": -431.1949,
+      "yhat_upper": 0.7302
+    },
+    {
+      "ds": "2025-11-08",
+      "yhat": 7372.4131,
+      "yhat_lower": 7179.7602,
+      "yhat_upper": 7573.577
+    },
+    {
+      "ds": "2025-11-09",
+      "yhat": -207.6671,
+      "yhat_lower": -423.4254,
+      "yhat_upper": -6.4761
+    },
+    {
+      "ds": "2025-11-10",
+      "yhat": -207.4997,
+      "yhat_lower": -405.1505,
+      "yhat_upper": 11.2632
+    },
+    {
+      "ds": "2025-11-11",
+      "yhat": -207.3324,
+      "yhat_lower": -403.2922,
+      "yhat_upper": -9.8835
+    },
+    {
+      "ds": "2025-11-12",
+      "yhat": 713.0058,
+      "yhat_lower": 521.4729,
+      "yhat_upper": 930.7782
+    }
+  ]
+}

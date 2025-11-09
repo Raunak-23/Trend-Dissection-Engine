@@ -1,110 +1,150 @@
-library(jsonlite)
-library(dplyr)
-library(lubridate)
-library(purrr)
-library(tidyr)
-library(zoo)
-library(stringr)
+# ===============================================================
+# preprocess.R
+# Trend Dissection Engine - Data Preprocessing Module
+# ===============================================================
 
-# ---- Helper function: read all json files in a directory ----
-read_topics_from_dir <- function(dir = "data/", time_unit = "hour") {
-  files <- list.files(dir, pattern = "\\.json$", full.names = TRUE)
-  if(length(files) == 0) stop("No JSON files found in dir: ", dir)
-  
-  topics <- map(files, function(f) {
-    raw <- fromJSON(f, simplifyVector = FALSE)
-    # raw might be a list of topics or single topic; normalize to list
-    # Each raw element is expected to have: topic (string), reddit_posts (list)
-    # keep also file path as source
-    tibble(file = f, payload = list(raw))
-  }) %>% bind_rows()
-  
-  # We'll expand each payload's topics into a row-per-topic
-  topics_expanded <- topics %>% 
-    mutate(topic_list = map(payload, function(pl) {
-      # if pl is already a list of topic objects
-      if(is.list(pl) && length(pl) > 0 && is.list(pl[[1]]) && !is.null(pl[[1]]$topic)) {
-        return(pl)
-      } else {
-        # fallback: treat entire payload as single topic object
-        return(list(pl))
-      }
-    })) %>%
-    select(-payload) %>%
-    unnest_longer(topic_list) %>%
-    mutate(topic_obj = topic_list) %>%
-    select(-topic_list)
-  
-  build_series <- function(topic_obj) {
-    tname <- topic_obj$title %||% "unknown_topic"
-    
-    # Process Reddit posts
-    reddit_posts <- topic_obj$reddit_insights
-    if (!is.null(reddit_posts) && length(reddit_posts) > 0) {
-      reddit_df <- bind_rows(reddit_posts) %>%
-        transmute(
-          timestamp = as_datetime(created_utc),
-          engagement = score + num_comments,
-          sentiment = 0 # Placeholder, sentiment analysis can be added here
-        )
-    } else {
-      reddit_df <- tibble(timestamp = POSIXct(), engagement = double(), sentiment = double())
-    }
-    
-    # Process News articles
-    news_articles <- topic_obj$news_insights
-    if (!is.null(news_articles) && length(news_articles) > 0) {
-      news_df <- bind_rows(news_articles) %>%
-        transmute(
-          timestamp = ymd_hms(publishedAt, tz = "UTC"),
-          engagement = 1, # Each article counts as an engagement of 1
-          sentiment = 0 # Placeholder
-        )
-    } else {
-      news_df <- tibble(timestamp = POSIXct(), engagement = double(), sentiment = double())
-    }
-    
-    # Combine sources
-    combined_df <- bind_rows(reddit_df, news_df) %>%
-      filter(!is.na(timestamp))
+suppressPackageStartupMessages({
+  library(jsonlite)
+  library(dplyr)
+  library(tidyr)
+  library(lubridate)
+  library(stringr)
+  library(stringi)
+})
 
-    if(nrow(combined_df) == 0) {
-      return(NULL)
-    }
-    
-    # Aggregation logic (remains the same)
-    agg <- combined_df %>%
-      mutate(period = floor_date(timestamp, unit = ifelse(time_unit == "hour", "hour", "day")))
-    
-    agg <- agg %>%
-      group_by(period) %>%
-      summarise(
-        n_posts = n(),
-        engagement_sum = sum(engagement, na.rm=TRUE),
-        engagement_mean = mean(engagement, na.rm=TRUE),
-        sentiment_mean = mean(sentiment, na.rm=TRUE)
-      ) %>% ungroup() %>% 
-      arrange(period)
-    
-    # pad missing periods with zeros to make contiguous series
-    if(nrow(agg) > 0) {
-      full_periods <- tibble(period = seq(min(agg$period), max(agg$period), by = ifelse(time_unit=="hour","hour","day")))
-      agg_full <- full_join(full_periods, agg, by = "period") %>%
-        arrange(period) %>%
-        mutate(across(c(n_posts,engagement_sum,engagement_mean,sentiment_mean), ~replace_na(.x, 0)))
-    } else {
-      agg_full <- tibble(period = POSIXct(character()), n_posts = integer(), engagement_sum=double(), engagement_mean=double(), sentiment_mean=double())
-    }
-    list(topic = tname, df = agg_full, metadata = list(topic_meta = topic_obj))
-  }
-  
-  topic_series <- map(topics_expanded$topic_obj, build_series)
-  # filter out nulls
-  topic_series <- compact(topic_series)
-  return(topic_series)
+today <- Sys.Date()
+json_path <- file.path("data_raw", paste0("trends_", today, ".json"))
+
+if (!file.exists(json_path)) {
+  source("R/acquire_data.R")
 }
 
-# Example usage:
-# topics <- read_topics_from_dir("path/to/json_dir", time_unit = "hour")
-# inspect first
-# str(topics[[1]]$df)
+safe_num <- function(x) {
+  # Converts to numeric safely, returning 0 if conversion fails
+  out <- suppressWarnings(as.numeric(x))
+  if (any(is.na(out))) out[is.na(out)] <- 0
+  return(out)
+}
+
+safe_chr <- function(x) {
+  if (is.null(x) || length(x) == 0 || all(is.na(x))) return("Unknown")
+  return(as.character(x))
+}
+
+
+message("🧹 Starting Data Preprocessing...")
+
+# ---------------------------------------------------------------
+# 1️⃣ Read and Flatten JSON
+# ---------------------------------------------------------------
+today <- format(Sys.Date(), "%Y-%m-%d")
+input_path <- file.path("data_raw", paste0("trends_", today, ".json"))
+if (!file.exists(input_path)) {
+  stop("❌ Input file not found: ", input_path)
+}
+
+raw_data <- fromJSON(input_path, simplifyVector = FALSE)
+message("📥 Loaded JSON file with ", length(raw_data), " records.")
+
+# Flatten to two dataframes
+trends_df <- bind_rows(lapply(raw_data, function(x) {
+  tibble(
+    topic = x$topic,
+    platform_source = x$platform_source,
+    category = x$category,
+    time_fetched = ymd_hms(x$time_fetched),
+    trend_score = as.numeric(x$trend_score),
+    trend_lifespan_hours = as.numeric(x$trend_lifespan_hours),
+    external_interest_index = as.numeric(x$external_interest_index),
+    avg_score = as.numeric(x$reddit_metrics$average_score),
+    avg_comments = as.numeric(x$reddit_metrics$average_comments),
+    avg_sentiment = as.numeric(x$reddit_metrics$average_sentiment),
+    avg_velocity = as.numeric(x$reddit_metrics$average_velocity),
+    post_count = as.integer(x$reddit_metrics$post_count),
+    insta_likes = as.numeric(x$instagram_metrics$avg_likes),
+    insta_comments = as.numeric(x$instagram_metrics$avg_comments),
+    insta_sentiment = as.numeric(x$instagram_metrics$sentiment),
+    insta_engagement = as.numeric(x$instagram_metrics$engagement_rate)
+  )
+}))
+
+reddit_posts_df <- bind_rows(lapply(raw_data, function(x) {
+  if (length(x$reddit_posts) == 0) return(NULL)
+  bind_rows(lapply(x$reddit_posts, function(p) {
+    tibble(
+      topic = x$topic,
+      title = p$title,
+      score = as.numeric(p$score),
+      num_comments = as.numeric(p$num_comments),
+      upvote_ratio = as.numeric(p$upvote_ratio),
+      engagement_velocity = as.numeric(p$engagement_velocity),
+      sentiment = as.numeric(p$sentiment),
+      post_age_hours = as.numeric(p$post_age_hours)
+    )
+  }))
+}))
+
+# ---------------------------------------------------------------
+# 2️⃣ Handle Missing or Null Values
+# ---------------------------------------------------------------
+num_cols <- sapply(trends_df, is.numeric)
+trends_df[num_cols] <- lapply(trends_df[num_cols], function(x) ifelse(is.na(x), 0, x))
+trends_df[!num_cols] <- lapply(trends_df[!num_cols], function(x) ifelse(is.na(x), "Unknown", x))
+
+# ---------------------------------------------------------------
+# 3️⃣ Normalize Time Columns
+# ---------------------------------------------------------------
+trends_df$time_fetched <- with_tz(trends_df$time_fetched, "Asia/Kolkata")
+trends_df$trend_date <- as.Date(trends_df$time_fetched)
+
+# ---------------------------------------------------------------
+# 4️⃣ Clean and Tokenize Titles
+# ---------------------------------------------------------------
+reddit_posts_df <- reddit_posts_df %>%
+  mutate(title_clean = str_to_lower(title)) %>%
+  mutate(title_clean = str_remove_all(title_clean, "http[s]?://\\S+")) %>%
+  mutate(title_clean = stri_replace_all_regex(title_clean, "[^\\p{L}\\p{N}\\s]", "")) %>%
+  mutate(title_clean = str_squish(title_clean))
+
+# ---------------------------------------------------------------
+# 5️⃣ Feature Engineering
+# ---------------------------------------------------------------
+trends_df <- trends_df %>%
+  mutate(
+    engagement_ratio = ifelse(avg_comments > 0, avg_velocity / avg_comments, 0),
+    sentiment_weighted_velocity = avg_velocity * (1 + avg_sentiment),
+    trend_intensity = (trend_score + external_interest_index) / 2,
+    insta_influence = (insta_likes * 0.7 + insta_comments * 0.3) / 1000
+  )
+
+# ---------------------------------------------------------------
+# 6️⃣ Data Validation
+# ---------------------------------------------------------------
+num_cols <- sapply(trends_df, is.numeric)   # <- now correct length
+
+message("🔍 Validating preprocessed data...")
+missing_ratio <- sum(is.na(trends_df)) / prod(dim(trends_df))
+outlier_counts <- vapply(trends_df[num_cols],
+                         function(x) length(boxplot.stats(x)$out),
+                         integer(1))
+message("📈 Missing Ratio: ", round(missing_ratio, 4))
+message("📊 Avg Outliers per Numeric Column: ", round(mean(outlier_counts), 2))
+
+
+# ---------------------------------------------------------------
+# 7️⃣ Add Version & Timestamp
+# ---------------------------------------------------------------
+trends_df$data_version <- paste0("v", format(Sys.Date(), "%Y%m%d"))
+trends_df$processed_at <- Sys.time()
+
+# ---------------------------------------------------------------
+# 8️⃣ Save Clean Data
+# ---------------------------------------------------------------
+dir.create("data_clean", showWarnings = FALSE)
+saveRDS(trends_df, file.path("data_clean", paste0("trends_clean_", today, ".rds")))
+saveRDS(reddit_posts_df, file.path("data_clean", paste0("reddit_posts_clean_", today, ".rds")))
+
+write_json(trends_df, file.path("data_clean", paste0("trends_clean_", today, ".json")),
+           pretty = TRUE, auto_unbox = TRUE)
+
+message("✅ Preprocessing complete. Clean files saved to data_clean/")

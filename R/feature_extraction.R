@@ -1,50 +1,52 @@
-library(dplyr)
-library(zoo)
-#Feature extraction (velocity, rolling averages, early-window metrics)
+# ===============================================================
+# Feature_extraction.R
+# Trend Dissection Engine – Feature Engineering Module
+# ===============================================================
+# Loads clean trends data from data_clean and produces 
+# normalized numeric feature matrices for clustering and forecasting.
+# ===============================================================
 
-extract_features_for_topic <- function(topic_series, roll_window = 3) {
-  # topic_series$df must have period and engagement_sum columns
-  df <- topic_series$df %>% arrange(period)
-  if(nrow(df) == 0) return(NULL)
-  
-  df <- df %>%
-    mutate(
-      t_index = row_number(),
-      cum_eng = cumsum(engagement_sum),
-      # velocity: difference per step (use small epsilon to avoid NaN)
-      velocity = c(NA, diff(engagement_sum)),
-      # relative velocity (pct)
-      rel_velocity = ifelse(lag(engagement_sum,1)==0, NA, (engagement_sum - lag(engagement_sum,1)) / (abs(lag(engagement_sum,1)) + 1e-9)),
-      # rolling averages
-      roll_mean_eng = rollapply(engagement_sum, width = roll_window, FUN = mean, align = "right", fill = NA),
-      roll_sd_eng = rollapply(engagement_sum, width = roll_window, FUN = sd, align = "right", fill = NA),
-      roll_mean_sent = rollapply(sentiment_mean, width = roll_window, FUN = mean, align = "right", fill = NA)
-    )
-  
-  # summary features that many models use:
-  # peak, time to peak, mean velocity first N periods
-  peak_val <- max(df$engagement_sum, na.rm = TRUE)
-  peak_idx <- which.max(df$engagement_sum)
-  time_to_peak <- ifelse(length(peak_idx)>0, peak_idx - 1, NA)
-  first_window <- head(df$engagement_sum, n = min(5, nrow(df)))
-  first_window_velocity <- ifelse(length(first_window) > 1, mean(diff(first_window)), NA)
-  total_volume <- sum(df$engagement_sum, na.rm=TRUE)
-  
-  features <- list(
-    timeseries = df,
-    summary = tibble(
-      topic = topic_series$topic,
-      peak_val = peak_val,
-      time_to_peak = time_to_peak,
-      first_window_velocity = first_window_velocity,
-      total_volume = total_volume,
-      avg_sentiment = mean(df$sentiment_mean, na.rm=TRUE),
-      n_periods = nrow(df)
-    )
+suppressPackageStartupMessages({
+  library(dplyr)
+  library(tidyr)
+  library(caret)
+  library(jsonlite)
+})
+
+message("⚙️ Starting Feature Extraction...")
+
+today <- format(Sys.Date(), "%Y-%m-%d")
+infile <- file.path("data_clean", paste0("trends_clean_", today, ".rds"))
+if (!file.exists(infile)) stop("❌ Clean data not found: ", infile)
+df <- readRDS(infile)
+
+# ---------------------------------------------------------------
+# 1️⃣ Select Numeric Features
+# ---------------------------------------------------------------
+features <- df %>%
+  select(
+    avg_score, avg_comments, avg_sentiment, avg_velocity,
+    trend_score, trend_lifespan_hours, external_interest_index,
+    engagement_ratio, sentiment_weighted_velocity,
+    trend_intensity, insta_influence, insta_engagement
   )
-  return(features)
-}
 
-# Example usage:
-# feats <- extract_features_for_topic(topics[[1]], roll_window = 3)
-# print(feats$summary)
+# ---------------------------------------------------------------
+# 2️⃣ Handle Missing Values and Scaling
+# ---------------------------------------------------------------
+features[is.na(features)] <- 0
+preproc <- preProcess(features, method = c("center", "scale"))
+scaled_features <- predict(preproc, features)
+
+# Attach topic for reference
+scaled_features$topic <- df$topic
+
+# ---------------------------------------------------------------
+# 3️⃣ Save Feature Matrix
+# ---------------------------------------------------------------
+dir.create("data_features", showWarnings = FALSE)
+saveRDS(scaled_features, file.path("data_features", paste0("trend_features_", today, ".rds")))
+write_json(scaled_features, file.path("data_features", paste0("trend_features_", today, ".json")),
+           pretty = TRUE, auto_unbox = TRUE)
+
+message("✅ Feature extraction complete → data_features/trend_features_", today)

@@ -1,0 +1,137 @@
+{
+  "topic": "Myke Towers - Lala (Letra)",
+  "forecast": [
+    {
+      "ds": "2025-10-26",
+      "yhat": 0.8658,
+      "yhat_lower": 0.6402,
+      "yhat_upper": 1.0967
+    },
+    {
+      "ds": "2025-10-27",
+      "yhat": 1.0995,
+      "yhat_lower": 0.8785,
+      "yhat_upper": 1.313
+    },
+    {
+      "ds": "2025-10-28",
+      "yhat": 1.0995,
+      "yhat_lower": 0.8888,
+      "yhat_upper": 1.3357
+    },
+    {
+      "ds": "2025-10-29",
+      "yhat": 1.0995,
+      "yhat_lower": 0.8752,
+      "yhat_upper": 1.3438
+    },
+    {
+      "ds": "2025-10-30",
+      "yhat": 1.0995,
+      "yhat_lower": 0.8652,
+      "yhat_upper": 1.3355
+    },
+    {
+      "ds": "2025-10-31",
+      "yhat": 1.0995,
+      "yhat_lower": 0.8738,
+      "yhat_upper": 1.319
+    },
+    {
+      "ds": "2025-11-01",
+      "yhat": 1.0996,
+      "yhat_lower": 0.8637,
+      "yhat_upper": 1.3153
+    },
+    {
+      "ds": "2025-11-02",
+      "yhat": 0.6668,
+      "yhat_lower": 0.4572,
+      "yhat_upper": 0.8844
+    },
+    {
+      "ds": "2025-11-03",
+      "yhat": 0.9005,
+      "yhat_lower": 0.6791,
+      "yhat_upper": 1.122
+    },
+    {
+      "ds": "2025-11-04",
+      "yhat": 0.9005,
+      "yhat_lower": 0.6885,
+      "yhat_upper": 1.1298
+    },
+    {
+      "ds": "2025-11-05",
+      "yhat": 0.9005,
+      "yhat_lower": 0.6807,
+      "yhat_upper": 1.1368
+    },
+    {
+      "ds": "2025-11-06",
+      "yhat": 0.9005,
+      "yhat_lower": 0.6822,
+      "yhat_upper": 1.1275
+    },
+    {
+      "ds": "2025-11-07",
+      "yhat": 0.9005,
+      "yhat_lower": 0.6675,
+      "yhat_upper": 1.1197
+    },
+    {
+      "ds": "2025-11-08",
+      "yhat": 0.9006,
+      "yhat_lower": 0.6649,
+      "yhat_upper": 1.1257
+    },
+    {
+      "ds": "2025-11-09",
+      "yhat": 0.4678,
+      "yhat_lower": 0.2469,
+      "yhat_upper": 0.6793
+    },
+    {
+      "ds": "2025-11-10",
+      "yhat": 0.7015,
+      "yhat_lower": 0.4802,
+      "yhat_upper": 0.9239
+    },
+    {
+      "ds": "2025-11-11",
+      "yhat": 0.7015,
+      "yhat_lower": 0.4684,
+      "yhat_upper": 0.9315
+    },
+    {
+      "ds": "2025-11-12",
+      "yhat": 0.7015,
+      "yhat_lower": 0.4962,
+      "yhat_upper": 0.9247
+    },
+    {
+      "ds": "2025-11-13",
+      "yhat": 0.7015,
+      "yhat_lower": 0.4807,
+      "yhat_upper": 0.9141
+    },
+    {
+      "ds": "2025-11-14",
+      "yhat": 0.7015,
+      "yhat_lower": 0.4674,
+      "yhat_upper": 0.9246
+    },
+    {
+      "ds": "2025-11-15",
+      "yhat": 0.7015,
+      "yhat_lower": 0.4773,
+      "yhat_upper": 0.9196
+    },
+    {
+      "ds": "2025-11-16",
+      "yhat": 0.2688,
+      "yhat_lower": 0.0273,
+      "yhat_upper": 0.5058
+    }
+  ]
+}

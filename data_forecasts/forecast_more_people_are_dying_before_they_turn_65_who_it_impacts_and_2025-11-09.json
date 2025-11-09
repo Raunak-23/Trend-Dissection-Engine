@@ -1,0 +1,101 @@
+{
+  "topic": "More people are dying before they turn 65. Who it impacts and what it means. - The Washington Post",
+  "forecast": [
+    {
+      "ds": "2016-04-13",
+      "yhat": 498,
+      "yhat_lower": 498,
+      "yhat_upper": 498
+    },
+    {
+      "ds": "2020-04-24",
+      "yhat": 412,
+      "yhat_lower": 412,
+      "yhat_upper": 412
+    },
+    {
+      "ds": "2020-04-28",
+      "yhat": 347,
+      "yhat_lower": 347,
+      "yhat_upper": 347
+    },
+    {
+      "ds": "2021-09-28",
+      "yhat": 182,
+      "yhat_lower": 182,
+      "yhat_upper": 182
+    },
+    {
+      "ds": "2022-02-24",
+      "yhat": 11558,
+      "yhat_lower": 11558,
+      "yhat_upper": 11558
+    },
+    {
+      "ds": "2022-03-26",
+      "yhat": 531,
+      "yhat_lower": 531,
+      "yhat_upper": 531
+    },
+    {
+      "ds": "2023-06-21",
+      "yhat": 293,
+      "yhat_lower": 293,
+      "yhat_upper": 293
+    },
+    {
+      "ds": "2023-11-13",
+      "yhat": 111,
+      "yhat_lower": 111,
+      "yhat_upper": 111
+    },
+    {
+      "ds": "2025-10-25",
+      "yhat": 33,
+      "yhat_lower": 33,
+      "yhat_upper": 33
+    },
+    {
+      "ds": "2025-10-26",
+      "yhat": 6636.3908,
+      "yhat_lower": 6636.3908,
+      "yhat_upper": 6636.3908
+    },
+    {
+      "ds": "2025-10-27",
+      "yhat": -162.0961,
+      "yhat_lower": -162.0961,
+      "yhat_upper": -162.0961
+    },
+    {
+      "ds": "2025-10-28",
+      "yhat": -375.2162,
+      "yhat_lower": -375.2162,
+      "yhat_upper": -375.2162
+    },
+    {
+      "ds": "2025-10-29",
+      "yhat": -36.3217,
+      "yhat_lower": -36.3217,
+      "yhat_upper": -36.3217
+    },
+    {
+      "ds": "2025-10-30",
+      "yhat": 11047.501,
+      "yhat_lower": 11047.501,
+      "yhat_upper": 11047.501
+    },
+    {
+      "ds": "2025-10-31",
+      "yhat": -311.6065,
+      "yhat_lower": -311.6065,
+      "yhat_upper": -311.6065
+    },
+    {
+      "ds": "2025-11-01",
+      "yhat": 30.3226,
+      "yhat_lower": 30.3226,
+      "yhat_upper": 30.3226
+    }
+  ]
+}

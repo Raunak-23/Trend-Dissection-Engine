@@ -1,54 +1,75 @@
-library(text2vec) # for cosine sim matrix (or we can compute manually)
-library(cluster)
-library(stats)
+# ===============================================================
+# Trend_similarity.R
+# Trend Dissection Engine – Clustering and Similarity Analysis
+# ===============================================================
+# Performs K-Means clustering and cosine similarity on feature matrix.
+# Evaluates clusters with Silhouette and Davies–Bouldin indices.
+# ===============================================================
 
-# create a matrix where rows = topics and columns = aligned time bins (we will align by relative positions)
-build_matrix_for_clustering <- function(features_list, align_by = "first_nonzero", max_len = 100) {
-  # features_list: list of results from extract_features_for_topic
-  rows <- list()
-  topics <- c()
-  for(x in features_list) {
-    df <- x$timeseries
-    vec <- df$engagement_sum
-    # optionally align by first nonzero (start of trend)
-    if(align_by == "first_nonzero") {
-      nz <- which(vec > 0)
-      if(length(nz) == 0) next
-      start <- nz[1]
-      rel <- vec[start:min(length(vec), start + max_len - 1)]
-    } else {
-      rel <- head(vec, max_len)
-    }
-    # pad to max_len
-    padded <- c(rel, rep(0, max_len - length(rel)))
-    # normalize (z-score) but avoid dividing by zero
-    if(sd(padded) == 0) {
-      normed <- rep(0, length(padded))
-    } else {
-      normed <- (padded - mean(padded)) / sd(padded)
-    }
-    rows <- append(rows, list(normed))
-    topics <- c(topics, x$summary$topic)
-  }
-  if(length(rows) == 0) stop("No valid rows for clustering")
-  mat <- do.call(rbind, rows)
-  rownames(mat) <- topics
-  return(mat)
-}
+suppressPackageStartupMessages({
+  library(dplyr)
+  library(cluster)
+  library(factoextra)
+  library(lsa)
+  library(clusterSim)
+  library(jsonlite)
+})
 
-cluster_trends <- function(mat, k = 4) {
-  # Option 1: k-means on matrix rows
-  set.seed(42)
-  km <- kmeans(mat, centers = k, nstart = 20)
-  # Optionally compute cosine distances and hierarchical cluster
-  cosine_sim <- sim2(x = mat, method = "cosine", norm = "l2")
-  dist_cos <- as.dist(1 - cosine_sim)
-  hc <- hclust(dist_cos, method = "ward.D2")
-  return(list(kmeans = km, hc = hc, dist_cos = dist_cos))
-}
+message("🔍 Starting Trend Similarity Analysis...")
 
-# Example usage
-# feats_list <- map(topics, extract_features_for_topic)
-# mat <- build_matrix_for_clustering(feats_list, max_len = 50)
-# cl <- cluster_trends(mat, k=3)
-# table(cl$kmeans$cluster)
+today <- format(Sys.Date(), "%Y-%m-%d")
+feat_path <- file.path("data_features", paste0("trend_features_", today, ".rds"))
+if (!file.exists(feat_path)) stop("❌ Feature file not found: ", feat_path)
+feat <- readRDS(feat_path)
+
+# ---------------------------------------------------------------
+# 1️⃣ Prepare Numeric Matrix
+# ---------------------------------------------------------------
+topic_names <- feat$topic
+feat_matrix <- feat %>% dplyr::select(-topic) %>% as.matrix()
+
+# ---------------------------------------------------------------
+# 2️⃣ Determine Optimal Number of Clusters (k)
+# ---------------------------------------------------------------
+set.seed(123)
+wcss <- sapply(2:10, function(k) { kmeans(feat_matrix, centers = k, nstart = 10)$tot.withinss })
+opt_k <- which.min(diff(diff(wcss))) + 1
+message("📊 Estimated optimal k = ", opt_k)
+
+# ---------------------------------------------------------------
+# 3️⃣ Apply K-Means
+# ---------------------------------------------------------------
+k_model <- kmeans(feat_matrix, centers = opt_k, nstart = 25)
+feat$cluster <- k_model$cluster
+
+# ---------------------------------------------------------------
+# 4️⃣ Compute Cosine Similarity Matrix
+# ---------------------------------------------------------------
+cos_sim <- cosine(t(feat_matrix))
+sim_df <- as.data.frame(cos_sim)
+rownames(sim_df) <- colnames(sim_df) <- topic_names
+
+# ---------------------------------------------------------------
+# 5️⃣ Cluster Evaluation Metrics
+# ---------------------------------------------------------------
+sil <- silhouette(k_model$cluster, dist(feat_matrix))
+sil_score <- mean(sil[, "sil_width"])
+db_index <- index.DB(feat_matrix, k_model$cluster)$DB
+
+message("✅ Silhouette Score = ", round(sil_score, 3))
+message("✅ Davies–Bouldin Index = ", round(db_index, 3))
+
+# ---------------------------------------------------------------
+# 6️⃣ Visualization (optional)
+# ---------------------------------------------------------------
+# fviz_cluster(k_model, data = feat_matrix, labelsize = 7, geom = "point")
+
+# ---------------------------------------------------------------
+# 7️⃣ Save Outputs
+# ---------------------------------------------------------------
+dir.create("data_clusters", showWarnings = FALSE)
+saveRDS(feat, file.path("data_clusters", paste0("clustered_trends_", today, ".rds")))
+write_json(feat, file.path("data_clusters", paste0("clustered_trends_", today, ".json")),
+           pretty = TRUE, auto_unbox = TRUE)
+
+message("📦 Clustered dataset saved → data_clusters/clustered_trends_", today)

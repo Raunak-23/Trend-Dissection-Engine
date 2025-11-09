@@ -1,0 +1,107 @@
+{
+  "topic": "F1 braced for potential cyclone disruption at Brazilian GP - The Race",
+  "forecast": [
+    {
+      "ds": "2020-07-20",
+      "yhat": 946.7216,
+      "yhat_lower": 461.2283,
+      "yhat_upper": 1420.3806
+    },
+    {
+      "ds": "2020-12-05",
+      "yhat": 357.0598,
+      "yhat_lower": -94.4217,
+      "yhat_upper": 813.5837
+    },
+    {
+      "ds": "2020-12-07",
+      "yhat": 894.4024,
+      "yhat_lower": 455.7247,
+      "yhat_upper": 1342.4277
+    },
+    {
+      "ds": "2021-01-04",
+      "yhat": 883.9386,
+      "yhat_lower": 412.6694,
+      "yhat_upper": 1361.0342
+    },
+    {
+      "ds": "2021-05-17",
+      "yhat": 834.2354,
+      "yhat_lower": 345.787,
+      "yhat_upper": 1318.3456
+    },
+    {
+      "ds": "2021-06-22",
+      "yhat": 570.4341,
+      "yhat_lower": 93.9879,
+      "yhat_upper": 1032.7708
+    },
+    {
+      "ds": "2022-01-17",
+      "yhat": 742.6769,
+      "yhat_lower": 296.4855,
+      "yhat_upper": 1244.9887
+    },
+    {
+      "ds": "2024-09-11",
+      "yhat": 107.3264,
+      "yhat_lower": -365.1115,
+      "yhat_upper": 580.1186
+    },
+    {
+      "ds": "2024-11-04",
+      "yhat": 360.7472,
+      "yhat_lower": -118.1065,
+      "yhat_upper": 817.4119
+    },
+    {
+      "ds": "2025-10-07",
+      "yhat": -15.5403,
+      "yhat_lower": -524.5731,
+      "yhat_upper": 444.2807
+    },
+    {
+      "ds": "2025-10-08",
+      "yhat": -39.1672,
+      "yhat_lower": -503.1082,
+      "yhat_upper": 403.4274
+    },
+    {
+      "ds": "2025-10-09",
+      "yhat": -985.4573,
+      "yhat_lower": -1491.9739,
+      "yhat_upper": -523.3908
+    },
+    {
+      "ds": "2025-10-10",
+      "yhat": -985.831,
+      "yhat_lower": -1487.9988,
+      "yhat_upper": -529.1251
+    },
+    {
+      "ds": "2025-10-11",
+      "yhat": -304.7774,
+      "yhat_lower": -737.2492,
+      "yhat_upper": 181.613
+    },
+    {
+      "ds": "2025-10-12",
+      "yhat": -986.5784,
+      "yhat_lower": -1472.6413,
+      "yhat_upper": -514.5595
+    },
+    {
+      "ds": "2025-10-13",
+      "yhat": 232.5653,
+      "yhat_lower": -264.4003,
+      "yhat_upper": 681.6209
+    },
+    {
+      "ds": "2025-10-14",
+      "yhat": -18.1562,
+      "yhat_lower": -472.412,
+      "yhat_upper": 451.0534
+    }
+  ]
+}
