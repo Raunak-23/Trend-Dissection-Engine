@@ -119,12 +119,12 @@
     "instagram_metrics": {
       "platform_source": "Instagram",
       "topic": "4 Non Blondes - What's Up? (Lyrics)",
-      "avg_likes": 55901,
-      "avg_comments": 888,
-      "sentiment": 0.2,
-      "engagement_rate": 0.083,
-      "time_fetched": "2025-11-10 00:22:36.095268",
-      "simulated": true
+      "avg_likes": 384084,
+      "avg_comments": 34633,
+      "sentiment": 0.216,
+      "engagement_rate": 0.668,
+      "time_fetched": "2025-11-10 11:36:34.184551",
+      "simulated": false
     }
   },
   {
@@ -247,11 +247,11 @@
     "instagram_metrics": {
       "platform_source": "Instagram",
       "topic": "skibidi toilet: emergence | official trailer",
-      "avg_likes": 274759,
-      "avg_comments": 20394,
-      "sentiment": 0.364,
-      "engagement_rate": 0.515,
-      "time_fetched": "2025-11-10 00:22:36.088247",
+      "avg_likes": 190093,
+      "avg_comments": 8146,
+      "sentiment": -0.129,
+      "engagement_rate": 0.434,
+      "time_fetched": "2025-11-10 11:36:34.185509",
       "simulated": false
     }
   },
@@ -295,11 +295,11 @@
     "instagram_metrics": {
       "platform_source": "Instagram",
       "topic": "Myke Towers - Lala (Letra)",
-      "avg_likes": 12139,
-      "avg_comments": 608,
-      "sentiment": 0.188,
-      "engagement_rate": 0.15,
-      "time_fetched": "2025-11-10 00:22:36.096697",
+      "avg_likes": 36165,
+      "avg_comments": 981,
+      "sentiment": 0.338,
+      "engagement_rate": 0.119,
+      "time_fetched": "2025-11-10 11:36:34.192936",
       "simulated": true
     }
   },
@@ -423,11 +423,11 @@
     "instagram_metrics": {
       "platform_source": "Instagram",
       "topic": "Michael | Official Trailer",
-      "avg_likes": 107581,
-      "avg_comments": 3757,
-      "sentiment": 0.195,
-      "engagement_rate": 0.814,
-      "time_fetched": "2025-11-10 00:22:36.088875",
+      "avg_likes": 303034,
+      "avg_comments": 12526,
+      "sentiment": 0.397,
+      "engagement_rate": 0.559,
+      "time_fetched": "2025-11-10 11:36:34.132742",
       "simulated": false
     }
   },
@@ -551,12 +551,12 @@
     "instagram_metrics": {
       "platform_source": "Instagram",
       "topic": "Flight cancelations to worsen next week if shutdown continues - CNBC",
-      "avg_likes": 87313,
-      "avg_comments": 7430,
-      "sentiment": -0.1,
-      "engagement_rate": 0.876,
-      "time_fetched": "2025-11-10 00:22:36.087494",
-      "simulated": false
+      "avg_likes": 54539,
+      "avg_comments": 358,
+      "sentiment": 0.059,
+      "engagement_rate": 0.134,
+      "time_fetched": "2025-11-10 11:36:34.194157",
+      "simulated": true
     }
   },
   {
@@ -679,11 +679,11 @@
     "instagram_metrics": {
       "platform_source": "Instagram",
       "topic": "Apple helped kill netbooks. Will it bring them back? - The Verge",
-      "avg_likes": 321020,
-      "avg_comments": 28209,
-      "sentiment": 0.26,
-      "engagement_rate": 0.522,
-      "time_fetched": "2025-11-10 00:22:36.086515",
+      "avg_likes": 365035,
+      "avg_comments": 16457,
+      "sentiment": 0.135,
+      "engagement_rate": 0.515,
+      "time_fetched": "2025-11-10 11:36:34.18351",
       "simulated": false
     }
   },
@@ -807,11 +807,11 @@
     "instagram_metrics": {
       "platform_source": "Instagram",
       "topic": "TVLine's Performer Of The Week: Rhea Seehorn - TVLine",
-      "avg_likes": 36846,
-      "avg_comments": 2255,
-      "sentiment": 0.441,
-      "engagement_rate": 0.647,
-      "time_fetched": "2025-11-10 00:22:36.089373",
+      "avg_likes": 289546,
+      "avg_comments": 24082,
+      "sentiment": 0.26,
+      "engagement_rate": 0.698,
+      "time_fetched": "2025-11-10 11:36:34.182379",
       "simulated": false
     }
   },
@@ -935,11 +935,11 @@
     "instagram_metrics": {
       "platform_source": "Instagram",
       "topic": "The endearing movie that affirms creativity as a human act - The Verge",
-      "avg_likes": 30422,
-      "avg_comments": 776,
-      "sentiment": -0.158,
-      "engagement_rate": 0.028,
-      "time_fetched": "2025-11-10 00:22:36.097675",
+      "avg_likes": 48120,
+      "avg_comments": 840,
+      "sentiment": -0.14,
+      "engagement_rate": 0.042,
+      "time_fetched": "2025-11-10 11:36:34.195629",
       "simulated": true
     }
   }

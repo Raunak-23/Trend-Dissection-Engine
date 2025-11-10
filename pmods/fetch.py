@@ -43,7 +43,7 @@ reddit = praw.Reddit(
 # -----------------------------------------------------------
 # 2️⃣  Global YouTube — Fetch Trending Topics
 # -----------------------------------------------------------
-def get_global_youtube_trending(max_results_per_region=5):
+def get_global_youtube_trending(max_results_per_region=20):
     regions = ["US"]
     trending_topics = []
 
@@ -136,7 +136,7 @@ def get_top_news(region_code="us", limit=5):
 # -----------------------------------------------------------
 # 4️⃣  Reddit Analysis — Metrics Computation
 # -----------------------------------------------------------
-def analyze_reddit_posts(topic, limit=10):
+def analyze_reddit_posts(topic, limit=15):
     posts = reddit.subreddit("all").search(topic, limit=limit, sort="relevance")
     data = []
     for post in posts:
